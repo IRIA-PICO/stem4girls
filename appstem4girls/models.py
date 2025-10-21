@@ -4,7 +4,7 @@ class Proveedor(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField(blank=True)
     web = models.URLField(blank=True)
-    logo = models.ImageField(upload_to='proveedores/', blank=True)
+    #logo = models.ImageField(upload_to='proveedores/', blank=True)
     
     def __str__(self):
         return self.nombre
@@ -25,7 +25,7 @@ class Recurso(models.Model):
     enlace = models.URLField(blank=True)
     proveedor = models.ForeignKey(Proveedor, on_delete=models.CASCADE, related_name='recursos')
     tags = models.ManyToManyField(Tag, related_name='recursos')
-    imagen = models.ImageField(upload_to='recursos/', blank=True)
+    #imagen = models.ImageField(upload_to='recursos/', blank=True)
 
     def __str__(self):
         return self.titulo

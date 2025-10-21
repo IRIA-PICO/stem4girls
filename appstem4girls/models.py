@@ -5,7 +5,7 @@ class Proveedor(models.Model):
     descripcion = models.TextField(blank=True)
     web = models.URLField(blank=True)
     logo = models.ImageField(upload_to='proveedores/', blank=True)
-
+    
     def __str__(self):
         return self.nombre
 

@@ -20,8 +20,8 @@ def lista_recursos(request):
     return render(request, 'lista_recursos.html', {'recursos': recursos})
 
 
-def detalle_recurso(request, id):
-    recurso = get_object_or_404(Recurso, id=id)
+def detalle_recurso(request, recurso_id):
+    recurso = get_object_or_404(Recurso, id=recurso_id)
     return render(request, 'detalle_recurso.html', {'recurso': recurso})
 
 
@@ -30,8 +30,8 @@ def lista_proveedores(request):
     return render(request, 'lista_proveedores.html', {'proveedores': proveedores})
 
 
-def detalle_proveedor(request, id):
-    proveedor = get_object_or_404(Proveedor, id=id)
+def detalle_proveedor(request, proveedor_id):
+    proveedor = get_object_or_404(Proveedor, id=proveedor_id)
     return render(request, 'detalle_proveedor.html', {'proveedor': proveedor})
 
 
@@ -40,6 +40,6 @@ def lista_tags(request):
     return render(request, 'lista_tags.html', {'tags': tags})
 
 
-def detalle_tag(request, id):
-    tag = get_object_or_404(Tag, id=id)
+def detalle_tag(request, tag_id):
+    tag = get_object_or_404(Tag, id=tag_id)
     return render(request, 'detalle_tag.html', {'tag': tag})

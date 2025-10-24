@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Recurso, Proveedor, Tag
+from .models import Recurso, Proveedor, Tag, Mujeres
 
 
 def index(request):
@@ -43,3 +43,6 @@ def lista_tags(request):
 def detalle_tag(request, tag_id):
     tag = get_object_or_404(Tag, id=tag_id)
     return render(request, 'detalle_tag.html', {'tag': tag})
+
+def mujeres_lideres(request, ):
+    return render(request, 'mujeres_lideres.html')

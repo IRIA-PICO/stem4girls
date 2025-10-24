@@ -12,11 +12,11 @@
         <header> 
             <nav class="nav-principal">
                 <div class="menu">
-                    <a href="lista_recursos.html">Recursos</a>
-                    <a href="lista_proveedores.html">Proveedores</a>
-                    <a href="index.html" id="titulo-nav">STEM 4 GIRLS</a>
-                    <a href="mujeres_lideres.html">Mujeres líderes</a>
-                    <a href="contacto.html">Contacto</a>
+                        <a href="{% url 'lista_recursos' %}">Recursos</a>
+                        <a href="{% url 'lista_proveedores' %}">Proveedores</a>
+                        <a href="{% url 'index' %}" id="titulo-nav">STEM 4 GIRLS</a>
+                        <a href="{% url 'mujeres_lideres' %}">Mujeres líderes</a>
+                        <a href="{% url 'index' %}#contacto">Contacto</a>
                 </div>
 		    </nav>
         </header>

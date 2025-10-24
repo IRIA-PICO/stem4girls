@@ -9,4 +9,6 @@ urlpatterns = [
     path('proveedores/<int:proveedor_id>/', views.detalle_proveedor, name='detalle_proveedor'),
     path('tags/', views.lista_tags, name='lista_tags'),
     path('tags/<int:tag_id>/', views.detalle_tag, name='detalle_tag'),
+    path('mujeres_lideres/', views.mujeres_lideres, name='mujeres_lideres'),
+
 ]

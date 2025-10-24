@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"-->
+        <meta name="STEM4GIRLS" content="20240111">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/text.css' %}">
+        <title>{% block titulo %}Gestor de Empleados{% endblock %}</title>
+    </head>
+    <body>
+        <header> 
+            <nav class="nav-principal">
+                <div class="menu">
+                    <a href="lista_recursos.html">Recursos</a>
+                    <a href="lista_proveedores.html">Proveedores</a>
+                    <a href="index.html" id="titulo-nav">STEM 4 GIRLS</a>
+                    <a href="mujeres_lideres.html">Mujeres líderes</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+		    </nav>
+        </header>
+        
+        <div id="content">
+	     <h1>Gestor de Empleados</h1>
+            {% block contenido %}{% endblock %}
+        </div>
+
+        <footer class="footer">
+            <div class="containerF">
+                <!--Columna 1: Marca y Misión-->
+                <div class="footer-col">
+                    <h4 class="logo-foot">STEM 4 girls</h4>
+                    <p class="mision">
+                        "Para todas laas futuras mujeres científicas. El futuro no se predice, ¡se programa!"
+                    </p>
+                    <p>© 2025 App de Mascotas</p>
+                </div>
+                <!--Columna 2: Información Legal-->
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="lista_recursos.html">Explorar Recursos</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <!--Columna 3: Contacto y Redes Sociales-->
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>📧 <a href="mailto:info@stem4girls.com">info@stem4girls.com</a></p>
+                    <p>📞 +34 123 456 789</p>
+                    
+                    <div class="social-icons">
+                        <!-- Facebook -->
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14 10.5h2.5L17 13h-2.5v7h-3v-7h-2V10h2V8.45c0-1.6 0.96-2.6 3.01-2.6h2.49v2.5H15c-.88 0-1.25.12-1.25.75V10.5z"/>
+                        </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 
+                            10 10 10 10-4.48 10-10S17.52 2 12 
+                            2zm3.2 2.3c.73 0 1.35.62 
+                            1.35 1.35s-.62 1.35-1.35 
+                            1.35-1.35-.62-1.35-1.35.62-1.35 
+                            1.35-1.35zM12 8.7c2.32 0 4.3 1.98 
+                            4.3 4.3s-1.98 4.3-4.3 
+                            4.3-4.3-1.98-4.3-4.3 
+                            1.98-4.3 4.3-4.3zm0 1.8c-1.37 
+                            0-2.5 1.13-2.5 2.5s1.13 2.5 
+                            2.5 2.5 2.5-1.13 
+                            2.5-2.5-1.13-2.5-2.5-2.5z"/>
+                        </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        <div class="footer-bottom">
+            <p>Hecho por mujeres para mujeres.</p>
+        </div>
+    </footer>
+    </body>
+</html>

@@ -1,1 +1,44 @@
 {% extends "base.html" %}
+
+{% block titulo %} Explora Nuestros Recursos {% endblock %}
+
+{% block contenido %}
+<h2>Datos del Recurso</h2>
+<!-- BEGIN ENTRIES -->
+<div class="w3-col l8 s12">
+
+  <!-- Blog entry -->
+  <div class="L_recursos">
+    {% if recursos %}
+    {% for recurso in recursos %}
+        <div class="recurso">
+            <div>
+                <h2>{{ recurso.titulo }}</h2>
+                <p> Publicado el {{ recurso.fecha_publicacion|date:"d M Y" }} </p>
+                <!-- Descripción recortada -->
+                <p>{{ recurso.descripcion|truncatechars:100 }}</p> 
+                <!-- Tags -->
+                {% if recurso.tags.all %}
+                    <div class="tagsdelrecurso">
+                        {% for tag in recurso.tags.all %}
+                            <!-- añadir tags con propiedades -->
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+            </div>
+
+            <!-- Enlace a detalle_recurso -->
+            <a href="{% url 'detalle_recurso' recurso.id %}">Ver más detalles:</a>
+        </div>
+    {% endfor %}
+    <!-- Enlace a más recursos -->
+    {% else %}
+        <p>ERROR</p>
+    {% endif %}
+    </div>
+  </div>
+
+</div>
+<!-- END ENTRIES -->
+{% endblock %}

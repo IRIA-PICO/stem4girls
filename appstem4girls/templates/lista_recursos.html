@@ -1,17 +1,18 @@
 {% extends "base.html" %}
 
-{% block titulo %} Explora Nuestros Recursos {% endblock %}
+{% block titulo %} Recursos Stem4Girls {% endblock %}
 
 {% block contenido %}
-<h2>Datos del Recurso</h2>
+<h1>Explora Nuestros Recursos</h1>
+<p>Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM</p>
 <!-- BEGIN ENTRIES -->
 <div class="w3-col l8 s12">
 
   <!-- Blog entry -->
-  <div class="L_recursos">
+  <div class="grid_recursos">
     {% if recursos %}
     {% for recurso in recursos %}
-        <div class="recurso">
+        <div class="recurso_card">
             <div>
                 <h2>{{ recurso.titulo }}</h2>
                 <p> Publicado el {{ recurso.fecha_publicacion|date:"d M Y" }} </p>
@@ -19,9 +20,10 @@
                 <p>{{ recurso.descripcion|truncatechars:100 }}</p> 
                 <!-- Tags -->
                 {% if recurso.tags.all %}
-                    <div class="tagsdelrecurso">
+                    <div class="tags_recurso">
                         {% for tag in recurso.tags.all %}
                             <!-- añadir tags con propiedades -->
+                            <span class="tag">{{ tag.nombre }}</span>
                         {% endfor %}
                     </div>
                 {% endif %}

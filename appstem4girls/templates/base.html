@@ -6,6 +6,7 @@
         <meta name="description" content="STEM 4 girls - Recursos educativos para futuras científicas">
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/recursos.css' %}">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <title>{% block titulo %}Gestor de Empleados{% endblock %}</title>
     </head>
@@ -41,8 +42,8 @@
                 <div class="footer-col">
                     <h4>Navegación</h4>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="lista_recursos.html">Explorar Recursos</a></li>
+                        <li><a href="{% url 'index' %}">Inicio</a></li>
+                        <li><a href="{% url 'lista_recursos' %}">Explorar Recursos</a></li>
                         <li><a href="#">Aviso Legal</a></li>
                         <li><a href="#">Política de Privacidad</a></li>
                     </ul>

@@ -1,14 +1,78 @@
-/*BASE PARA EL FOOTER*/
+/*HEADER BASE*/
+header {
+  background-color: #1a1831;
+  padding: 1.2rem 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+.nav-principal .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-izq, .menu-der {
+  display: flex;
+  gap: 2.2rem;
+}
+#titulo-nav {
+  font-weight: 800;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #e56ad1, #ff74c4, #71c8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+#titulo-nav:hover {
+  transform: scale(1.05);
+}
+.menu a {
+  color: #d8d8e4;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+}
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #e56ad1, #ff74c4, #71c8ff);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+.menu a:hover {
+  color: #ffffff;
+}
+.menu a:hover::after {
+  width: 100%;
+}
+/*VERSIÓN RESPONSIVE*/
+@media (max-width: 900px) {
+  .nav-principal .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menu-izq, .menu-der {
+    gap: 1rem;
+  }
+}
+
 body {
     font-family: 'Poppins', Arial, sans-serif;
 }
+/*BASE PARA EL FOOTER*/
 footer {
     width: 100%;
     background: #f4f4f4;
     color: #2d2d2d;
     border-top: 1px solid #e0e0e0;
 }
-
 .containerF {
     display: flex;
     justify-content: center;

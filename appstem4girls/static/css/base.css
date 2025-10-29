@@ -84,6 +84,7 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 /*BASE PARA EL FOOTER*/
 footer {
@@ -198,3 +199,4 @@ footer {
         gap: 30px;
     }
 }
+

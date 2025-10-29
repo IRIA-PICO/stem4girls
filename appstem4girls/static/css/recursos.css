@@ -2,7 +2,9 @@
 .grid_recursos { 
   width: 100%;              
   padding: 20px;
+  box-sizing: border-box; /* incluye el padding dentro del 100% */
   text-align: center;
+  background-color: #1a1831;
 }
 
 .recurso_card {
@@ -51,4 +53,48 @@
   color: #A67CC9;
   text-decoration: none;
   font-weight: 600;
+}
+.recurso a{
+  text-decoration: none;
+  color: #C4A1D7;
+}
+/*Responsive*/
+
+@media (max-width: 900px) {
+  .grid_recursos {
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .recurso_card {
+    width: 90%;
+    min-width: auto;
+    margin: 10px auto;
+    display: block;
+
+  }
+}
+
+/*Responsive Moviles */
+@media (max-width: 768px) {
+  .recurso_card {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    box-sizing: border-box;
+  }
+  .grid_recursos {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .recurso {
+    width: 90%;
+    padding: 20px;
+    margin: 30px auto;
+  }
+  .recurso h1 {
+    font-size: 1.5rem;
+  }
 }

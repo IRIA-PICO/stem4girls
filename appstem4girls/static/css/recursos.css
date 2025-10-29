@@ -1,10 +1,22 @@
 /*lista_recursos*/
+.l_recursos{
+  background-color: #1a1831;
+}
+.info_L_recursos{
+  color: white;
+  text-align: center;
+}
+.info_L_recursos h1{
+  color: #EC4899;
+}
+.info_L_recursos p{
+  font-size: large;
+}
 .grid_recursos { 
   width: 100%;              
   padding: 20px;
   box-sizing: border-box; /* incluye el padding dentro del 100% */
   text-align: center;
-  background-color: #1a1831;
 }
 
 .recurso_card {
@@ -21,10 +33,24 @@
   max-width: 350px;
   margin: 12px;            
   box-sizing: border-box;  /* Asegura que el padding no rompa el ancho */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recurso_card h2{
+    color: #A0E7E5;
+    -webkit-text-stroke: 0.2px #a0e7e5b1; /* Borde más oscuroy fino */
+    -webkit-text-fill-color: #A0E7E5; /* Relleno del texto */
+
+}
+.recurso_card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 .recurso_card a {
   text-decoration: none;
    color: #C4A1D7;
+}
+.recurso_card a:hover {
+  color: #A67CC9;
 }
 .tags_recurso {
   display: flex;
@@ -57,6 +83,9 @@
 .recurso a{
   text-decoration: none;
   color: #C4A1D7;
+}
+.recurso a:hover {
+  color: #A67CC9;
 }
 /*Responsive*/
 

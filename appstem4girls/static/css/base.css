@@ -78,13 +78,12 @@ header {
 }
 body{
   font-family: 'Poppins', Arial, sans-serif;
-  background-color: white;
+  background-color: #1a1831;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 /*BASE PARA EL FOOTER*/
 footer {

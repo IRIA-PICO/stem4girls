@@ -8,24 +8,38 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
+  padding: 0.5rem 2rem;
 }
+
 .menu-izq, .menu-der {
   display: flex;
   gap: 2.2rem;
 }
+.logo-titulo a {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* distancia mínima entre logo y texto */
+    text-decoration: none;
+}
+
+.logo-titulo img {
+    height: 45px; /* ajusta según el tamaño del header */
+    width: auto;
+}
+
 #titulo-nav {
   font-weight: 800;
   font-size: 1.5rem;
   background: linear-gradient(90deg, #e56ad1, #ff74c4, #71c8ff);
+  background-clip: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   letter-spacing: 1px;
   transition: transform 0.3s ease;
 }
-#titulo-nav:hover {
-  transform: scale(1.05);
-}
+
 .menu a {
   color: #d8d8e4;
   text-decoration: none;
@@ -62,13 +76,17 @@ header {
     gap: 1rem;
   }
 }
-
-body {
-    font-family: 'Poppins', Arial, sans-serif;
+body{
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /*BASE PARA EL FOOTER*/
 footer {
-    width: 100%;
     background: #f4f4f4;
     color: #2d2d2d;
     border-top: 1px solid #e0e0e0;

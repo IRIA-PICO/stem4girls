@@ -7,8 +7,10 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link rel="stylesheet" href="{% static 'css/recursos.css' %}">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-        <title>{% block titulo %}Gestor de Empleados{% endblock %}</title>
+        <link rel="icon" href="{% static 'images/logoI.ico' %}" type="image/x-icon">
+        <title>{% block titulo %}Stem 4 girls-INDICE{% endblock %}</title>
     </head>
     <body>
         <header> 
@@ -18,7 +20,12 @@
                             <a href="{% url 'lista_recursos' %}">Recursos</a>
                             <a href="{% url 'lista_proveedores' %}">Proveedores</a>
                         </div>
-                        <a href="{% url 'index' %}" id="titulo-nav">STEM 4 GIRLS</a>
+                        <div class="logo-titulo">
+                            <a href="{% url 'index' %}">
+                            <img src="{% static 'images/logo.png' %}" alt="Logo STEM 4 Girls">
+                            <span id="titulo-nav">STEM 4 GIRLS</span>
+                            </a>
+                        </div>
                         <div class="menu-der">
                             <a href="{% url 'mujeres_lideres' %}">Mujeres líderes</a>
                             <a href="{% url 'index' %}#contacto">Contacto</a>
@@ -27,10 +34,9 @@
 		    </nav>
         </header>
         
-        <div id="content">
-	     <h1>Gestor de Empleados</h1>
+        <main id="content">
             {% block contenido %}{% endblock %}
-        </div>
+        </main>
 
         <footer class="footer">
             <div class="containerF">

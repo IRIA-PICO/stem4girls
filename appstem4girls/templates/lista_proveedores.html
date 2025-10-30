@@ -1,1 +1,29 @@
 {% extends "base.html" %}
+{% block titulo %}Proveedores{% endblock %}
+
+{% block contenido %}
+<div class="lp">
+    <div class="lp-info">
+        <h1>Proveedores de Recursos STEM</h1>
+        <p>Descubre las organizaciones, empresas e insituciones que impulsan el talento femenino en STEM.</p>
+    </div>
+    <div class="p-contenedor">
+        {% if proveedores %}
+            {% for proveedor in proveedores %}
+                <div class="p-tarjeta">
+                    {% if proveedor.logo%}
+                        <img src="{{ proveedor.logo.url }}" alt="Logo de {{ proveedor.nombre }}" class="p-logo">
+                    {% endif %}
+                    <h3 class="p-nombre">
+                        <a href="{ url 'detalle_proveedor' proveedor.id %}">{{ proveedor.nombre }}</a>
+                    </h3>
+                    <p class="p-descripcion">{{ proveedor.descripcion|truncatechars:100 }}</p>                  
+                    <a href="{ url 'detalle_proveedor' proveedor.id %}" class="p-detalle">Ver Detalle y Recusrsos &rarr;</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Todavía no hay proveedores registrados.</p>
+        {% endif%}
+    </div>
+</div>
+{% endblock %}

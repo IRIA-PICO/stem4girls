@@ -6,16 +6,29 @@
     --text-muted: rgba(255, 255, 255, 0.6);
     --bg-dark: #0B0C1A;   /* Fondo oscuro elegante */
 }
+.hero-imagen-section {
+    width: 100%;
+    height: 70vh; /* ajusta según cuánto quieras que ocupe la pantalla */
+    overflow: hidden;
+}
+
+.hero-imagen-section .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 .hero {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6rem 3rem;
-    background: var(--bg-dark);
+    padding: 3rem 3rem;
+    background: transparent;
     color: var(--text-light);
     z-index: 1;
     overflow: hidden;
+    margin-top: 0.1rem;
 }
 .hero .particles-container {
     position: absolute;
@@ -99,9 +112,6 @@
     font-size: 0.9rem;
     color: var(--text-muted);
 }
-
-/* ============================= */
-/* Botones CTA */
 .cta-container {
     display: flex;
     justify-content: center;
@@ -143,7 +153,6 @@
     box-shadow: 0 15px 35px rgba(139, 92, 246, 0.4);
 }
 
-/* Botón secundario */
 .cta-secondary {
     background: transparent;
     border: 2px solid var(--primary);

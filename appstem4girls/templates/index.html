@@ -1,11 +1,20 @@
 {% extends "base.html" %}
 
+{% load static%}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
 {% block titulo %}STEM 4 Girls - Inicio{% endblock %}
 
 {% block contenido %}
 <!-- Particles -->
-<div class="particles-container" id="particles">
 
+<section class="hero-imagen-section">
+    <img src="{% static 'images/fondo.png' %}" alt="STEM 4 Girls" class="hero-img">
+</section>
+
+<div class="particles-container" id="particles">
 	<!-- Hero Section -->
 	<section class="hero" id="inicio">
 		<div class="hero-content">

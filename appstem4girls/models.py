@@ -36,6 +36,7 @@ class Recurso(models.Model):
 class Mujeres(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField(blank=True)
+    #proveedor = models.ForeignKey(Proveedor, on_delete=models.CASCADE, related_name='recursos')
     
     def __str__(self):
         return self.nombre

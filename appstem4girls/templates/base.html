@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="{% static 'css/recursos.css' %}">
         <link rel="stylesheet" href="{% static 'css/proveedores.css' %}">
         <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet" href="{% static 'css/tags.css' %}">
+        
         {% block extra_css %}{% endblock %}
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <link rel="icon" href="{% static 'images/logoI.ico' %}" type="image/x-icon">
@@ -21,6 +23,7 @@
                         <div class="menu-izq">
                             <a href="{% url 'lista_recursos' %}">Recursos</a>
                             <a href="{% url 'lista_proveedores' %}">Proveedores</a>
+                            <a href="{% url 'lista_tags' %}">Etiquetas</a>
                         </div>
                         <div class="logo-titulo">
                             <a href="{% url 'index' %}">

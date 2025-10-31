@@ -1,0 +1,102 @@
+/* ===== Estilos generales ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Sección principal ===== */
+.tags_section {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tags_section h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1e1b4b;
+  margin-bottom: 10px;
+}
+
+.tags_section .subtitle {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* ===== Rejilla de tarjetas ===== */
+.tags_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ===== Tarjeta individual ===== */
+.tag_card {
+  width: 260px;
+  min-height: 150px;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tag_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.tag_card h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.tag_card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #374151;
+}
+
+/* ===== Botón ===== */
+.btn_tag {
+  display: inline-block;
+  background-color: white;
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn_tag:hover {
+  background-color: #f3f4f6;
+  transform: scale(1.05);
+}
+
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  .tag_card {
+    width: 90%;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .p-tarjeta {
+        max-width: 100%;
+    }
+}

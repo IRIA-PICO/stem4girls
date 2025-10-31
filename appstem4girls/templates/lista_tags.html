@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block titulo %} Etiquetas Stem4Girls {% endblock %}
+
+{% block contenido %}
+<section class="tags_section">
+    <h1>Etiquetas de Recursos STEM</h1>
+    <p class="subtitle">Filtra los recursos por tipo de actividad o contenido (Taller, Evento, Vídeo, etc.).</p>
+
+    <div class="tags_grid">
+        {% for tag in tags %}
+            <div class="tag_card">
+                <h2>{{ tag.nombre }}</h2>
+                <p>{{ tag.recurso_set.count }} recurso{{ tag.recurso_set.count|pluralize:"s" }}</p>
+                <a href="{% url 'detalle_tag' tag.id %}" class="btn_tag">Ver Recursos</a>
+            </div>
+        {% empty %}
+            <p>No hay etiquetas disponibles.</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

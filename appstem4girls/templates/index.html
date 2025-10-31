@@ -44,5 +44,68 @@
 			</div>
 		</div>
 	</section>
+	<section class="featured-resources" id="recursos">
+    <div class="featured-container">
+        <div class="featured-header">
+            <div class="featured-header-content">
+                <h2 class="featured-title">Recursos Destacados</h2>
+                <p class="featured-subtitle">Lo más reciente de cada proveedor colaborador</p>
+            </div>
+            <a href="{% url 'lista_recursos' %}" class="featured-view-all">
+                Ver todos →
+            </a>
+        </div>
+
+        {% if recursos_destacados %}
+        <div class="featured-grid">
+            {% for recurso in recursos_destacados %}
+            <article class="featured-card">
+                <div class="card-header">
+                    <div class="card-provider">{{ recurso.proveedor.nombre }}</div>
+                    <div class="card-date">{{ recurso.fecha_publicacion|date:"d M" }}</div>
+                </div>
+                
+                <div class="card-body">
+                    <h3 class="card-title">{{ recurso.titulo }}</h3>
+                    <p class="card-description">
+                        {% if recurso.descripcion|length > 120 %}
+                            {{ recurso.descripcion|slice:":120" }}...
+                        {% else %}
+                            {{ recurso.descripcion }}
+                        {% endif %}
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    {% if recurso.tags.all %}
+                    <div class="card-tags">
+                        {% for tag in recurso.tags.all|slice:":2" %}
+                        <span class="card-tag">{{ tag.nombre }}</span>
+                        {% endfor %}
+                        {% if recurso.tags.count > 2 %}
+                        <span class="card-tag-more">+{{ recurso.tags.count|add:"-2" }}</span>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                    
+                    <a href="{% url 'detalle_recurso' recurso.id %}" class="card-link">
+                        <span>Ver más</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="card-glow"></div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="no-resources">
+            <p>No hay recursos disponibles en este momento</p>
+        </div>
+        {% endif %}
+    </div>
+	</section>
 </div>
 {% endblock %}

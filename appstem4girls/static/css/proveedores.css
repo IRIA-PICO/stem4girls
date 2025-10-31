@@ -9,7 +9,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     border-bottom: 2px solid;
-    border-image: linear-gradient(135deg, var(--secondary), var(--accent)) 1;
+    border-image: linear-gradient(135deg, var(--secondary), var(--primary)) 1;
 }
 
 .lp-info p {
@@ -23,13 +23,14 @@
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(200px, 400px));
     gap: 20px;
+    padding-left: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .p-tarjeta {
     background-color: #1a1831;
-    padding: 24px;
+    padding: 10px;
     border-radius: 15px;
     box-shadow: 0 2px 8px rgba(139,92, 246, 0.3);
     border-left: 4px solid;
@@ -62,10 +63,12 @@
 .p-nombre a {
     text-decoration: none;
     color: inherit;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
 }
 
-.p_nombre a:hover {
-    text-decoration: underline;
+.p-nombre a:hover {
+   border-color: var(--primary);
 }
 
 .p-descripcion {

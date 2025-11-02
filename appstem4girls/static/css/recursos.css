@@ -1,13 +1,13 @@
 /*lista_recursos*/
 .l_recursos{
-  background-color: #1a1831;
+  background-color: var(--bg-dark);;
 }
 .info_L_recursos{
-  color: white;
+  color:var(--text-light);
   text-align: center;
 }
 .info_L_recursos h1{
-  color: #EC4899;
+  color: var(--secondary);
 }
 .info_L_recursos p{
   font-size: large;
@@ -17,6 +17,9 @@
   padding: 20px;
   box-sizing: border-box; /* incluye el padding dentro del 100% */
   text-align: center;
+}
+.grid_recursos p { 
+ color: black;
 }
 
 .recurso_card {
@@ -56,7 +59,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border: 1px solid var(--accent);
+  border-radius: 20px; 
+  background-color: rgba(59, 130, 246, 0.15); 
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.tag a{
+  text-decoration: none;
+   color: var(--accent);
 }
 /*detalles_recurso*/
 .recurso {

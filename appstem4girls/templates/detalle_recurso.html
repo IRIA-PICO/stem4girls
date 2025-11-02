@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/recursos.css' %}">
+{% endblock %}
+
 {% block contenido %}
 
 <div class="recurso">
@@ -15,7 +20,9 @@
     {% if recurso.tags.all %}
         <div class="tags_recurso">
             {% for tag in recurso.tags.all %}
-                <span class="tag">{{ tag.nombre }}</span>
+                <a href="{% url 'detalle_tag' tag.id %}" class="tag">
+                    {{ tag.nombre }}
+                </a>
             {% endfor %}
         </div>
     {% endif %}

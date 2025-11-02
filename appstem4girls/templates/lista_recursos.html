@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 
 {% block titulo %} Recursos Stem4Girls {% endblock %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/recursos.css' %}">
+{% endblock %}
 
 {% block contenido %}
-
 <!-- BEGIN ENTRIES -->
 <div class="l_recursos">
     <div class="info_L_recursos">
@@ -25,7 +28,9 @@
                     <div class="tags_recurso">
                         {% for tag in recurso.tags.all %}
                             <!-- añadir tags con propiedades -->
-                            <span class="tag">{{ tag.nombre }}</span>
+                            <a href="{% url 'detalle_tag' tag.id %}" class="tag">
+                                {{ tag.nombre }}
+                            </a>
                         {% endfor %}
                     </div>
                 {% endif %}

@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% load static%}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
 
 {% block titulo %}STEM 4 Girls - Inicio{% endblock %}
 

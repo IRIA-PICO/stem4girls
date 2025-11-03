@@ -1,1 +1,83 @@
 {% extends "base.html" %}
+
+{% load static%}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/proveedores.css' %}">
+{% endblock %}
+
+{% block titulo %}Detalle proveedor{% endblock %}
+
+{% block contenido %}
+<section class="contenedor">
+    <a href="{% url 'lista_proveedores' %}" class="lp-volver">&larr; Volver a proveedores</a>
+
+    <div class="p-tarjeta">
+        <h1 class="p-nombre">{{ proveedor.nombre }}</h1>
+        <p class="p-descripcion">{{ proveedor.descripcion }}</p>
+
+        <div class="contenedor-contacto">
+
+            {% if proveedor.ciudad %}
+                <div class="contacto">
+                    <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="8"/></svg>
+                    <span class="label">Ciudad:</span>
+                    <span>{{ proveedor.ciudad }}</span>
+                </div>
+            {% endif%}
+
+            {% if proveedor.email %}
+                <div class="contacto">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span class="label">Email:</span>
+                    <span>{{ proveedor.email }}</span>
+                </div>
+            {% endif%}
+
+            {% if proveedor.telefono %}
+                <div class="contacto">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.32-6.32A19.79 19.79 0 0 1 3 4.07 2 2 0 0 1 4.07 2h3a2 2 0 0 1 2 1.73A17.9 17.9 0 0 0 12 8l-3 3 2 2 3-3 3 3v3a2 2 0 0 1-1.73 2z"/></svg>
+                    <span class="label">Teléfono:</span>
+                    <span>{{ proveedor.telefono }}</span>
+                </div>
+            {% endif%}
+
+            {% if proveedor.web %}
+                <div class="contacto">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+                    <span class="label">Web:</span>
+                    <a href="{{ proveedor.web }}" target="_blank">{{ proveedor.web }}</a>
+                </div>
+            {% endif%}
+        </div>
+
+        <h2 class="r-titulo">Recursos de {{ proveedor.nombre }} ({{ recursos.count }})</h2>
+        {% if recursos %}
+            <ul class="lr">
+                {% for recurso in recursos %}
+                    <li class="recurso">
+                        <span class="r-fecha">{{ recurso.fecha_publicacion }}</span>
+                        <div class="r.info">
+                            <span class="r-titulo">{{ recurso.titulo }}</span>
+                            <span class="r-desc">{{ recurso.descripcion|truncatechars:70 }}</span>
+                            
+                            <div class="r-tags">
+                                {% for tag in recurso.tags.all %}
+                                    <a href="{% url 'detalle_tag' tag.id %}" class="tag">
+                                        {{ tag.nombre }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <a href="{% url 'detalle_recurso' recurso.id %}" class="r-link">
+                           Ver recurso 
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="no-recursos">Este proveedor aún no tiene recursos asociados.</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

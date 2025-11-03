@@ -48,11 +48,11 @@
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
-.recurso_card a {
+.enlace_recursos a {
   text-decoration: none;
    color: #C4A1D7;
 }
-.recurso_card a:hover {
+.enlace_recursos a:hover {
   color: #A67CC9;
 }
 .tags_recurso {
@@ -70,11 +70,10 @@
   background-color: rgba(59, 130, 246, 0.15); 
   font-size: 0.9rem;
   font-weight: 500;
-}
-.tag a{
   text-decoration: none;
-   color: var(--accent);
+  color: var(--accent);
 }
+
 /*detalles_recurso*/
 .recurso {
   max-width: 900px;
@@ -96,14 +95,7 @@
   color: #A67CC9;
   text-decoration: none;
   font-weight: 600;
-}
-.recurso a{
-  text-decoration: none;
-  color: #C4A1D7;
-}
-.recurso a:hover {
-  color: #A67CC9;
-}
+} 
 /*Responsive*/
 
 @media (max-width: 900px) {

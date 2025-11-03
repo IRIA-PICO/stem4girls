@@ -32,7 +32,8 @@ def lista_proveedores(request):
 
 def detalle_proveedor(request, proveedor_id):
     proveedor = get_object_or_404(Proveedor, id=proveedor_id)
-    return render(request, 'detalle_proveedor.html', {'proveedor': proveedor})
+    recursos = proveedor.recursos.all().order_by('-fecha_publicacion')
+    return render(request, 'detalle_proveedor.html', {'proveedor': proveedor, 'recursos': recursos})
 
 
 def lista_tags(request):

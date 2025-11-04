@@ -1,1 +1,49 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block titulo %} Mujeres STEM {% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/mujeres.css' %}">
+{% endblock %}
+
+{% block contenido %}
+<section class="mujeres_section">
+    <div class="info_mujeres">
+        <h1>Mujeres que inspiran en STEM</h1>
+        <p class="subtitle">Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, Tecnologia y matematicas.</p>
+    </div>
+
+    {% if mujeres %}
+    <div class="mujeres_grid">
+        {% for mujer in mujeres %}
+            <div class="mujer_card">
+                <div class="card_header">
+                    <h2 class="mujer_nombre">{{ mujer.nombre }}</h2>
+                    {% if mujer.fecha_nacimiento %}
+                        <span class="mujer_fecha">
+                            {{ mujer.fecha_nacimiento|date:"d M Y" }}
+                        </span>
+                    {% endif %}
+                </div>
+
+                <div class="card_body">
+                    <p class="mujer_descripcion">
+                        {{ mujer.descripcion|truncatechars:150 }}
+                    </p>
+
+                    {% if mujer.proveedor %}
+                        <a href="{% url 'detalle_proveedor' mujer.proveedor.id %}" class="prov-detalle">
+                            Proveedor: <strong>{{ mujer.proveedor.nombre }}</strong>
+                        </a>
+                    {% endif %}
+                </div>
+
+            </div>
+        {% endfor %}
+    </div>
+    {% else %}
+        <p class="no-data">No hay mujeres registradas aún.</p>
+    {% endif %}
+</section>
+{% endblock %}

@@ -46,4 +46,10 @@ def detalle_tag(request, tag_id):
     return render(request, 'detalle_tag.html', {'tag': tag})
 
 def mujeres_lideres(request, ):
-    return render(request, 'mujeres_lideres.html')
+    #ordenadas por fecha de nacimiento
+    mujeres = Mujeres.objects.all().order_by('fecha_NCTO')
+    
+    context = {
+        'mujeres': mujeres
+    }
+    return render(request, 'mujeres_lideres.html', context)

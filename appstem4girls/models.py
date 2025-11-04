@@ -33,11 +33,12 @@ class Recurso(models.Model):
 
     def __str__(self):
         return self.titulo
+
 class Mujeres(models.Model):
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField(blank=True)
-    #proveedor = models.ForeignKey(Proveedor, on_delete=models.CASCADE, related_name='recursos')
-    
+    proveedor = models.ForeignKey(Proveedor, on_delete=models.CASCADE, related_name='mujer_proveedor', null=True)
+    fecha_NCTO= models.DateField(null=True, blank=True)
     def __str__(self):
         return self.nombre
 

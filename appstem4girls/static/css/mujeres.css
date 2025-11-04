@@ -13,38 +13,35 @@
 }
 
 .info_mujeres .subtitle {
-    color: #555;
+    color: white;
     font-size: 1rem;
     margin-bottom: 2.5rem;
 }
 
 /* ====== GRID DE TARJETAS ====== */
 .mujeres_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    justify-items: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    gap: 25px; 
 }
 
 /* ====== TARJETA INDIVIDUAL ====== */
 .mujer_card {
-    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    background: #1f2937;
+    color: white;
     border-radius: 16px;
     padding: 1.8rem;
-    width: 100%;
-    max-width: 320px;
+    width: 90%;
+    max-width: 800px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: none;
 }
 
-.mujer_card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
 
 /* ====== CABECERA ====== */
 .card_header {
@@ -57,27 +54,24 @@
 .mujer_nombre {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #1f2937;
+    color: var(--secondary);
 }
 
 .mujer_fecha {
     font-size: 0.9rem;
-    color: #6b7280;
+    color: white;
     font-weight: 500;
 }
 
 /* ====== CUERPO ====== */
 .mujer_descripcion {
     font-size: 0.95rem;
-    color: #374151;
+    color: white;
     margin-bottom: 1rem;
     line-height: 1.4;
 }
 
-.mujer_proveedor {
-    font-size: 0.9rem;
-    color: var(--secondary);
-}
+
 
 /* ====== BOTÓN ====== */
 .btn_detalle {

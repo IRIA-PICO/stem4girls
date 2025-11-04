@@ -20,20 +20,20 @@
             <div class="mujer_card">
                 <div class="card_header">
                     <h2 class="mujer_nombre">{{ mujer.nombre }}</h2>
-                    {% if mujer.fecha_nacimiento %}
+                    {% if mujer.fecha_NCTO %}
                         <span class="mujer_fecha">
-                            {{ mujer.fecha_nacimiento|date:"d M Y" }}
+                            {{ mujer.fecha_NCTO|date:"d M Y" }}
                         </span>
                     {% endif %}
                 </div>
 
                 <div class="card_body">
                     <p class="mujer_descripcion">
-                        {{ mujer.descripcion|truncatechars:150 }}
+                        {{ mujer.descripcion}}
                     </p>
 
                     {% if mujer.proveedor %}
-                        <a href="{% url 'detalle_proveedor' mujer.proveedor.id %}" class="prov-detalle">
+                        <a href="{% url 'detalle_proveedor' mujer.proveedor.id %}" class="btn_detalle">
                             Proveedor: <strong>{{ mujer.proveedor.nombre }}</strong>
                         </a>
                     {% endif %}

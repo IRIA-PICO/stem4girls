@@ -16,6 +16,7 @@
 .tags_section .subtitle {
   font-size: 1rem;
   margin-bottom: 40px;
+  color: var(--text-light);
 }
 
 .tags_grid {
@@ -31,7 +32,7 @@
   min-height: 150px;
   border-radius: 16px;
   padding: 25px 20px;
-  background-color: white;
+  background-color: #111827;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
@@ -39,7 +40,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tag_card:hover {
+.tag_card:hover { 
   transform: translateY(-6px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.12);
 }
@@ -48,19 +49,20 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #111827;
+  color: white;
 }
 
 .tag_card p {
   font-size: 0.95rem;
-  margin-bottom: 15px;
-  color: #374151;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
 }
 
 /* ===== Botón ===== */
 .btn_tag {
   display: inline-block;
-  background-color: white;
+  background-color: transparent;
+  border: 2px solid #4f46e5;
   color: #4f46e5;
   font-weight: 600;
   font-size: 1rem;
@@ -72,7 +74,7 @@
 }
 
 .btn_tag:hover {
-  background-color: #f3f4f6;
+  background: rgba(255, 255, 255, 0.15);
   transform: scale(1.05);
 }
 

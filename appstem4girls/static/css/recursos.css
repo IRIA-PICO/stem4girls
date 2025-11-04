@@ -18,9 +18,7 @@
   box-sizing: border-box; /* incluye el padding dentro del 100% */
   text-align: center;
 }
-.grid_recursos p { 
- color: black;
-}
+
 
 .recurso_card {
   display: inline-block; 
@@ -28,9 +26,9 @@
   width: 30%;               /* Ajusta para tener 3 por fila */
   min-width: 280px;
   min-height: 340px; 
-  background-color: #fff;
+  background-color: #111827;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.15);
   overflow: hidden;
   padding: 20px;
   max-width: 350px;
@@ -73,17 +71,20 @@
   text-decoration: none;
   color: var(--accent);
 }
+.tag:hover {
+  background-color: rgba(255, 255, 255, 0.15);; 
+}
 
 /*detalles_recurso*/
 .recurso {
   max-width: 900px;
   margin: 60px auto;             /* Centrado y con espacio arriba y abajo */
   padding: 40px;
-  background-color: #fff;
+  background-color: #111827;;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   line-height: 1.7;
-  color: #333;
+  color: white;
 }
 .recurso h1 {
   font-size: 2rem;

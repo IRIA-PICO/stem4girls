@@ -1,10 +1,46 @@
 {% extends "base.html" %}
-{% block titulo %} Detalles etiquetas Stem4Girls {% endblock %}
+{% block titulo %} Detalle etiqueta Stem4Girls {% endblock %}
 {% load static%}
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/tags..css' %}">
+<link rel="stylesheet" href="{% static 'css/proveedores.css' %}">
 {% endblock %}
 
 {% block contenido %}
-<h1>AQUUI HAY UN TAG</h1>
+<section class="p-contenedor">
+    <a href="{% url 'lista_tags' %}" class="lp-volver">&larr; Volver a Etiquetas</a>
+
+    <div class="p-tarjeta">
+        <h1>{{ tag.nombre }}</h1>
+        <p class="p-descripcion">{{ tag.descripcion }}</p> 
+
+        <h2 class="lr-titulo">Recursos de {{ tag.nombre }} ({{ tag.recursos.count  }})</h2>
+        {% if tag.recursos %}
+            <ul class="lr">
+                {% for recurso in tag.recursos.all %}
+                    <li class="recurso">
+                        <span class="r-fecha">{{ recurso.fecha_publicacion }}</span>
+                        <div class="r.info">
+                            <span class="r-titulo">{{ recurso.titulo }}</span>
+                            <span class="r-descripcion">{{ recurso.descripcion|truncatechars:70 }}</span>
+                            
+                            <div class="r-tags">
+                                {% for tag in recurso.tags.all %}
+                                    <a href="{% url 'detalle_tag' tag.id %}" class="tag">
+                                        {{ tag.nombre }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <a href="{% url 'detalle_recurso' recurso.id %}" class="r-link">
+                           Ver recurso 
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="no-recursos">Esta etiqueta aún no tiene recursos asociados.</p>
+        {% endif %}
+    </div>
+</section>
 {% endblock %}

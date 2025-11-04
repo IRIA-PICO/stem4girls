@@ -186,7 +186,6 @@
 }
 
 .lr {
-    max-height: 24rem;
     overflow-y: auto;
     background-color: #1a1c30;
     border-radius: 12px;

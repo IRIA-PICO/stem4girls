@@ -15,24 +15,27 @@
         <title>{% block titulo %}Stem 4 girls-INDICE{% endblock %}</title>
     </head>
     <body>
-        <header> 
-            <nav class="nav-principal">
-                <div class="menu">
-                        <div class="menu-izq">
-                            <a href="{% url 'lista_recursos' %}">Recursos</a>
-                            <a href="{% url 'lista_proveedores' %}">Proveedores</a>
-                            <a href="{% url 'lista_tags' %}">Etiquetas</a>
-                        </div>
-                        <div class="logo-titulo">
-                            <a href="{% url 'index' %}">
-                            <img src="{% static 'images/logo.png' %}" alt="Logo STEM 4 Girls">
-                            <span id="titulo-nav">STEM 4 GIRLS</span>
-                            </a>
-                        </div>
-                        <div class="menu-der">
-                            <a href="{% url 'mujeres_lideres' %}">Mujeres líderes</a>
-                            <a href="{% url 'index' %}#contacto">Contacto</a>
-                        </div>
+        <header class="header-stem"> 
+            <nav class="nav-container">
+                <div class="nav-brand">
+                <a href="{% url 'index' %}" class="logo-link">
+                    <div class="logo-wrapper">
+                    <img src="{% static 'images/logo.png' %}" alt="Logo STEM 4 Girls" class="logo-img">
+                    <div class="logo-glow"></div>
+                    </div>
+                    <div class="logo-text">
+                    <span class="logo-title">STEM 4 GIRLS</span>
+                    <span class="logo-tagline">Empoderando el futuro</span>
+                    </div>
+                </a>
+                </div>
+
+                <div class="nav-menu">
+                    <a href="{% url 'lista_recursos' %}" class="nav-link">Recursos</a>
+                    <a href="{% url 'lista_proveedores' %}" class="nav-link">Proveedores</a>
+                    <a href="{% url 'lista_tags' %}" class="nav-link">Etiquetas</a>
+                    <a href="{% url 'mujeres_lideres' %}" class="nav-link">Mujeres Líderes</a>
+                    <a href="{% url 'index' %}#contacto" class="nav-link nav-link-cta">Contacto</a>
                 </div>
 		    </nav>
         </header>

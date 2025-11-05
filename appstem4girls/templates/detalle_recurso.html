@@ -8,40 +8,51 @@
 
 <div class="recurso">
     <h1>{{ recurso.titulo }}</h1>
-    <p id="Proveedor_r_link">Proveedor: 
-        <a href="{% url 'detalle_proveedor' recurso.proveedor.id %}">
-            {{ recurso.proveedor.nombre }}</a>
-    </p>
+    <div class="contenido_recurso">
+        <p id="Proveedor_r_link">Proveedor: 
+            <a href="{% url 'detalle_proveedor' recurso.proveedor.id %}">
+                {{ recurso.proveedor.nombre }}</a>
+        </p>
 
-    <p> Publicado el {{ recurso.fecha_publicacion|date:"d M Y" }} </p>
-    <p>{{recurso.descripcion}}</p>
-
-    <!-- Tags -->
-    {% if recurso.tags.all %}
-        <div class="tags_recurso">
-            {% for tag in recurso.tags.all %}
-                <a href="{% url 'detalle_tag' tag.id %}" class="tag">
-                    {{ tag.nombre }}
-                </a>
-            {% endfor %}
+        <p> Publicado el {{ recurso.fecha_publicacion|date:"d M Y" }} </p>
+        <p>{{recurso.descripcion}}</p>
+        <!-- Tags -->
+        {% if recurso.tags.all %}
+            <div class="tags_recurso">
+                {% for tag in recurso.tags.all %}
+                    <a href="{% url 'detalle_tag' tag.id %}" class="tag">
+                        {{ tag.nombre }}
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <!-- Enlace -->
+        <div class="recurso_enlace">
+        <p>
+            Si estás interesado o quieres más información, visita el siguiente enlace:
+        </p>
+        <a href="{{ recurso.enlace }}" target="_blank" rel="noopener noreferrer" class="btn_enlace">
+            Ir a la web
+        </a>
         </div>
-    {% endif %}
 
+    </div>
     <!-- SI TIENE UN TAG "Video" -->
-        {% for tag in recurso.tags.all %}
-            {% if tag.nombre|lower == "video" %}
-                {% if recurso.enlace %}
-                <div class="video_container">
-                    <iframe 
-                    src="{{ recurso.enlace }}" 
-                    title="{{ recurso.titulo }}" 
-                    frameborder="0"
-                    allowfullscreen>
-                    </iframe>
-                </div>
-                {% endif %}
+    {% for tag in recurso.tags.all %}
+        {% if tag.nombre|lower == "video" %}
+            {% if recurso.enlace %}
+            <div class="video_container">
+                <iframe 
+                src="{{ recurso.enlace }}" 
+                title="{{ recurso.titulo }}" 
+                frameborder="0"
+                allowfullscreen>
+                </iframe>
+            </div>
             {% endif %}
-        {% endfor%}
+        {% endif %}
+    {% endfor%}
+    
     <!-- Enlace VOLVER -->
      <div class="enlace_recursos">
     <a href="{% url 'lista_recursos' %}">Volver a recursos:</a></div>

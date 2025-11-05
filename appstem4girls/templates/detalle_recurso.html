@@ -26,6 +26,22 @@
             {% endfor %}
         </div>
     {% endif %}
+
+    <!-- SI TIENE UN TAG "Video" -->
+        {% for tag in recurso.tags.all %}
+            {% if tag.nombre|lower == "video" %}
+                {% if recurso.enlace %}
+                <div class="video_container">
+                    <iframe 
+                    src="{{ recurso.enlace }}" 
+                    title="{{ recurso.titulo }}" 
+                    frameborder="0"
+                    allowfullscreen>
+                    </iframe>
+                </div>
+                {% endif %}
+            {% endif %}
+        {% endfor%}
     <!-- Enlace VOLVER -->
      <div class="enlace_recursos">
     <a href="{% url 'lista_recursos' %}">Volver a recursos:</a></div>

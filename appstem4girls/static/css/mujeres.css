@@ -1,3 +1,16 @@
+#mujeres-tit{
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: white;
+  background: linear-gradient(90deg, var(--secondary)0%, var(--primary)60%, var(--accent)100%);
+  background-clip: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
 .mujeres_section {
     text-align: center;
     padding: 60px 20px;

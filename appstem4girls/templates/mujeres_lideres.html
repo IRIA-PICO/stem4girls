@@ -31,6 +31,7 @@
                     <p class="mujer_descripcion">
                         {{ mujer.descripcion}}
                     </p>
+                    <button class="ver-mas-btn" data-target="desc-{{ forloop.counter }}">Ver más</button>
 
                     {% if mujer.proveedor %}
                         <a href="{% url 'detalle_proveedor' mujer.proveedor.id %}" class="btn_detalle">

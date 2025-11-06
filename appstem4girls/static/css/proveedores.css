@@ -36,12 +36,11 @@
     box-shadow: 0 2px 8px rgba(139,92, 246, 0.3);
     border-left: 4px solid;
     border-image: linear-gradient(135deg, var(--secondary), var(--accent)) 1;
-    transition: box-shadow 0.3 sec ease;
     box-sizing: border-box;	
 }
 
 .prov-tarjeta:hover {
-    box-shadow: 0 px 20px rgba(236, 72, 153, 0.4);
+    box-shadow: 0px 20px rgba(236, 72, 153, 0.4);
 }
 
 /*Hay que comprobar como queda cuando carguemos fotos*/
@@ -169,7 +168,7 @@
     text-decoration: none;
 }
 .contact-item a:hover {
-    text-decoration: unerline;
+    text-decoration: underline;
 }
 .valor {
     color: var(--text-light);
@@ -266,7 +265,7 @@
     border: none;
     cursor: pointer;
     font-weight: 500;
-    font-size: 0.875;
+    font-size: 14px;
     flex-shrink: 0;
     transition: color 0.15s ease-in-out;
     padding: 0;

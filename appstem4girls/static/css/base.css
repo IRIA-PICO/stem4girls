@@ -189,16 +189,15 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* ===== Footer general ===== */
+
 .footer {
     background-color: var(--bg-dark);
     color: var(--text-light);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;;
     padding-top: 3rem;
     border-top: 4px solid var(--primary);
 }
 
-/* ===== Contenedor principal ===== */
 .containerF {
     max-width: 1200px;
     margin: 0 auto;
@@ -214,7 +213,6 @@ body {
     }
 }
 
-/* ===== Columnas ===== */
 .footer-col h4 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
@@ -244,7 +242,6 @@ body {
     color: var(--text-muted);
 }
 
-/* ===== Navegación ===== */
 .footer-col ul {
     list-style: none;
     padding: 0;

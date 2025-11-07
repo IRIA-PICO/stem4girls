@@ -93,11 +93,21 @@
   color: #A0E7E5;
   margin-bottom: 10px;
 }
+.contenido_recurso{  
+  display: flex; 
+  align-items: center;
+}
+.recurso_text{
+  text-align: justify;
+  margin-right: 20px;
+  flex:60%;
+}
 /*  CONTENEDOR DE VIDEOS  */
 .video_container {
+  flex:40%;
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* Relación 16:9 */
+  aspect-ratio: 16 / 9;
   margin-top: 15px;
   border-radius: 12px;
   overflow: hidden;

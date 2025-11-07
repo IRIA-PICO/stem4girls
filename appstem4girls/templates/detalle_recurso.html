@@ -9,11 +9,12 @@
 <div class="recurso">
     <h1>{{ recurso.titulo }}</h1>
     <div class="contenido_recurso">
+    <div class="recurso_text">
         <p id="Proveedor_r_link">Proveedor: 
             <a href="{% url 'detalle_proveedor' recurso.proveedor.id %}">
                 {{ recurso.proveedor.nombre }}</a>
         </p>
-
+    
         <p> Publicado el {{ recurso.fecha_publicacion|date:"d M Y" }} </p>
         <p>{{recurso.descripcion}}</p>
         <!-- Tags -->
@@ -26,15 +27,6 @@
                 {% endfor %}
             </div>
         {% endif %}
-        <!-- Enlace -->
-        <div class="recurso_enlace">
-        <p>
-            Si estás interesado o quieres más información, visita el siguiente enlace:
-        </p>
-        <a href="{{ recurso.enlace }}" target="_blank" rel="noopener noreferrer" class="btn_enlace">
-            Ir a la web
-        </a>
-        </div>
 
     </div>
     <!-- SI TIENE UN TAG "Video" -->
@@ -44,15 +36,22 @@
             <div class="video_container">
                 <iframe 
                 src="{{ recurso.enlace }}" 
-                title="{{ recurso.titulo }}" 
-                frameborder="0"
-                allowfullscreen>
+                title="{{ recurso.titulo }}" >
                 </iframe>
             </div>
             {% endif %}
         {% endif %}
     {% endfor%}
-    
+    </div>
+    <!-- Enlace -->
+        <div class="recurso_enlace">
+        <p>
+            Si estás interesado o quieres más información, visita el siguiente enlace:
+        </p>
+        <a href="{{ recurso.enlace }}" target="_blank" rel="noopener noreferrer" class="btn_enlace">
+            Ir a la web
+        </a>
+        </div>
     <!-- Enlace VOLVER -->
      <div class="enlace_recursos">
     <a href="{% url 'lista_recursos' %}">Volver a recursos:</a></div>

@@ -40,7 +40,7 @@
 }
 
 .prov-tarjeta:hover {
-    box-shadow: 0px 20px rgba(236, 72, 153, 0.4);
+    box-shadow: 0px 10px 20px rgba(120, 120, 120, 0.4);
 }
 
 /*Hay que comprobar como queda cuando carguemos fotos*/
@@ -269,21 +269,4 @@
     flex-shrink: 0;
     transition: color 0.15s ease-in-out;
     padding: 0;
-}
-
-.r-link:hover {
-    color: var(--secondary);
-}
-.featured-view-all {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
-    transition: color 0.3s ease;
-}
-
-.featured-view-all:hover {
-    color: var(--secondary);
 }

@@ -84,8 +84,12 @@
   transition: max-height 0.4s ease;
 }
 
-.mujer_descripcion.expandida {
-  max-height: 1000px; /* suficiente para mostrar todo */
+.toggle_descripcion {
+  display: none;/* Oculta el checkbox */
+}
+ 
+.toggle_descripcion:checked ~ .mujer_descripcion {
+  max-height: 1000px; /* valor grande para mostrar todo */
 }
 
 .ver-mas-btn {

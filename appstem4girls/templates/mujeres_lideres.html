@@ -28,11 +28,14 @@
                 </div>
 
                 <div class="card_body">
+                    <!-- Checkbox oculto que controla la expansión -->
+                    <input type="checkbox" id="toggle-{{ forloop.counter }}" class="toggle_descripcion">
+
                     <p class="mujer_descripcion">
                         {{ mujer.descripcion}}
                     </p>
-                    <button class="ver-mas-btn" data-target="desc-{{ forloop.counter }}">Ver más</button>
-
+                    <!-- Botón que actúa como label del checkbox -->
+                    <label for="toggle-{{ forloop.counter }}" class="ver-mas-btn">Ver más</label>
                     {% if mujer.proveedor %}
                         <a href="{% url 'detalle_proveedor' mujer.proveedor.id %}" class="btn_detalle">
                             Proveedor: <strong>{{ mujer.proveedor.nombre }}</strong>

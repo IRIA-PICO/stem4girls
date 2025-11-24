@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-24 20:09+0100\n"
+"POT-Creation-Date: 2025-11-24 22:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,6 +81,46 @@ msgstr "Contacto"
 msgid "Hecho por mujeres para mujeres."
 msgstr "Hecho por mujeres para mujeres."
 
+#: .\appstem4girls\templates\detalle_proveedor.html:12
+#, fuzzy
+#| msgid "Explorar recursos"
+msgid "Volver a proveedores"
+msgstr "Explorar recursos"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:28
+msgid "Ciudad:"
+msgstr "Ciudad:"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:41
+msgid "Email:"
+msgstr "Email:"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:53
+msgid "Teléfono:"
+msgstr "Teléfono:"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:67
+msgid "Web:"
+msgstr "Web:"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:73
+#: .\appstem4girls\templates\detalle_tag.html:16
+#, fuzzy
+#| msgid "Recursos"
+msgid "Recursos de"
+msgstr "Recursos"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:93
+#: .\appstem4girls\templates\detalle_tag.html:36
+#, fuzzy
+#| msgid "Explorar recursos"
+msgid "Ver recurso"
+msgstr "Explorar recursos"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:99
+msgid "Este proveedor aún no tiene recursos asociados."
+msgstr "Este proveedor aún no tiene recursos asociados."
+
 #: .\appstem4girls\templates\detalle_recurso.html:14
 #, fuzzy
 #| msgid "Proveedores"
@@ -95,7 +135,8 @@ msgstr "Publicado el %(fecha)s"
 #: .\appstem4girls\templates\detalle_recurso.html:50
 msgid ""
 "Si estás interesado o quieres más información, visita el siguiente enlace:"
-msgstr "Si estás interesado o quieres más información, visita el siguiente enlace:"
+msgstr ""
+"Si estás interesado o quieres más información, visita el siguiente enlace:"
 
 #: .\appstem4girls\templates\detalle_recurso.html:53
 msgid "Ir a la web"
@@ -106,6 +147,16 @@ msgstr "Ir a la web"
 #| msgid "Explorar recursos"
 msgid "Volver a recursos:"
 msgstr "Explorar recursos"
+
+#: .\appstem4girls\templates\detalle_tag.html:10
+#, fuzzy
+#| msgid "Etiquetas"
+msgid "Volver a Etiquetas"
+msgstr "Etiquetas"
+
+#: .\appstem4girls\templates\detalle_tag.html:42
+msgid "Esta etiqueta aún no tiene recursos asociados."
+msgstr "Esta etiqueta aún no tiene recursos asociados."
 
 #: .\appstem4girls\templates\index.html:17
 msgid "Innovar, crear y transformar"
@@ -173,6 +224,24 @@ msgstr "No hay recursos disponibles en este momento"
 msgid "Explorar recursos"
 msgstr "Explorar recursos"
 
+#: .\appstem4girls\templates\lista_proveedores.html:12
+msgid "Proveedores de Recursos STEM"
+msgstr "Proveedores de Recursos STEM"
+
+#: .\appstem4girls\templates\lista_proveedores.html:13
+msgid ""
+"Descubre las organizaciones, empresas e insituciones que impulsan el talento "
+"femenino en STEM."
+msgstr "Descubre las organizaciones, empresas e insituciones que impulsan el talento femenino en STEM."
+
+#: .\appstem4girls\templates\lista_proveedores.html:26
+msgid "Ver Detalle y Recursos &rarr;"
+msgstr "Ver Detalle y Recursos &rarr;"
+
+#: .\appstem4girls\templates\lista_proveedores.html:30
+msgid "Todavía no hay proveedores registrados."
+msgstr "Todavía no hay proveedores registrados."
+
 #: .\appstem4girls\templates\lista_recursos.html:14
 msgid "Explora Nuestros Recursos"
 msgstr "Explora Nuestros Recursos"
@@ -183,7 +252,7 @@ msgid ""
 msgstr ""
 "Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM"
 
-#: .\appstem4girls\templates\lista_recursos.html:42
+#: .\appstem4girls\templates\lista_recursos.html:49
 msgid "Ver más detalles:"
 msgstr "Ver más detalles:"
 
@@ -195,5 +264,6 @@ msgstr "Mujeres que inspiran en STEM"
 msgid ""
 "Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, "
 "Tecnologia y matematicas."
-msgstr "Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, "
+msgstr ""
+"Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, "
 "Tecnologia y matematicas."

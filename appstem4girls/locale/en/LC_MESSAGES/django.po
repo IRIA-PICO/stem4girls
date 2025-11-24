@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-24 20:09+0100\n"
+"POT-Creation-Date: 2025-11-24 22:24+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,6 +80,40 @@ msgstr "Contact"
 msgid "Hecho por mujeres para mujeres."
 msgstr "Made by women for women."
 
+#: .\appstem4girls\templates\detalle_proveedor.html:12
+msgid "Volver a proveedores"
+msgstr "Back to Providers"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:28
+msgid "Ciudad:"
+msgstr "City:"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:41
+msgid "Email:"
+msgstr "Email:"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:53
+msgid "Teléfono:"
+msgstr "Phone:"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:67
+msgid "Web:"
+msgstr "Website:"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:73
+#: .\appstem4girls\templates\detalle_tag.html:16
+msgid "Recursos de"
+msgstr "Resources of"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:93
+#: .\appstem4girls\templates\detalle_tag.html:36
+msgid "Ver recurso"
+msgstr "View Resource"
+
+#: .\appstem4girls\templates\detalle_proveedor.html:99
+msgid "Este proveedor aún no tiene recursos asociados."
+msgstr "This provider does not have any associated resources yet."
+
 #: .\appstem4girls\templates\detalle_recurso.html:14
 #, fuzzy
 #| msgid "Proveedores"
@@ -94,7 +128,9 @@ msgstr "Published %(fecha)s"
 #: .\appstem4girls\templates\detalle_recurso.html:50
 msgid ""
 "Si estás interesado o quieres más información, visita el siguiente enlace:"
-msgstr "If you are interested or would like more information, please visit the following link:"
+msgstr ""
+"If you are interested or would like more information, please visit the "
+"following link:"
 
 #: .\appstem4girls\templates\detalle_recurso.html:53
 msgid "Ir a la web"
@@ -105,6 +141,14 @@ msgstr "Access the web"
 #| msgid "Explorar recursos"
 msgid "Volver a recursos:"
 msgstr "Explore Resources"
+
+#: .\appstem4girls\templates\detalle_tag.html:10
+msgid "Volver a Etiquetas"
+msgstr "Back to Tags"
+
+#: .\appstem4girls\templates\detalle_tag.html:42
+msgid "Esta etiqueta aún no tiene recursos asociados."
+msgstr "This tag does not have any associated resources yet."
 
 #: .\appstem4girls\templates\index.html:17
 msgid "Innovar, crear y transformar"
@@ -172,6 +216,22 @@ msgstr "No resources available at the moment"
 msgid "Explorar recursos"
 msgstr "Explore Resources"
 
+#: .\appstem4girls\templates\lista_proveedores.html:12
+msgid "Proveedores de Recursos STEM"
+msgstr "STEM Resource Providers"
+
+#: .\appstem4girls\templates\lista_proveedores.html:13
+msgid "Descubre las organizaciones, empresas e insituciones que impulsan el talento femenino en STEM."
+msgstr "Discover the organizations, companies, and institutions that promote female talent in STEM."
+
+#: .\appstem4girls\templates\lista_proveedores.html:26
+msgid "Ver Detalle y Recursos &rarr;"
+msgstr "View Details and Resources &rarr;"
+
+#: .\appstem4girls\templates\lista_proveedores.html:30
+msgid "Todavía no hay proveedores registrados."
+msgstr "No providers registered yet."
+
 #: .\appstem4girls\templates\lista_recursos.html:14
 msgid "Explora Nuestros Recursos"
 msgstr "Explore Our Resources"
@@ -182,7 +242,7 @@ msgid ""
 msgstr ""
 "Find workshops, videos, events, and much more to boost your STEM talent"
 
-#: .\appstem4girls\templates\lista_recursos.html:42
+#: .\appstem4girls\templates\lista_recursos.html:49
 msgid "Ver más detalles:"
 msgstr "See More Details:"
 
@@ -194,4 +254,6 @@ msgstr "Women who inspire STEM"
 msgid ""
 "Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, "
 "Tecnologia y matematicas."
-msgstr "Meet outstanding women in the fields of science, engineering, technology and mathematics."
+msgstr ""
+"Meet outstanding women in the fields of science, engineering, technology and "
+"mathematics."

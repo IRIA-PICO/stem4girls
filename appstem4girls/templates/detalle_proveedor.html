@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% load static%}
+{% load i18n %}
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/proveedores.css' %}">
 {% endblock %}
@@ -9,7 +10,7 @@
 
 {% block contenido %}
 <section class="p-contenedor">
-    <a href="{% url 'lista_proveedores' %}" class="lp-volver">&larr; Volver a proveedores</a>
+    <a href="{% url 'lista_proveedores' %}" class="lp-volver">&larr; {% trans "Volver a proveedores" %}</a>
 
     <div class="p-tarjeta">
         <h1>{{ proveedor.nombre }}</h1>
@@ -25,7 +26,7 @@
                         <line x1="12" y1="16" x2="12" y2="12"/>
                         <line x1="12" y1="8" x2="12" y2="8"/>
                     </svg>
-                    <span class="label">Ciudad:</span>
+                    <span class="label">{% trans "Ciudad:" %}</span>
                     <span class="valor">{{ proveedor.ciudad }}</span>
                 </div>
             {% endif%}
@@ -38,7 +39,7 @@
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                         <polyline points="22,6 12,13 2,6"/>
                     </svg>
-                    <span class="label">Email:</span>
+                    <span class="label">{% trans "Email:" %}</span>
                     <span class="valor">{{ proveedor.email }}</span>
                 </div>
             {% endif%}
@@ -50,7 +51,7 @@
                         stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.32-6.32A19.79 19.79 0 0 1 3 4.07 2 2 0 0 1 4.07 2h3a2 2 0 0 1 2 1.73A17.9 17.9 0 0 0 12 8l-3 3 2 2 3-3 3 3v3a2 2 0 0 1-1.73 2z"/>
                     </svg>
-                    <span class="label">Teléfono:</span>
+                    <span class="label">{% trans "Teléfono:" %}</span>
                     <span class="valor">{{ proveedor.telefono }}</span>
                 </div>
             {% endif%}
@@ -64,13 +65,13 @@
                         <path d="M15 3h6v6"/>
                         <path d="M10 14L21 3"/>
                     </svg>
-                    <span class="label">Web:</span>
+                    <span class="label">{% trans "Web:" %}</span>
                     <a href="{{ proveedor.web }}" target="_blank">{{ proveedor.web }}</a>
                 </div>
             {% endif%}
         </div>
 
-        <h2 class="lr-titulo">Recursos de {{ proveedor.nombre }} ({{ recursos.count }})</h2>
+        <h2 class="lr-titulo">{% trans "Recursos de" %}{{ proveedor.nombre }} ({{ recursos.count }})</h2>
         {% if recursos %}
             <ul class="lr">
                 {% for recurso in recursos %}
@@ -90,13 +91,13 @@
                         </div>
 
                         <a href="{% url 'detalle_recurso' recurso.id %}" class="r-link">
-                           Ver recurso 
+                           {% trans "Ver recurso" %}
                         </a>
                     </li>
                 {% endfor %}
             </ul>
         {% else %}
-            <p class="no-recursos">Este proveedor aún no tiene recursos asociados.</p>
+            <p class="no-recursos">{% trans "Este proveedor aún no tiene recursos asociados." %}</p>
         {% endif %}
     </div>
 </section>

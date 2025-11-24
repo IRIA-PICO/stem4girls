@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% load static%}
+{% load i18n %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
@@ -13,8 +14,8 @@
 <section class="hero-imagen-section">
     <img src="{% static 'images/fondo.png' %}" alt="STEM 4 Girls" class="hero-img">
     <div class="hero-texto">
-		<h1>Innovar, crear y transformar</h1>
-		<p>el futuro STEM es de todas.</p>
+		<h1> {% trans "Innovar, crear y transformar" %}</h1>
+		<p> {% trans "el futuro STEM es de todas." %}</p>
 	</div>
 </section>
 
@@ -23,9 +24,9 @@
 	<section class="hero" id="inicio">
 		<div class="hero-content">
 			<div class="hero-badge">Únete a la revolución STEM</div>
-			<h1 class="hero-title">El Futuro es STEM<span class="hero-highlight">El Futuro es Femenino</span>
+			<h1 class="hero-title">{% trans "El Futuro es STEM" %}<span class="hero-highlight">{% trans "El Futuro es Femenino" %}</span>
 			</h1>
-			<p class="hero-description">Descubre un universo de posibilidades en ciencia, tecnología, ingeniería y matemáticas. Rompe barreras, desafía estereotipos y construye el mañana junto a una comunidad global de mujeres brillantes.</p>
+			<p class="hero-description"> {% trans "Descubre un universo de posibilidades en ciencia, tecnología, ingeniería y matemáticas. Rompe barreras, desafía estereotipos y construye el mañana junto a una comunidad global de mujeres brillantes." %}</p>
 			
 			<div class="hero-stats">
 				<div class="hero-stat">

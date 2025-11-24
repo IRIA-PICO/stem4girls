@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-24 13:33+0100\n"
+"POT-Creation-Date: 2025-11-24 18:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,39 +38,68 @@ msgstr "Tags"
 msgid "Mujeres Líderes"
 msgstr "Women Leaders"
 
-#: .\appstem4girls\templates\base.html:39
-#: .\appstem4girls\templates\base.html:70
-msgid "Contacto"
-msgstr "Contact"
+#: .\appstem4girls\templates\base.html:65
+msgid ""
+"\"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se "
+"programa!\""
+msgstr ""
+"\"For all future women scientists. The future is not predicted, it's "
+"programmed!\""
 
-#: .\appstem4girls\templates\base.html:54
-msgid "\"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se programa!\""
-msgstr "\"For all future women scientists. The future is not predicted, it's programmed!\""
-
-#: .\appstem4girls\templates\base.html:56
+#: .\appstem4girls\templates\base.html:67
 msgid "© 2025 App de Stem4girls"
 msgstr "© 2025 Stem4girls App"
 
-#: .\appstem4girls\templates\base.html:60
+#: .\appstem4girls\templates\base.html:71
 msgid "Navegación"
 msgstr "Navigation"
 
-#: .\appstem4girls\templates\base.html:62
+#: .\appstem4girls\templates\base.html:73
 msgid "Inicio"
 msgstr "Home"
 
-#: .\appstem4girls\templates\base.html:63
+#: .\appstem4girls\templates\base.html:74
 msgid "Explorar Recursos"
 msgstr "Explore Resources"
 
-#: .\appstem4girls\templates\base.html:64
+#: .\appstem4girls\templates\base.html:75
 msgid "Aviso Legal"
 msgstr "Legal Notice"
 
-#: .\appstem4girls\templates\base.html:65
+#: .\appstem4girls\templates\base.html:76
 msgid "Política de Privacidad"
 msgstr "Privacy Policy"
 
-#: .\appstem4girls\templates\base.html:102
+#: .\appstem4girls\templates\base.html:81
+msgid "Contacto"
+msgstr "Contact"
+
+#: .\appstem4girls\templates\base.html:113
 msgid "Hecho por mujeres para mujeres."
 msgstr "Made by women for women."
+
+#: .\appstem4girls\templates\index.html:17
+msgid "Innovar, crear y transformar"
+msgstr "Innovate, create and transform"
+
+#: .\appstem4girls\templates\index.html:18
+msgid "el futuro STEM es de todas."
+msgstr "The future of STEM belongs to everyone."
+
+#: .\appstem4girls\templates\index.html:27
+msgid "El Futuro es STEM"
+msgstr "The Future is STEM"
+
+#: .\appstem4girls\templates\index.html:27
+msgid "El Futuro es Femenino"
+msgstr "the Future is Femenine"
+
+#: .\appstem4girls\templates\index.html:29
+msgid ""
+"Descubre un universo de posibilidades en ciencia, tecnología, ingeniería y "
+"matemáticas. Rompe barreras, desafía estereotipos y construye el mañana "
+"junto a una comunidad global de mujeres brillantes."
+msgstr ""
+"Discover a universe of possibilities in science, technology, engineering, "
+"and mathematics.Break down barriers, challenge stereotypes, and build "
+"tomorrow alongside a global community of brilliant women."

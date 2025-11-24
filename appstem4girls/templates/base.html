@@ -36,7 +36,18 @@
                     <a href="{% url 'lista_proveedores' %}" class="nav-link">{% trans "Proveedores" %}</a>
                     <a href="{% url 'lista_tags' %}" class="nav-link">{% trans "Etiquetas" %}</a>
                     <a href="{% url 'mujeres_lideres' %}" class="nav-link">{% trans "Mujeres Líderes" %}</a>
-                    <a href="#contacto" class="nav-link nav-link-cta">{% trans "Contacto" %}</a>
+                    <form action="{% url 'set_language' %}" method="post" class="nav-link" style="margin: 0; padding: 0;">
+                        {% csrf_token %}
+                        <select name="language" onchange="this.form.submit()" class="nav-select">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% for lang in LANGUAGES %}
+                                <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>
+                                    {{ lang.1 }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </form>
                 </div>
 		    </nav>
         </header>

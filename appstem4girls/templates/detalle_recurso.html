@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/recursos.css' %}">
 {% endblock %}
@@ -10,12 +11,12 @@
     <h1>{{ recurso.titulo }}</h1>
     <div class="contenido_recurso">
     <div class="recurso_text">
-        <p id="Proveedor_r_link">Proveedor: 
+        <p id="Proveedor_r_link"> {% trans "Proveedor:" %}
             <a href="{% url 'detalle_proveedor' recurso.proveedor.id %}">
                 {{ recurso.proveedor.nombre }}</a>
         </p>
     
-        <p> Publicado el {{ recurso.fecha_publicacion|date:"d M Y" }} </p>
+        <p> {% blocktrans with fecha=recurso.fecha_publicacion|date:"d M Y" %}Publicado el {{ fecha }}{% endblocktrans %}</p>
         <p>{{recurso.descripcion}}</p>
         <!-- Tags -->
         {% if recurso.tags.all %}
@@ -46,15 +47,15 @@
     <!-- Enlace -->
         <div class="recurso_enlace">
         <p>
-            Si estás interesado o quieres más información, visita el siguiente enlace:
+            {% trans "Si estás interesado o quieres más información, visita el siguiente enlace:" %}
         </p>
         <a href="{{ recurso.enlace }}" target="_blank" rel="noopener noreferrer" class="btn_enlace">
-            Ir a la web
+            {% trans "Ir a la web" %}
         </a>
         </div>
     <!-- Enlace VOLVER -->
      <div class="enlace_recursos">
-    <a href="{% url 'lista_recursos' %}">Volver a recursos:</a></div>
+    <a href="{% url 'lista_recursos' %}">{% trans "Volver a recursos:" %}</a></div>
 
 </div>
 {% endblock %}

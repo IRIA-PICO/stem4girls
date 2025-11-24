@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% load i18n %}
 {% block titulo %} Mujeres STEM {% endblock %}
 
 {% block extra_css %}
@@ -10,8 +10,8 @@
 {% block contenido %}
 <section class="mujeres_section">
     <div class="info_mujeres">
-        <h1 id="mujeres-tit">Mujeres que inspiran en STEM</h1>
-        <p class="subtitle">Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, Tecnologia y matematicas.</p>
+        <h1 id="mujeres-tit">{% trans "Mujeres que inspiran en STEM" %}</h1>
+        <p class="subtitle">{% trans "Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, Tecnologia y matematicas." %}</p>
     </div>
 
     {% if mujeres %}

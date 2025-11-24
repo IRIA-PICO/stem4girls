@@ -19,8 +19,15 @@
     {% if recursos %}
     {% for recurso in recursos %}
         <div class="recurso_card">
+
             <div>
                 <h2>{{ recurso.titulo }}</h2>
+                {% if recurso.imagen %}
+                    <img src="{{ recurso.imagen.url }}" alt="{{ recurso.titulo|escape }}" class="recurso_img">
+                
+                {% else %}
+                    <p>ERROR</p>
+                {% endif %}
                 <p> Publicado el {{ recurso.fecha_publicacion|date:"d M Y" }} </p>
                 <!-- Descripción recortada -->
                 <p>{{ recurso.descripcion|truncatechars:100 }}</p> 

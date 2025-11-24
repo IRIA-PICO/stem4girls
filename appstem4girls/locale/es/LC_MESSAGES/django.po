@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-24 18:58+0100\n"
+"POT-Creation-Date: 2025-11-24 20:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,6 +81,32 @@ msgstr "Contacto"
 msgid "Hecho por mujeres para mujeres."
 msgstr "Hecho por mujeres para mujeres."
 
+#: .\appstem4girls\templates\detalle_recurso.html:14
+#, fuzzy
+#| msgid "Proveedores"
+msgid "Proveedor:"
+msgstr "Proveedores"
+
+#: .\appstem4girls\templates\detalle_recurso.html:19
+#, python-format
+msgid "Publicado el %(fecha)s"
+msgstr "Publicado el %(fecha)s"
+
+#: .\appstem4girls\templates\detalle_recurso.html:50
+msgid ""
+"Si estás interesado o quieres más información, visita el siguiente enlace:"
+msgstr "Si estás interesado o quieres más información, visita el siguiente enlace:"
+
+#: .\appstem4girls\templates\detalle_recurso.html:53
+msgid "Ir a la web"
+msgstr "Ir a la web"
+
+#: .\appstem4girls\templates\detalle_recurso.html:58
+#, fuzzy
+#| msgid "Explorar recursos"
+msgid "Volver a recursos:"
+msgstr "Explorar recursos"
+
 #: .\appstem4girls\templates\index.html:17
 msgid "Innovar, crear y transformar"
 msgstr "Innovar, crear y transformar"
@@ -147,14 +173,27 @@ msgstr "No hay recursos disponibles en este momento"
 msgid "Explorar recursos"
 msgstr "Explorar recursos"
 
-#: .\appstem4girls\templates\lista_recursos.html:13
+#: .\appstem4girls\templates\lista_recursos.html:14
 msgid "Explora Nuestros Recursos"
 msgstr "Explora Nuestros Recursos"
 
-#: .\appstem4girls\templates\lista_recursos.html:14
-msgid "Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM"
-msgstr "Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM"
+#: .\appstem4girls\templates\lista_recursos.html:15
+msgid ""
+"Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM"
+msgstr ""
+"Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM"
 
-#: .\appstem4girls\templates\lista_recursos.html:41
+#: .\appstem4girls\templates\lista_recursos.html:42
 msgid "Ver más detalles:"
 msgstr "Ver más detalles:"
+
+#: .\appstem4girls\templates\mujeres_lideres.html:13
+msgid "Mujeres que inspiran en STEM"
+msgstr "Mujeres que inspiran en STEM"
+
+#: .\appstem4girls\templates\mujeres_lideres.html:14
+msgid ""
+"Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, "
+"Tecnologia y matematicas."
+msgstr "Conoce a mujeres destacadas en los ambitos de Ciencia, Ingieneria, "
+"Tecnologia y matematicas."

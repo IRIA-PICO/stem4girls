@@ -42,6 +42,16 @@
     -webkit-text-fill-color: #A0E7E5; /* Relleno del texto */
 
 }
+
+/* Ajuste de la imagen dentro del contenedor */
+.recurso_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* recorta para cubrir */
+  display: block;
+  transition: transform .35s ease;
+}
+
 .recurso_card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);

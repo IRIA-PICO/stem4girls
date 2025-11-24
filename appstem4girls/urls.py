@@ -1,4 +1,5 @@
-from django.urls import path
+from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns
 from . import views
 
 urlpatterns = [
@@ -10,5 +11,9 @@ urlpatterns = [
     path('tags/', views.lista_tags, name='lista_tags'),
     path('tags/<int:tag_id>/', views.detalle_tag, name='detalle_tag'),
     path('mujeres_lideres/', views.mujeres_lideres, name='mujeres_lideres'),
-
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
+
+urlpatterns += i18n_patterns(
+    path('', include('core.urls')),
+)

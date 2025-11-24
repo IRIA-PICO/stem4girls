@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-24 13:33+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\appstem4girls\templates\base.html:29
+msgid "Empoderando el futuro"
+msgstr "Empowering the future"
+
+#: .\appstem4girls\templates\base.html:35
+msgid "Recursos"
+msgstr "Resources"
+
+#: .\appstem4girls\templates\base.html:36
+msgid "Proveedores"
+msgstr "Providers"
+
+#: .\appstem4girls\templates\base.html:37
+msgid "Etiquetas"
+msgstr "Tags"
+
+#: .\appstem4girls\templates\base.html:38
+msgid "Mujeres Líderes"
+msgstr "Women Leaders"
+
+#: .\appstem4girls\templates\base.html:39
+#: .\appstem4girls\templates\base.html:70
+msgid "Contacto"
+msgstr "Contact"
+
+#: .\appstem4girls\templates\base.html:54
+msgid "\"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se programa!\""
+msgstr "\"For all future women scientists. The future is not predicted, it's programmed!\""
+
+#: .\appstem4girls\templates\base.html:56
+msgid "© 2025 App de Stem4girls"
+msgstr "© 2025 Stem4girls App"
+
+#: .\appstem4girls\templates\base.html:60
+msgid "Navegación"
+msgstr "Navigation"
+
+#: .\appstem4girls\templates\base.html:62
+msgid "Inicio"
+msgstr "Home"
+
+#: .\appstem4girls\templates\base.html:63
+msgid "Explorar Recursos"
+msgstr "Explore Resources"
+
+#: .\appstem4girls\templates\base.html:64
+msgid "Aviso Legal"
+msgstr "Legal Notice"
+
+#: .\appstem4girls\templates\base.html:65
+msgid "Política de Privacidad"
+msgstr "Privacy Policy"
+
+#: .\appstem4girls\templates\base.html:102
+msgid "Hecho por mujeres para mujeres."
+msgstr "Made by women for women."

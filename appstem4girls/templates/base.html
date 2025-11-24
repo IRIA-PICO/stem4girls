@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="STEM 4 girls - Recursos educativos para futuras científicas">
         {% load static %}
+        {% load i18n %}
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         {% block extra_css %}{% endblock %}
         
@@ -25,17 +26,17 @@
                     </div>
                     <div class="logo-text">
                     <span class="logo-title">STEM 4 GIRLS</span>
-                    <span class="logo-tagline">Empoderando el futuro</span>
+                    <span class="logo-tagline">{% trans "Empoderando el futuro" %}</span>
                     </div>
                 </a>
                 </div>
 
                 <div class="nav-menu">
-                    <a href="{% url 'lista_recursos' %}" class="nav-link">Recursos</a>
-                    <a href="{% url 'lista_proveedores' %}" class="nav-link">Proveedores</a>
-                    <a href="{% url 'lista_tags' %}" class="nav-link">Etiquetas</a>
-                    <a href="{% url 'mujeres_lideres' %}" class="nav-link">Mujeres Líderes</a>
-                    <a href="#contacto" class="nav-link nav-link-cta">Contacto</a>
+                    <a href="{% url 'lista_recursos' %}" class="nav-link">{% trans "Recursos" %}</a>
+                    <a href="{% url 'lista_proveedores' %}" class="nav-link">{% trans "Proveedores" %}</a>
+                    <a href="{% url 'lista_tags' %}" class="nav-link">{% trans "Etiquetas" %}</a>
+                    <a href="{% url 'mujeres_lideres' %}" class="nav-link">{% trans "Mujeres Líderes" %}</a>
+                    <a href="#contacto" class="nav-link nav-link-cta">{% trans "Contacto" %}</a>
                 </div>
 		    </nav>
         </header>
@@ -50,23 +51,23 @@
                 <div class="footer-col">
                     <h4 class="logo-foot">STEM 4 girls</h4>
                     <p class="mision">
-                        "Para todas las futuras mujeres científicas. El futuro no se predice, ¡se programa!"
+                        {% trans '"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se programa!"' %}
                     </p>
-                    <p class="copy">© 2025 App de Stem4girls</p>
+                    <p class="copy">{% trans "© 2025 App de Stem4girls" %}</p>
                 </div>
                 <!--Columna 2: Información Legal-->
                 <div class="footer-col">
-                    <h4>Navegación</h4>
+                    <h4>{% trans "Navegación" %}</h4>
                     <ul>
-                        <li><a href="{% url 'index' %}">Inicio</a></li>
-                        <li><a href="{% url 'lista_recursos' %}">Explorar Recursos</a></li>
-                        <li><a href="#">Aviso Legal</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="{% url 'index' %}">{% trans "Inicio" %}</a></li>
+                        <li><a href="{% url 'lista_recursos' %}">{% trans "Explorar Recursos" %}</a></li>
+                        <li><a href="#">{% trans "Aviso Legal" %}</a></li>
+                        <li><a href="#">{% trans "Política de Privacidad" %}</a></li>
                     </ul>
                 </div>
                 <!--Columna 3: Contacto y Redes Sociales-->
                 <div class="footer-col" id="contacto">
-                    <h4>Contacto</h4>
+                    <h4>{% trans "Contacto" %}</h4>
                     <p>📧 <a href="mailto:info@stem4girls.com">info@stem4girls.com</a></p>
                     <p>📞 +34 123 456 789</p>
                     
@@ -98,7 +99,7 @@
                 </div>
             </div>
         <div class="footer-bottom">
-            <p>Hecho por mujeres para mujeres.</p>
+            <p>{% trans "Hecho por mujeres para mujeres." %}</p>
         </div>
     </footer>
     </body>

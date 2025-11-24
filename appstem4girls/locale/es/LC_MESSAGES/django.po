@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-24 13:33+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: .\appstem4girls\templates\base.html:29
+msgid "Empoderando el futuro"
+msgstr "Empoderando el futuro"
+
+#: .\appstem4girls\templates\base.html:35
+msgid "Recursos"
+msgstr "Recursos"
+
+#: .\appstem4girls\templates\base.html:36
+msgid "Proveedores"
+msgstr "Proveedores"
+
+#: .\appstem4girls\templates\base.html:37
+msgid "Etiquetas"
+msgstr "Etiquetas"
+
+#: .\appstem4girls\templates\base.html:38
+msgid "Mujeres Líderes"
+msgstr "Mujeres Líderes"
+
+#: .\appstem4girls\templates\base.html:39
+#: .\appstem4girls\templates\base.html:70
+msgid "Contacto"
+msgstr "Contacto"
+
+#: .\appstem4girls\templates\base.html:54
+msgid "\"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se programa!\""
+msgstr "\"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se programa!\""
+
+#: .\appstem4girls\templates\base.html:56
+msgid "© 2025 App de Stem4girls"
+msgstr "© 2025 App de Stem4girls"
+
+#: .\appstem4girls\templates\base.html:60
+msgid "Navegación"
+msgstr "Navegación"
+
+#: .\appstem4girls\templates\base.html:62
+msgid "Inicio"
+msgstr "Inicio"
+
+#: .\appstem4girls\templates\base.html:63
+msgid "Explorar Recursos"
+msgstr "Explorar Recursos"
+
+#: .\appstem4girls\templates\base.html:64
+msgid "Aviso Legal"
+msgstr "Aviso Legal"
+
+#: .\appstem4girls\templates\base.html:65
+msgid "Política de Privacidad"
+msgstr "Política de Privacidad"
+
+#: .\appstem4girls\templates\base.html:102
+msgid "Hecho por mujeres para mujeres."
+msgstr "Hecho por mujeres para mujeres."

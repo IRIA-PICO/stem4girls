@@ -172,6 +172,27 @@
   box-shadow: 0 8px 25px rgba(139,92,246,0.5);
   transform: translateY(-3px);
 }
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0; 
+  display: flex;
+  align-items: center;
+}
+.flag-img {
+  width: 32px; 
+  height: 21px;
+  border-radius: 4px;
+  display: block;
+  object-fit: cover;
+}
 /* ====== RESPONSIVE ====== */
 @media (max-width: 900px) {
   .nav-menu { display: none; }

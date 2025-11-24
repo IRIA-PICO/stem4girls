@@ -2,6 +2,7 @@
 
 {% block titulo %} Recursos Stem4Girls {% endblock %}
 {% load static %}
+{% load i18n %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/recursos.css' %}">
 {% endblock %}
@@ -10,8 +11,8 @@
 <!-- BEGIN ENTRIES -->
 <div class="l_recursos">
     <div class="info_L_recursos">
-        <h1>Explora Nuestros Recursos</h1>
-        <p>Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM</p>
+        <h1>{% trans "Explora Nuestros Recursos" %}</h1>
+        <p>{% trans "Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM" %}</p>
     </div>
   <!-- Blog entry -->
   <div class="grid_recursos">
@@ -38,7 +39,7 @@
             </div>
             <div class= "enlace_recursos">
             <!-- Enlace a detalle_recurso -->
-            <a href="{% url 'detalle_recurso' recurso.id %}">Ver más detalles:</a></div>
+            <a href="{% url 'detalle_recurso' recurso.id %}">{% trans "Ver más detalles:" %}</a></div>
         </div>
     {% endfor %}
     <!-- Enlace a más recursos -->

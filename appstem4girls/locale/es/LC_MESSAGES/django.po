@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-24 18:05+0100\n"
+"POT-Creation-Date: 2025-11-24 18:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,7 @@ msgid "Recursos"
 msgstr "Recursos"
 
 #: .\appstem4girls\templates\base.html:36
+#: .\appstem4girls\templates\index.html:38
 msgid "Proveedores"
 msgstr "Proveedores"
 
@@ -39,7 +40,7 @@ msgstr "Etiquetas"
 msgid "Mujeres Líderes"
 msgstr "Mujeres Líderes"
 
-#: .\appstem4girls\templates\base.html:65
+#: .\appstem4girls\templates\base.html:70
 msgid ""
 "\"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se "
 "programa!\""
@@ -47,35 +48,36 @@ msgstr ""
 "\"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se "
 "programa!\""
 
-#: .\appstem4girls\templates\base.html:67
+#: .\appstem4girls\templates\base.html:72
 msgid "© 2025 App de Stem4girls"
 msgstr "© 2025 App de Stem4girls"
 
-#: .\appstem4girls\templates\base.html:71
+#: .\appstem4girls\templates\base.html:76
 msgid "Navegación"
 msgstr "Navegación"
 
-#: .\appstem4girls\templates\base.html:73
+#: .\appstem4girls\templates\base.html:78
 msgid "Inicio"
 msgstr "Inicio"
 
-#: .\appstem4girls\templates\base.html:74
+#: .\appstem4girls\templates\base.html:79
+#: .\appstem4girls\templates\index.html:47
 msgid "Explorar Recursos"
 msgstr "Explorar Recursos"
 
-#: .\appstem4girls\templates\base.html:75
+#: .\appstem4girls\templates\base.html:80
 msgid "Aviso Legal"
 msgstr "Aviso Legal"
 
-#: .\appstem4girls\templates\base.html:76
+#: .\appstem4girls\templates\base.html:81
 msgid "Política de Privacidad"
 msgstr "Política de Privacidad"
 
-#: .\appstem4girls\templates\base.html:81
+#: .\appstem4girls\templates\base.html:86
 msgid "Contacto"
 msgstr "Contacto"
 
-#: .\appstem4girls\templates\base.html:113
+#: .\appstem4girls\templates\base.html:118
 msgid "Hecho por mujeres para mujeres."
 msgstr "Hecho por mujeres para mujeres."
 
@@ -104,3 +106,55 @@ msgstr ""
 "Descubre un universo de posibilidades en ciencia, tecnología, ingeniería y "
 "matemáticas. Rompe barreras, desafía estereotipos y construye el mañana "
 "junto a una comunidad global de mujeres brillantes."
+
+#: .\appstem4girls\templates\index.html:34
+msgid "Recursos Disponibles"
+msgstr "Recursos Disponibles"
+
+#: .\appstem4girls\templates\index.html:42
+msgid "Usuarias Activas"
+msgstr "Usuarias Activas"
+
+#: .\appstem4girls\templates\index.html:48
+msgid "Descubre STEM"
+msgstr "Descubre STEM"
+
+#: .\appstem4girls\templates\index.html:56
+msgid "Destacados"
+msgstr "Destacados"
+
+#: .\appstem4girls\templates\index.html:57
+msgid "Recursos Más Recientes"
+msgstr "Recursos Más Recientes"
+
+#: .\appstem4girls\templates\index.html:58
+msgid "Descubre lo último de cada proveedor colaborador"
+msgstr "Descubre lo último de cada proveedor colaborador"
+
+#: .\appstem4girls\templates\index.html:61
+msgid "Ver todos los recursos"
+msgstr "Ver todos los recursos"
+
+#: .\appstem4girls\templates\index.html:132
+msgid "Ver detalles"
+msgstr "Ver detalles"
+
+#: .\appstem4girls\templates\index.html:142
+msgid "No hay recursos disponibles en este momento"
+msgstr "No hay recursos disponibles en este momento"
+
+#: .\appstem4girls\templates\index.html:143
+msgid "Explorar recursos"
+msgstr "Explorar recursos"
+
+#: .\appstem4girls\templates\lista_recursos.html:13
+msgid "Explora Nuestros Recursos"
+msgstr "Explora Nuestros Recursos"
+
+#: .\appstem4girls\templates\lista_recursos.html:14
+msgid "Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM"
+msgstr "Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM"
+
+#: .\appstem4girls\templates\lista_recursos.html:41
+msgid "Ver más detalles:"
+msgstr "Ver más detalles:"

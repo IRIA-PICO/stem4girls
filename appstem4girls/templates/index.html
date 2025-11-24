@@ -31,21 +31,21 @@
 			<div class="hero-stats">
 				<div class="hero-stat">
 					<div class="hero-stat-number">500+</div>
-					<div class="hero-stat-label">Recursos Disponibles</div>
+					<div class="hero-stat-label">{% trans "Recursos Disponibles" %}</div>
 				</div>
 				<div class="hero-stat">
 					<div class="hero-stat-number">50+</div>
-					<div class="hero-stat-label">Proveedores</div>
+					<div class="hero-stat-label">{% trans "Proveedores" %}</div>
 				</div>
 				<div class="hero-stat">
 					<div class="hero-stat-number">10K+</div>
-					<div class="hero-stat-label">Usuarias Activas</div>
+					<div class="hero-stat-label">{% trans "Usuarias Activas" %}</div>
 				</div>
 			</div>
 
 			<div class="cta-container">
-				<a href="{% url 'lista_recursos' %}" class="cta-button">Explorar Recursos</a>
-				<a href="#stem" class="cta-button cta-secondary">Descubre STEM</a>
+				<a href="{% url 'lista_recursos' %}" class="cta-button">{% trans "Explorar Recursos" %}</a>
+				<a href="#stem" class="cta-button cta-secondary">{% trans "Descubre STEM" %}</a>
 			</div>
 		</div>
 	</section>
@@ -53,12 +53,12 @@
     <div class="featured-container">
         <div class="featured-header">
             <div class="featured-header-content">
-                <span class="featured-badge">Destacados</span>
-                <h2 class="featured-title">Recursos Más Recientes</h2>
-                <p class="featured-subtitle">Descubre lo último de cada proveedor colaborador</p>
+                <span class="featured-badge">{% trans "Destacados" %}</span>
+                <h2 class="featured-title">{% trans "Recursos Más Recientes" %}</h2>
+                <p class="featured-subtitle">{% trans "Descubre lo último de cada proveedor colaborador" %}</p>
             </div>
             <a href="{% url 'lista_recursos' %}" class="featured-view-all">
-                <span>Ver todos los recursos</span>
+                <span>{% trans "Ver todos los recursos" %}</span>
                 <span class="arrow">→</span>
             </a>
         </div>
@@ -128,7 +128,7 @@
                         {% endif %}
                         
                         <a href="{% url 'detalle_recurso' recurso.id %}" class="card-link">
-                            Ver detalles
+                            {% trans "Ver detalles" %}
                         </a>
                     </div>
                 </div>
@@ -138,8 +138,8 @@
         {% else %}
         <div class="no-resources">
             <div class="no-resources-icon">📚</div>
-            <p>No hay recursos disponibles en este momento</p>
-            <a href="{% url 'lista_recursos' %}" class="btn-explore">Explorar recursos</a>
+            <p>{% trans "No hay recursos disponibles en este momento" %}</p>
+            <a href="{% url 'lista_recursos' %}" class="btn-explore">{% trans "Explorar recursos" %}</a>
         </div>
         {% endif %}
     </div>

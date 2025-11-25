@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-25 09:07+0100\n"
+"POT-Creation-Date: 2025-11-25 12:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,7 +124,7 @@ msgstr "Este proveedor aún no tiene recursos asociados."
 #: .\appstem4girls\templates\detalle_recurso.html:14
 #, fuzzy
 #| msgid "Proveedores"
-msgid "Proveedor:"
+msgid "Proveedor"
 msgstr "Proveedores"
 
 #: .\appstem4girls\templates\detalle_recurso.html:19
@@ -145,7 +145,7 @@ msgstr "Ir a la web"
 #: .\appstem4girls\templates\detalle_recurso.html:58
 #, fuzzy
 #| msgid "Explorar recursos"
-msgid "Volver a recursos:"
+msgid "Volver a recursos"
 msgstr "Explorar recursos"
 
 #: .\appstem4girls\templates\detalle_tag.html:11
@@ -268,7 +268,8 @@ msgstr "Etiquetas de Recursos STEM"
 msgid ""
 "Filtra los recursos por tipo de actividad o contenido (Taller, Evento, "
 "Vídeo, etc.)."
-msgstr "Filtra los recursos por tipo de actividad o contenido (Taller, Evento, "
+msgstr ""
+"Filtra los recursos por tipo de actividad o contenido (Taller, Evento, "
 "Vídeo, etc.)."
 
 #: .\appstem4girls\templates\lista_tags.html:20

@@ -11,7 +11,7 @@
     <h1>{{ recurso.titulo }}</h1>
     <div class="contenido_recurso">
     <div class="recurso_text">
-        <p id="Proveedor_r_link"> {% trans "Proveedor:" %}
+        <p id="Proveedor_r_link"> {% trans "Proveedor" %}
             <a href="{% url 'detalle_proveedor' recurso.proveedor.id %}">
                 {{ recurso.proveedor.nombre }}</a>
         </p>
@@ -55,7 +55,7 @@
         </div>
     <!-- Enlace VOLVER -->
      <div class="enlace_recursos">
-    <a href="{% url 'lista_recursos' %}">{% trans "Volver a recursos:" %}</a></div>
+    <a href="{% url 'lista_recursos' %}">{% trans "Volver a recursos" %}</a></div>
 
 </div>
 {% endblock %}

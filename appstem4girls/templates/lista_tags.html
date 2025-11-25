@@ -3,22 +3,23 @@
 {% block titulo %} Etiquetas Stem4Girls {% endblock %}
 
 {% load static%}
+{% load i18n %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/tags.css' %}">
 {% endblock %}
 
 {% block contenido %}
 <section class="tags_section">
-    <h1>Etiquetas de Recursos STEM</h1>
-    <p class="subtitle">Filtra los recursos por tipo de actividad o contenido (Taller, Evento, Vídeo, etc.).</p>
+    <h1>{% trans "Etiquetas de Recursos STEM" %}</h1>
+    <p class="subtitle">{% trans "Filtra los recursos por tipo de actividad o contenido (Taller, Evento, Vídeo, etc.)." %}</p>
 
     <div class="tags_grid">
         {% for tag in tags %}
             <div class="tag_card">
                 <h2>{{ tag.nombre }}</h2>
-                <p>{{ tag.recursos.count }} recurso{{ tag.recursos.count|pluralize:"s" }}</p>
+                <p>{{ tag.recursos.count }} {% trans "recurso " %}{{ tag.recursos.count|pluralize:"s" }}</p>
                 <!-- pongo recursos porque en el models.py Recursos así lo he llamado a los tags-->
-                <a href="{% url 'detalle_tag' tag.id %}" class="btn_tag">Ver Recursos</a>
+                <a href="{% url 'detalle_tag' tag.id %}" class="btn_tag">{% trans "Ver Recursos" %}</a>
             </div>
         {% empty %}
             <p>No hay etiquetas disponibles.</p>

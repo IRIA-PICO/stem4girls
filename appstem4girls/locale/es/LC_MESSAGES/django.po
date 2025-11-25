@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-24 22:24+0100\n"
+"POT-Creation-Date: 2025-11-25 09:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,43 +81,43 @@ msgstr "Contacto"
 msgid "Hecho por mujeres para mujeres."
 msgstr "Hecho por mujeres para mujeres."
 
-#: .\appstem4girls\templates\detalle_proveedor.html:12
+#: .\appstem4girls\templates\detalle_proveedor.html:13
 #, fuzzy
 #| msgid "Explorar recursos"
 msgid "Volver a proveedores"
 msgstr "Explorar recursos"
 
-#: .\appstem4girls\templates\detalle_proveedor.html:28
+#: .\appstem4girls\templates\detalle_proveedor.html:29
 msgid "Ciudad:"
 msgstr "Ciudad:"
 
-#: .\appstem4girls\templates\detalle_proveedor.html:41
+#: .\appstem4girls\templates\detalle_proveedor.html:42
 msgid "Email:"
 msgstr "Email:"
 
-#: .\appstem4girls\templates\detalle_proveedor.html:53
+#: .\appstem4girls\templates\detalle_proveedor.html:54
 msgid "Teléfono:"
 msgstr "Teléfono:"
 
-#: .\appstem4girls\templates\detalle_proveedor.html:67
+#: .\appstem4girls\templates\detalle_proveedor.html:68
 msgid "Web:"
 msgstr "Web:"
 
-#: .\appstem4girls\templates\detalle_proveedor.html:73
-#: .\appstem4girls\templates\detalle_tag.html:16
+#: .\appstem4girls\templates\detalle_proveedor.html:74
+#: .\appstem4girls\templates\detalle_tag.html:17
 #, fuzzy
 #| msgid "Recursos"
 msgid "Recursos de"
 msgstr "Recursos"
 
-#: .\appstem4girls\templates\detalle_proveedor.html:93
-#: .\appstem4girls\templates\detalle_tag.html:36
+#: .\appstem4girls\templates\detalle_proveedor.html:94
+#: .\appstem4girls\templates\detalle_tag.html:37
 #, fuzzy
 #| msgid "Explorar recursos"
 msgid "Ver recurso"
 msgstr "Explorar recursos"
 
-#: .\appstem4girls\templates\detalle_proveedor.html:99
+#: .\appstem4girls\templates\detalle_proveedor.html:100
 msgid "Este proveedor aún no tiene recursos asociados."
 msgstr "Este proveedor aún no tiene recursos asociados."
 
@@ -148,13 +148,13 @@ msgstr "Ir a la web"
 msgid "Volver a recursos:"
 msgstr "Explorar recursos"
 
-#: .\appstem4girls\templates\detalle_tag.html:10
+#: .\appstem4girls\templates\detalle_tag.html:11
 #, fuzzy
 #| msgid "Etiquetas"
 msgid "Volver a Etiquetas"
 msgstr "Etiquetas"
 
-#: .\appstem4girls\templates\detalle_tag.html:42
+#: .\appstem4girls\templates\detalle_tag.html:43
 msgid "Esta etiqueta aún no tiene recursos asociados."
 msgstr "Esta etiqueta aún no tiene recursos asociados."
 
@@ -224,21 +224,23 @@ msgstr "No hay recursos disponibles en este momento"
 msgid "Explorar recursos"
 msgstr "Explorar recursos"
 
-#: .\appstem4girls\templates\lista_proveedores.html:12
+#: .\appstem4girls\templates\lista_proveedores.html:13
 msgid "Proveedores de Recursos STEM"
 msgstr "Proveedores de Recursos STEM"
 
-#: .\appstem4girls\templates\lista_proveedores.html:13
+#: .\appstem4girls\templates\lista_proveedores.html:14
 msgid ""
 "Descubre las organizaciones, empresas e insituciones que impulsan el talento "
 "femenino en STEM."
-msgstr "Descubre las organizaciones, empresas e insituciones que impulsan el talento femenino en STEM."
+msgstr ""
+"Descubre las organizaciones, empresas e insituciones que impulsan el talento "
+"femenino en STEM."
 
-#: .\appstem4girls\templates\lista_proveedores.html:26
+#: .\appstem4girls\templates\lista_proveedores.html:27
 msgid "Ver Detalle y Recursos &rarr;"
 msgstr "Ver Detalle y Recursos &rarr;"
 
-#: .\appstem4girls\templates\lista_proveedores.html:30
+#: .\appstem4girls\templates\lista_proveedores.html:31
 msgid "Todavía no hay proveedores registrados."
 msgstr "Todavía no hay proveedores registrados."
 
@@ -255,6 +257,31 @@ msgstr ""
 #: .\appstem4girls\templates\lista_recursos.html:49
 msgid "Ver más detalles:"
 msgstr "Ver más detalles:"
+
+#: .\appstem4girls\templates\lista_tags.html:13
+#, fuzzy
+#| msgid "Proveedores de Recursos STEM"
+msgid "Etiquetas de Recursos STEM"
+msgstr "Etiquetas de Recursos STEM"
+
+#: .\appstem4girls\templates\lista_tags.html:14
+msgid ""
+"Filtra los recursos por tipo de actividad o contenido (Taller, Evento, "
+"Vídeo, etc.)."
+msgstr "Filtra los recursos por tipo de actividad o contenido (Taller, Evento, "
+"Vídeo, etc.)."
+
+#: .\appstem4girls\templates\lista_tags.html:20
+#, fuzzy
+#| msgid "Recursos"
+msgid "recurso "
+msgstr "recurso"
+
+#: .\appstem4girls\templates\lista_tags.html:22
+#, fuzzy
+#| msgid "Explorar recursos"
+msgid "Ver Recursos"
+msgstr "Explorar recursos"
 
 #: .\appstem4girls\templates\mujeres_lideres.html:13
 msgid "Mujeres que inspiran en STEM"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-25 09:07+0100\n"
+"POT-Creation-Date: 2025-11-25 12:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgstr "This provider does not have any associated resources yet."
 #: .\appstem4girls\templates\detalle_recurso.html:14
 #, fuzzy
 #| msgid "Proveedores"
-msgid "Proveedor:"
+msgid "Proveedor"
 msgstr "Providers"
 
 #: .\appstem4girls\templates\detalle_recurso.html:19
@@ -139,8 +139,8 @@ msgstr "Access the web"
 #: .\appstem4girls\templates\detalle_recurso.html:58
 #, fuzzy
 #| msgid "Explorar recursos"
-msgid "Volver a recursos:"
-msgstr "Explore Resources:"
+msgid "Volver a recursos"
+msgstr "Explore Resources"
 
 #: .\appstem4girls\templates\detalle_tag.html:11
 msgid "Volver a Etiquetas"
@@ -260,7 +260,9 @@ msgstr "STEM Resource Tags"
 msgid ""
 "Filtra los recursos por tipo de actividad o contenido (Taller, Evento, "
 "Vídeo, etc.)."
-msgstr "Filter resources by type of activity or content (Workshop, Event, Video, etc.)."
+msgstr ""
+"Filter resources by type of activity or content (Workshop, Event, Video, "
+"etc.)."
 
 #: .\appstem4girls\templates\lista_tags.html:20
 #, fuzzy

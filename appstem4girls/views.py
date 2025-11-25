@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Recurso, Proveedor, Tag, Mujeres
-
+from django.http import JsonResponse
+from django.urls import reverse
+from django.db.models import Q
 
 def index(request):
     proveedores = Proveedor.objects.all()
@@ -53,3 +55,47 @@ def mujeres_lideres(request, ):
         'mujeres': mujeres
     }
     return render(request, 'mujeres_lideres.html', context)
+
+#JAVASCRIPT
+def ajax_search(request):
+    """
+    GET ajax/search/?q=...
+    Devuelve JSON:
+    { 'recursos': [{id, titulo, url}], 'proveedores': [{id, nombre, url}] }
+    """
+    q = request.GET.get('q', '').strip()
+    results = {'recursos': [], 'proveedores': []}
+    if q:
+        # buscar en título, descripción y tags
+        recursos_qs = Recurso.objects.filter(
+            Q(titulo__icontains=q) | Q(descripcion__icontains=q) | Q(tags__nombre__icontains=q)
+        ).distinct()[:12]
+
+        proveedores_qs = Proveedor.objects.filter(
+            Q(nombre__icontains=q) | Q(descripcion__icontains=q) | Q(ciudad__icontains=q)
+        ).distinct()[:8]
+
+        for r in recursos_qs:
+            # ajustar el nombre de la url si difiere en tu proyecto
+            try:
+                url = reverse('appstem4girls:detalle_recurso', args=[r.id])
+            except:
+                url = f"/appstem4girls/recursos/{r.id}/"
+            results['recursos'].append({
+                'id': r.id,
+                'titulo': r.titulo,
+                'url': url,
+            })
+
+        for p in proveedores_qs:
+            try:
+                url = reverse('appstem4girls:detalle_proveedor', args=[p.id])
+            except:
+                url = f"/appstem4girls/proveedores/{p.id}/"
+            results['proveedores'].append({
+                'id': p.id,
+                'nombre': p.nombre,
+                'url': url,
+            })
+
+    return JsonResponse(results)

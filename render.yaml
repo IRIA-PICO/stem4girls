@@ -1,0 +1,22 @@
+databases:
+  - name: stem4girlsdb
+    plan: free
+    databaseName: stem4girls
+    user: stem4girls
+
+services:
+  - type: web
+    plan: free
+    name: stem4girls
+    runtime: python
+    buildCommand: './build.sh'
+    startCommand: 'python -m gunicorn stem4girls.asgi:application -k uvicorn.workers.UvicornWorker'
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: stem4girlsdb
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4

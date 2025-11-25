@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-rq5rmr2drv=@=k4#s^x)n&d&f%nc9fsp30)oz1s=s(y#c=@%!e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'stem4girls.onrender.com'
+]
 
 
 # Application definition

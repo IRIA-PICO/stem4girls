@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-rq5rmr2drv=@=k4#s^x)n&d&f%nc9fsp30)oz1s=s(y#c=@%!e
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'appstem4girls.onrender.com'
+    'stem4girls.onrender.com'
 ]
 
 

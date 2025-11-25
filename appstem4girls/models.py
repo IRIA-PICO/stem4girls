@@ -28,7 +28,7 @@ class Recurso(models.Model):
     enlace = models.URLField(blank=True)
     proveedor = models.ForeignKey(Proveedor, on_delete=models.CASCADE, related_name='recursos')
     tags = models.ManyToManyField(Tag, related_name='recursos')
-    imagen = models.ImageField(upload_to='img',blank=True,null=True,verbose_name='Image')
+    imagen = models.ImageField(upload_to='images',blank=True,null=True,verbose_name='Image')
 
     def __str__(self):
         return self.titulo

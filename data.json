@@ -1,0 +1,1346 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-10-21T14:41:59.510Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Proveedor1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-10-21T14:43:04.301Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Proveedor1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Descripcion\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-10-21T14:43:41.137Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Video",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-10-21T14:44:22.510Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Recurso1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2025-10-24T18:20:48.880Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Recurso2",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2025-10-26T12:03:47.400Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "What powers your world?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Titulo\", \"Descripcion\", \"Enlace\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2025-10-26T12:06:09.788Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "STEM4Girls Europe",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nombre\", \"Web\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2025-10-26T12:06:22.211Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Camp",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2025-10-26T12:09:04.227Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Titulo\", \"Descripcion\", \"Enlace\", \"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2025-10-26T12:09:22.546Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "What powers your world?",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2025-10-26T12:09:30.389Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2025-10-28T20:44:45.556Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "DeustoLearningLab",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2025-10-28T20:48:03.222Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Información",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2025-10-28T20:48:32.527Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Inspira STEAM",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2025-10-28T20:53:15.404Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "club",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2025-10-28T20:53:23.957Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Club",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nombre\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2025-10-28T20:54:55.759Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Trastea club",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2025-10-28T20:55:09.416Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Club",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2025-10-28T20:57:26.558Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Taller EOLOS SMART FACTORY",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2025-10-28T20:57:33.583Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Taller",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2025-10-28T20:57:42.495Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Taller EOLOS SMART FACTORY",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2025-10-28T20:57:58.158Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Inspira STEAM",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2025-10-30T00:28:51.118Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Deusto Learning Lab",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nombre\", \"Descripcion\", \"Ciudad\", \"Direccion\", \"Telefono\", \"Email\", \"Web\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2025-10-30T00:28:54.462Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Deusto Learning Lab",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2025-10-30T00:32:33.630Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "STEM4Girls Europe",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Descripcion\", \"Email\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2025-10-31T12:11:57.395Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Taller EOLOS SMART FACTORY",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2025-10-31T12:12:02.477Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Trastea club",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2025-10-31T12:12:08.123Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Inspira STEAM",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2025-10-31T12:12:15.344Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "What powers your world?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tags\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2025-11-04T11:37:25.922Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Marie Curie",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2025-11-06T15:00:06.729Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Mª Luz Guenaga,",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nombre\", \"Descripcion\", \"Fecha NCTO\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2025-11-06T15:01:14.294Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Alicia Alarcón Cobacho",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2025-11-06T15:04:03.732Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Eva Boo",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2025-11-06T21:30:45.409Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Mª Luz Guenaga",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nombre\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2025-11-06T21:30:51.938Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Alicia Alarcón",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nombre\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2025-11-06T21:31:38.419Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Science",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2025-11-06T21:31:56.520Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Ciencia",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Nombre\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2025-11-06T21:32:05.270Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Tecnologia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2025-11-24T19:53:51.601Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Taller EOLOS SMART FACTORY",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2025-11-24T19:55:44.148Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2025-11-24T20:05:28.290Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2025-11-24T20:07:01.824Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2025-11-24T20:07:29.619Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2025-11-25T08:24:16.605Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2025-11-25T08:24:22.065Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2025-11-25T08:24:29.556Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2025-11-25T08:25:25.124Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2025-11-25T08:30:14.155Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2025-11-25T11:49:49.233Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2025-11-25T11:50:26.718Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Sustainable Energy STEM Camp",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add proveedor",
+    "content_type": 7,
+    "codename": "add_proveedor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change proveedor",
+    "content_type": 7,
+    "codename": "change_proveedor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete proveedor",
+    "content_type": 7,
+    "codename": "delete_proveedor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view proveedor",
+    "content_type": 7,
+    "codename": "view_proveedor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add tag",
+    "content_type": 8,
+    "codename": "add_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change tag",
+    "content_type": 8,
+    "codename": "change_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete tag",
+    "content_type": 8,
+    "codename": "delete_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view tag",
+    "content_type": 8,
+    "codename": "view_tag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add recurso",
+    "content_type": 9,
+    "codename": "add_recurso"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change recurso",
+    "content_type": 9,
+    "codename": "change_recurso"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete recurso",
+    "content_type": 9,
+    "codename": "delete_recurso"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view recurso",
+    "content_type": 9,
+    "codename": "view_recurso"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add mujeres",
+    "content_type": 10,
+    "codename": "add_mujeres"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change mujeres",
+    "content_type": 10,
+    "codename": "change_mujeres"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete mujeres",
+    "content_type": 10,
+    "codename": "delete_mujeres"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view mujeres",
+    "content_type": 10,
+    "codename": "view_mujeres"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$pIAzQ8oFvycMLZhyz4ShDc$NNj4xCL+AyysfwykRJXH5PoAIllcdvqf3onJi/F4zBQ=",
+    "last_login": "2025-11-24T19:39:06.088Z",
+    "is_superuser": true,
+    "username": "adminDjangoSTEM",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-10-21T14:38:12.812Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "appstem4girls",
+    "model": "proveedor"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "appstem4girls",
+    "model": "tag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "appstem4girls",
+    "model": "recurso"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "appstem4girls",
+    "model": "mujeres"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4rqddatd0fb9v485h6375uw69oivnxpq",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmoAwu3XuGZpgBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnBerwu0XiR6obkDvVW9Pc6jJPUW-K3mnX1ybpedndv4NCvXxrx0cQHxCADFlgTtb4LHByRBkwxQDJBXToyZgYBrRmoBzYigMWNOr9Adh2N5A:1vH7Yx:1Oi1eTZ58fuzwqGVlF5eZ825BzHgbV1zcnM9dOzQ144",
+    "expire_date": "2025-11-20T21:30:35.403Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "50dwd38xiznvtq6f3degwdcftjppmc6k",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmoAwu3XuGZpgBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnBerwu0XiR6obkDvVW9Pc6jJPUW-K3mnX1ybpedndv4NCvXxrx0cQHxCADFlgTtb4LHByRBkwxQDJBXToyZgYBrRmoBzYigMWNOr9Adh2N5A:1vBDXK:cfafsby2IKxR9GWR6bMzAVb7bZpjRITDwl-eF0b9Jp8",
+    "expire_date": "2025-11-04T14:40:30.586Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m08dunkmgkxwcp89c8w9a41p549nknha",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmoAwu3XuGZpgBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnBerwu0XiR6obkDvVW9Pc6jJPUW-K3mnX1ybpedndv4NCvXxrx0cQHxCADFlgTtb4LHByRBkwxQDJBXToyZgYBrRmoBzYigMWNOr9Adh2N5A:1vBGjE:QC6hD5rnTN0km_SuIBkQ5zIWyHGYf3jXO4dr96wKxb8",
+    "expire_date": "2025-11-04T18:05:00.274Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "q094dve9x9xjkwjdx1740v45z4erd85a",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmoAwu3XuGZpgBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnBerwu0XiR6obkDvVW9Pc6jJPUW-K3mnX1ybpedndv4NCvXxrx0cQHxCADFlgTtb4LHByRBkwxQDJBXToyZgYBrRmoBzYigMWNOr9Adh2N5A:1vEGT9:Dnwz81Klxs1aKq16tJkbG8c9O0m4-GVM6DNEnKMhvR0",
+    "expire_date": "2025-11-13T00:24:47.822Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "qsspsehpbpmi15ugv08bqqezm8hx5614",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmoAwu3XuGZpgBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnBerwu0XiR6obkDvVW9Pc6jJPUW-K3mnX1ybpedndv4NCvXxrx0cQHxCADFlgTtb4LHByRBkwxQDJBXToyZgYBrRmoBzYigMWNOr9Adh2N5A:1vNcOw:IW4rc6B6P91U4L7UEU3YsiAa8WuSfMEaeB_EfUwMaIo",
+    "expire_date": "2025-12-08T19:39:06.103Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "v6zplu1kimmgacn0k91k5lxn28wmfksj",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmoAwu3XuGZpgBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnBerwu0XiR6obkDvVW9Pc6jJPUW-K3mnX1ybpedndv4NCvXxrx0cQHxCADFlgTtb4LHByRBkwxQDJBXToyZgYBrRmoBzYigMWNOr9Adh2N5A:1vH1PJ:btOLwlFC1LCZiPQvWHLrSDkHulLe8sWZ1ytjJFEkIOY",
+    "expire_date": "2025-11-20T14:56:13.448Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vnifwdndv3epvs0hp0pximcmqecbfwni",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCmoAwu3XuGZpgBqRpISrsy3l2bdKHb_977LzXSupRx7WkeJ1FnBerwu0XiR6obkDvVW9Pc6jJPUW-K3mnX1ybpedndv4NCvXxrx0cQHxCADFlgTtb4LHByRBkwxQDJBXToyZgYBrRmoBzYigMWNOr9Adh2N5A:1vBDXI:ZV5I08qny-yyUNRToox6AMzWFKOwVyfWCvXxorOhJSs",
+    "expire_date": "2025-11-04T14:40:28.855Z"
+  }
+},
+{
+  "model": "appstem4girls.proveedor",
+  "pk": 1,
+  "fields": {
+    "nombre": "STEM4Girls Europe",
+    "descripcion": "Iniciativa europea para inspirar y empoderar a niñas y chicas hacia las disciplinas STEM (Ciencia, Tecnología, Ingeniería, Matemáticas) mediante talleres hands‑on, mentoría con modelos femeninos, y actividades específicas para chicas de 13‑18 años.",
+    "ciudad": "",
+    "direccion": "",
+    "telefono": "",
+    "email": "hello@threeoclock.co",
+    "web": "https://www.stemforgirls.eu/"
+  }
+},
+{
+  "model": "appstem4girls.proveedor",
+  "pk": 2,
+  "fields": {
+    "nombre": "Deusto Learning Lab",
+    "descripcion": "Grupo de investigación e innovación educativa vinculado a la Universidad de Deusto, centrado en enseñanza‑aprendizaje de competencias STEM, aprendizaje basado en juego, experimentación remota y analítica de aprendizaje",
+    "ciudad": "Bilbao",
+    "direccion": "Avenida de las Universidades, 24, 48007 Bilbao, Bizkaia.",
+    "telefono": "+34 944 13 90 00",
+    "email": "learninglab@deusto.es",
+    "web": "https://learninglab.deusto.es/"
+  }
+},
+{
+  "model": "appstem4girls.tag",
+  "pk": 1,
+  "fields": {
+    "nombre": "Video",
+    "descripcion": "archivos de video"
+  }
+},
+{
+  "model": "appstem4girls.tag",
+  "pk": 2,
+  "fields": {
+    "nombre": "Camp",
+    "descripcion": ""
+  }
+},
+{
+  "model": "appstem4girls.tag",
+  "pk": 3,
+  "fields": {
+    "nombre": "Información",
+    "descripcion": ""
+  }
+},
+{
+  "model": "appstem4girls.tag",
+  "pk": 5,
+  "fields": {
+    "nombre": "Taller",
+    "descripcion": ""
+  }
+},
+{
+  "model": "appstem4girls.tag",
+  "pk": 6,
+  "fields": {
+    "nombre": "Ciencia",
+    "descripcion": ""
+  }
+},
+{
+  "model": "appstem4girls.tag",
+  "pk": 7,
+  "fields": {
+    "nombre": "Tecnologia",
+    "descripcion": ""
+  }
+},
+{
+  "model": "appstem4girls.recurso",
+  "pk": 1,
+  "fields": {
+    "titulo": "Sustainable Energy STEM Camp",
+    "descripcion": "Join the STEM camps in Paris and Copenhagen! \r\n\r\nExplore the thrilling world of sustainable energy and the cutting-edge technologies currently being developed.\r\n\r\nDiscover how solar power, wind energy, hydrogen fuel, batteries, and other revolutionary innovations are shaping the future of our planet – and learn how you can become an active part of the movement towards a greener, more sustainable world!",
+    "fecha_publicacion": "2025-10-21",
+    "enlace": "https://8acde77f.sibforms.com/serve/MUIFAHI08OZcGrFSzVZ78y9F37vOfImNHWXLg_Z6OsYegHvtwc_nQA834La2Sd91diYW6e-jNRliQaH7GIJbwjhzjJF3o1gcQuJOxmX9SwkTWCWnKr558BUhT_En9JNfldcrMqlgxVj_Yb7s7dilg3t4dIw1MWNtVq45",
+    "proveedor": 1,
+    "imagen": "images/Sustainable_Energy_STEM_Camp.jpeg",
+    "tags": [
+      2
+    ]
+  }
+},
+{
+  "model": "appstem4girls.recurso",
+  "pk": 2,
+  "fields": {
+    "titulo": "What powers your world?",
+    "descripcion": "You’ve probably heard the word energy a lot. People say things like: \r\n“Energy prices are going up.” \r\n“We need more green energy.” \r\n\r\nBut what does energy really mean? And what does it have to do with your life, your phone, or even the food you eat? \r\n\r\nIn this section, you will learn: \r\n\r\n👉 What energy is, how it powers the world — and how it connects to electricity, solar panels, wind turbines, and even the future of cities. \r\n✨ Along the way, you’ll: \r\nDiscover where energy comes from \r\nLearn the difference between energy and electricity \r\nExplore how you use energy every day \r\nAnd start thinking about the bigger energy picture \r\nLet’s get started!",
+    "fecha_publicacion": "2025-10-24",
+    "enlace": "https://www.youtube.com/watch?v=1pwjHgUrTyQ",
+    "proveedor": 1,
+    "imagen": "",
+    "tags": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "appstem4girls.recurso",
+  "pk": 3,
+  "fields": {
+    "titulo": "Inspira STEAM",
+    "descripcion": "Inspira STEAM es un proyecto pionero para el fomento de la vocación científico-tecnológica entre las niñas, basado en acciones de sensibilización y orientación, que imparten mujeres profesionales del mundo de la investigación, la ciencia y la tecnología.",
+    "fecha_publicacion": "2025-10-28",
+    "enlace": "https://inspirasteam.net/",
+    "proveedor": 2,
+    "imagen": "",
+    "tags": [
+      3
+    ]
+  }
+},
+{
+  "model": "appstem4girls.recurso",
+  "pk": 4,
+  "fields": {
+    "titulo": "Trastea club",
+    "descripcion": "Trastea Club es un repositorio de recursos e iniciativa de la Facultad de Ingeniería de la Universidad de Deusto, donde podrás encontrar programas, actividades, formación y material para la enseñanza-aprendizaje de las STEAM en educación preuniversitaria.",
+    "fecha_publicacion": "2025-10-28",
+    "enlace": "https://trastea.club/",
+    "proveedor": 2,
+    "imagen": "",
+    "tags": [
+      3
+    ]
+  }
+},
+{
+  "model": "appstem4girls.recurso",
+  "pk": 5,
+  "fields": {
+    "titulo": "Taller EOLOS SMART FACTORY",
+    "descripcion": "Durante el taller el alumnado podrá ver diferentes áreas \r\nde ingeniería: mecánica informática, electrónica, diseño, \r\nentre otras. Conocerán las diferencias entre cada una \r\nde ellas y cómo en un mismo proyecto es necesaria \r\nla colaboración de diferentes perfiles de la ingeniería. \r\nEste taller ofrece a los estudiantes la oportunidad de \r\nexperimentar las habilidades y competencias específicas \r\nde las diferentes ingenierías.\r\nDirigido a Estudiantes de Bachillerato científico- tecnológico.",
+    "fecha_publicacion": "2025-10-28",
+    "enlace": "https://www.deusto.es/document/ingenieria/es/taller-eolos.pdf?_gl=1*1g17gbt*_up*MQ..*_ga*NjE5MDkzMTY1LjE3NjE2ODQyNjk.*_ga_ZVJ1XGGKPL*czE3NjE2ODQyNjgkbzEkZzAkdDE3NjE2ODQyNjgkajYwJGwwJGgw",
+    "proveedor": 2,
+    "imagen": "",
+    "tags": [
+      5
+    ]
+  }
+},
+{
+  "model": "appstem4girls.mujeres",
+  "pk": 1,
+  "fields": {
+    "nombre": "Mª Luz Guenaga",
+    "descripcion": "Doctora en Ingeniería Informática (2007). Es profesora titular y responsable de la línea estratégica Vocaciones STEAM en la Facultad de Ingeniería. Su investigación se centra en la tecnología educativa, la educación STEM (en particular el pensamiento computacional), el aprendizaje basado en juegos y la interacción persona-ordenador. Ha publicado los resultados de su actividad en más de 40 artículos en la WoS, 36 de ellos indexados en la Science Core Collection. Ha desarrollado proyectos de I+D+i en educación STEM para educación primaria y secundaria, coordinando 38 proyectos (10 a nivel europeo) y participando en otros 45 proyectos a nivel nacional e internacional.",
+    "proveedor": 2,
+    "fecha_NCTO": null
+  }
+},
+{
+  "model": "appstem4girls.mujeres",
+  "pk": 2,
+  "fields": {
+    "nombre": "Alicia Alarcón",
+    "descripcion": "Alicia Alarcón Cobacho is an energy engineer with a passion for renewable energies and sustainability, as well as their implementation in today’s society. Alicia has a professional background in solar photovoltaics. She is particularly interested in the generation, distribution, and management of energy in a sustainable way. In addition, she has a broad knowledge base that allows her to approach sustainability from different perspectives, and she is working to apply her skills to help build a greener future.",
+    "proveedor": 1,
+    "fecha_NCTO": "1994-10-06"
+  }
+},
+{
+  "model": "appstem4girls.mujeres",
+  "pk": 3,
+  "fields": {
+    "nombre": "Eva Boo",
+    "descripcion": "Eva Boo is passionate about innovation and collective intelligence, convinced that collaboration is key to preserving our planet. In 2020, she co-founded Three o’clock, a Paris-based agency dedicated to co-designing sustainable products and services to make cities more livable.\r\n\r\nWith 15 years of experience across Spain, France, and the United States, Eva has worked in the energy, mobility, and construction sectors, leading over 100 projects and facilitating more than 200 workshops in strategy, marketing, innovation management, and service design.",
+    "proveedor": 1,
+    "fecha_NCTO": "1985-04-29"
+  }
+}
+]

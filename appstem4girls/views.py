@@ -79,9 +79,7 @@ def ajax_search(request):
 
     # 2) Buscar proveedores que coincidan
     proveedores_qs = Proveedor.objects.filter(
-        Q(nombre__icontains=q) |
-        Q(descripcion__icontains=q) |
-        Q(ciudad__icontains=q)
+        Q(nombre__icontains=q)
     ).distinct()
 
     # 3) Si hay proveedores que coinciden, añadir TODOS sus recursos

@@ -1261,7 +1261,7 @@
     "fecha_publicacion": "2025-10-24",
     "enlace": "https://www.youtube.com/watch?v=1pwjHgUrTyQ",
     "proveedor": 1,
-    "imagen": "",
+    "imagen": "images/luces.png",
     "tags": [
       1,
       3
@@ -1277,7 +1277,7 @@
     "fecha_publicacion": "2025-10-28",
     "enlace": "https://inspirasteam.net/",
     "proveedor": 2,
-    "imagen": "",
+    "imagen": "images/laboratorio.png",
     "tags": [
       3
     ]
@@ -1292,7 +1292,7 @@
     "fecha_publicacion": "2025-10-28",
     "enlace": "https://trastea.club/",
     "proveedor": 2,
-    "imagen": "",
+    "imagen": "images/trastea.png",
     "tags": [
       3
     ]
@@ -1307,7 +1307,7 @@
     "fecha_publicacion": "2025-10-28",
     "enlace": "https://www.deusto.es/document/ingenieria/es/taller-eolos.pdf?_gl=1*1g17gbt*_up*MQ..*_ga*NjE5MDkzMTY1LjE3NjE2ODQyNjk.*_ga_ZVJ1XGGKPL*czE3NjE2ODQyNjgkbzEkZzAkdDE3NjE2ODQyNjgkajYwJGwwJGgw",
     "proveedor": 2,
-    "imagen": "",
+    "imagen": "images/ciencia.png",
     "tags": [
       5
     ]

@@ -99,7 +99,7 @@ def ajax_search(request):
         results['recursos'].append({
             'id': r.id,
             'titulo': r.titulo,
-            'url': f"/recursos/{r.id}/", 
+            'url': reverse('detalle_recurso', args=[r.id]),
         })
 
     return JsonResponse(results)

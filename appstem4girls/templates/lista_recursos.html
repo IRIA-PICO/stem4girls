@@ -32,7 +32,7 @@
             <div>
                 <h2>{{ recurso.titulo }}</h2>
                 {% if recurso.imagen %}
-                    <img src="{% recurso.imagen.url %}" alt="{{ recurso.titulo|escape }}" class="recurso_img">
+                    <img src="{% static recurso.imagen.url %}" alt="{{ recurso.titulo|escape }}" class="recurso_img">
                 
                 {% else %}
                     <p>ERROR</p>

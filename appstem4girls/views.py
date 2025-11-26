@@ -3,6 +3,7 @@ from .models import Recurso, Proveedor, Tag, Mujeres
 from django.http import JsonResponse
 from django.urls import reverse
 from django.db.models import Q
+from django.templatetags.static import static
 
 def index(request):
     proveedores = Proveedor.objects.all()
@@ -98,7 +99,7 @@ def ajax_search(request):
         'id': r.id,
         'titulo': r.titulo,
         'url': reverse('detalle_recurso', args=[r.id]),
-        'imagen_url': r.imagen.url if r.imagen else '',  # url de la imagen
+        'imagen_url': static(r.imagen.url) if r.imagen else '',
         'descripcion': r.descripcion[:100] if r.descripcion else '',  # recortada
         'tags': [{'id': t.id, 'nombre': t.nombre} for t in r.tags.all()],
         'fecha_publicacion': r.fecha_publicacion.strftime("%d %b %Y") if r.fecha_publicacion else ''

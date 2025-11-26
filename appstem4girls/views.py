@@ -97,9 +97,12 @@ def ajax_search(request):
     # 4) Construccion del JSON
     for r in recursos_qs:
         results['recursos'].append({
-            'id': r.id,
-            'titulo': r.titulo,
-            'url': reverse('detalle_recurso', args=[r.id]),
-        })
-
+        'id': r.id,
+        'titulo': r.titulo,
+        'url': reverse('detalle_recurso', args=[r.id]),
+        'imagen_url': r.imagen.url if r.imagen else '',  # url de la imagen
+        'descripcion': r.descripcion[:100] if r.descripcion else '',  # recortada
+        'tags': [{'id': t.id, 'nombre': t.nombre} for t in r.tags.all()],
+        'fecha_publicacion': r.fecha_publicacion.strftime("%d %b %Y") if r.fecha_publicacion else ''
+    })
     return JsonResponse(results)

@@ -14,6 +14,15 @@
         <h1>{% trans "Explora Nuestros Recursos" %}</h1>
         <p>{% trans "Encuentra talleres, videos, eventos y mucho más para impulsar tu talento STEM" %}</p>
     </div>
+
+    <!-- Buscador en índice -->
+    <div class="search_box">
+    <label for="live-search-input" class="sr-only">Buscar</label>
+    <input id="live-search-input" class="live-search-input" type="search"
+            placeholder="{% trans 'Buscar recursos o proveedores...' %}" autocomplete="off">
+    <div id="live-search-results" class="live-search-results" aria-live="polite" role="listbox"></div>
+    </div>
+
   <!-- Blog entry -->
   <div class="grid_recursos">
     {% if recursos %}

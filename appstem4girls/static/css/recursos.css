@@ -261,6 +261,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: #D1D5DB;
+    width: 350px; /*MIRAR COMO QUEDA*/
 }
 
 .recurso_card_busqueda:hover {

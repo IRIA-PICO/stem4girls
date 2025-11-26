@@ -16,9 +16,20 @@ input.addEventListener("keyup", function () {
         }
 
         fetch(`/ajax/search/?q=${encodeURIComponent(q)}`)
-            .then(response => response.json())
-            .then(data => renderResults(data.recursos))
-            .catch(err => console.error("Error AJAX:", err));
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error en la respuesta del servidor');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log("Datos recibidos:", data); // Para debug
+                    renderResults(data.recursos);
+                })
+                .catch(err => {
+                    console.error("Error AJAX:", err);
+                    resultsGrid.innerHTML = "<p>Error al buscar. Por favor, intenta de nuevo.</p>";
+                });
     }, 300);
 });
 

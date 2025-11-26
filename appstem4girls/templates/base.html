@@ -8,7 +8,6 @@
         {% load i18n %}
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         
-        <script src="{% static 'js/ajax.js' %}"></script>
         {% block extra_css %}{% endblock %}
         
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -60,7 +59,8 @@
         </header>
         
         <main id="content">
-            {% block contenido %}{% endblock %}
+            {% block contenido %}
+            {% endblock %}
         </main>
 
         <footer class="footer">
@@ -120,5 +120,7 @@
             <p>{% trans "Hecho por mujeres para mujeres." %}</p>
         </div>
     </footer>
+    <script src="{% static 'js/ajax.js' %}"></script>
+    {% block extra_js %}{% endblock %}
     </body>
 </html>

@@ -1,85 +1,38 @@
-// static/js/ajax-search.js
-(function($){
-  $(function(){
-    var $input = $('#live-search-input');
-    var $box = $('#live-search-results');
-    var timer = null;
-    var DEBOUNCE = 280;
+const input = document.getElementById("live-search-input");
+const resultsBox = document.getElementById("live-search-results");
+let timeout = null;
 
-    function escapeHtml(s){
-      return String(s || '').replace(/[&<>"']/g, function(m){
-        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m];
-      });
-    }
+input.addEventListener("keyup", function () {
+    const q = input.value.trim();
 
-    function renderResults(data){
-      var html = '';
-      if ((data.recursos && data.recursos.length) || (data.proveedores && data.proveedores.length)){
-        if (data.recursos && data.recursos.length){
-          html += '<div class="rs-section"><strong>{0}</strong><ul>'.replace('{0}','Recursos');
-          $.each(data.recursos, function(i, r){
-            html += '<li class="rs-item rs-recurso"><a href="'+ escapeHtml(r.url) +'">'+ escapeHtml(r.titulo) +'</a></li>';
-          });
-          html += '</ul></div>';
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+        if (q.length < 2) { // No buscar si hay menos de 2 caracteres
+            resultsBox.innerHTML = "";
+            return;
         }
-        if (data.proveedores && data.proveedores.length){
-          html += '<div class="rs-section"><strong>{0}</strong><ul>'.replace('{0}','Proveedores');
-          $.each(data.proveedores, function(i, p){
-            html += '<li class="rs-item rs-proveedor"><a href="'+ escapeHtml(p.url) +'">'+ escapeHtml(p.nombre) +'</a></li>';
-          });
-          html += '</ul></div>';
-        }
-      } else {
-        html = '<div class="rs-empty">No hay resultados</div>';
-      }
-      $box.html(html);
-      $box.show();
-    }
 
-    function doSearch(q){
-      if (!q) {
-        $box.empty().hide();
+        fetch(`/ajax/search/?q=${encodeURIComponent(q)}`)
+            .then(response => response.json())
+            .then(data => renderResults(data.recursos))
+            .catch(err => console.error("Error AJAX:", err));
+    }, 300); // Retraso 300ms para no saturar el servidor
+});
+
+function renderResults(recursos) {
+    resultsBox.innerHTML = "";
+
+    if (recursos.length === 0) {
+        resultsBox.innerHTML = "<div class='result-item empty'>No se encontraron resultados</div>";
         return;
-      }
-      $.ajax({
-        url: '/appstem4girls/ajax/search/',
-        method: 'GET',
-        data: { q: q },
-        dataType: 'json'
-      }).done(function(data){
-        renderResults(data || {});
-      }).fail(function(){
-        $box.html('<div class="rs-empty">Error al buscar</div>').show();
-      });
     }
 
-    $input.on('input', function(){
-      clearTimeout(timer);
-      var q = $(this).val().trim();
-      timer = setTimeout(function(){ doSearch(q); }, DEBOUNCE);
+    recursos.forEach(r => {
+        const item = document.createElement("a");
+        item.classList.add("result-item");
+        item.href = r.url;
+        item.setAttribute("role", "option");
+        item.innerHTML = `<strong>${r.titulo}</strong>`;
+        resultsBox.appendChild(item);
     });
-
-    // cerrar resultados al hacer click fuera
-    $(document).on('click', function(e){
-      if (!$(e.target).closest('.search_box').length){
-        $box.empty().hide();
-      }
-    });
-
-    // Navegación con teclado (simple)
-    $input.on('keydown', function(e){
-      var $items = $box.find('.rs-item a');
-      if (!$items.length) return;
-      var $focused = $items.filter('.focused');
-      if (e.key === 'ArrowDown'){
-        e.preventDefault();
-        if (!$focused.length) { $items.first().addClass('focused').focus(); }
-        else { var $next = $focused.parent().next().find('a'); if ($next.length){ $focused.removeClass('focused'); $next.addClass('focused').focus(); } }
-      } else if (e.key === 'ArrowUp'){
-        e.preventDefault();
-        if ($focused.length){ var $prev = $focused.parent().prev().find('a'); if ($prev.length){ $focused.removeClass('focused'); $prev.addClass('focused').focus(); } }
-      }
-    });
-
-  });
-})(jQuery);
+}

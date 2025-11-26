@@ -12,7 +12,7 @@ urlpatterns = [
     path('tags/<int:tag_id>/', views.detalle_tag, name='detalle_tag'),
     path('mujeres_lideres/', views.mujeres_lideres, name='mujeres_lideres'),
     path('i18n/', include('django.conf.urls.i18n')),    
-    path('ajax/search/', views.ajax_search, name='ajax'),
+    path('ajax/search/', views.ajax_search, name='ajax_search'),
 
 ]
 

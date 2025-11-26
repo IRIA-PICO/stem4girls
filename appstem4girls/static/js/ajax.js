@@ -1,42 +1,48 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const input = document.getElementById("live-search-input");
-    const resultsBox = document.getElementById("live-search-results");
-    if (!input || !resultsBox) return; // seguridad
+const input = document.getElementById("live-search-input");
+const resultsGrid = document.querySelector(".grid_recursos");
+if (!input || !resultsGrid) return;
 
-    let timeout = null;
+let timeout = null;
 
-    input.addEventListener("keyup", function () {
-        const q = input.value.trim();
+input.addEventListener("keyup", function () {
+    const q = input.value.trim();
 
-        clearTimeout(timeout);
-        timeout = setTimeout(() => {
-            if (q.length < 2) {
-                resultsBox.innerHTML = "";
-                return;
-            }
-
-            fetch(`/ajax/search/?q=${encodeURIComponent(q)}`)
-                .then(response => response.json())
-                .then(data => renderResults(data.recursos))
-                .catch(err => console.error("Error AJAX:", err));
-        }, 300);
-    });
-
-    function renderResults(recursos) {
-        resultsBox.innerHTML = "";
-
-        if (recursos.length === 0) {
-            resultsBox.innerHTML = "<div class='result-item empty'>No se encontraron resultados</div>";
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+        if (q.length < 2) {
+            // Restaurar todos los recursos si se borra el input
+            resultsGrid.innerHTML = originalHTML;
             return;
         }
 
-        recursos.forEach(r => {
-            const item = document.createElement("a");
-            item.classList.add("result-item");
-            item.href = r.url;
-            item.setAttribute("role", "option");
-            item.innerHTML = `<strong>${r.titulo}</strong>`;
-            resultsBox.appendChild(item);
-        });
-    }
+        fetch(`/ajax/search/?q=${encodeURIComponent(q)}`)
+            .then(response => response.json())
+            .then(data => renderResults(data.recursos))
+            .catch(err => console.error("Error AJAX:", err));
+    }, 300);
 });
+
+const originalHTML = resultsGrid.innerHTML; // Guardar grilla original
+
+function renderResults(recursos) {
+    resultsGrid.innerHTML = "";
+
+    if (recursos.length === 0) {
+        resultsGrid.innerHTML = "<p>No se encontraron resultados</p>";
+        return;
+    }
+
+    recursos.forEach(r => {
+        const card = document.createElement("div");
+        card.classList.add("recurso_card");
+        card.innerHTML = `
+            <div>
+                <h2>${r.titulo}</h2>
+                <div class="enlace_recursos">
+                    <a href="${r.url}">Ver más detalles</a>
+                </div>
+            </div>
+        `;
+        resultsGrid.appendChild(card);
+    });
+}

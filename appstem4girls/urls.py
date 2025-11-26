@@ -2,6 +2,8 @@ from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
 from . import views
 
+app_name = "appstem4girls"
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('recursos/', views.lista_recursos, name='lista_recursos'),

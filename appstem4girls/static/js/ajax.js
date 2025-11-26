@@ -49,7 +49,7 @@
 
         recursos.forEach(r => {
         const card = document.createElement("div");
-        card.classList.add("recurso_card");
+        card.classList.add("recurso_card_busqueda");
 
         let tagsHTML = '';
         if (r.tags && r.tags.length > 0) {

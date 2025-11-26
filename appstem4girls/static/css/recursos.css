@@ -46,7 +46,7 @@
 /* Ajuste de la imagen dentro del contenedor */
 .recurso_img{
   width: 100%;
-  height: 100%;
+  height: 100px;
   object-fit: cover;   /* recorta para cubrir */
   display: block;
   transition: transform .35s ease;

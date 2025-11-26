@@ -69,23 +69,7 @@
             <article class="featured-card">
                 <!-- Imagen del recurso -->
                 <div class="card-image">
-                    {% comment %}
-                    Imágenes de Unsplash relacionadas con STEM
-                    Rotan automáticamente según la posición en el loop
-                    {% endcomment %}
-                    {% with forloop.counter0|add:1 as img_num %}
-                        {% if img_num == 1 %}
-                            <img src="https://images.unsplash.com/photo-1454779132693-e5cd0a216ed3?w=600&q=80" alt="Ciencia">
-                        {% elif img_num == 2 %}
-                            <img src="https://plus.unsplash.com/premium_photo-1676325101955-1089267548d4?w=600&q=80" alt="Tecnología">
-                        {% elif img_num == 3 %}
-                            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Ingeniería">
-                        {% elif img_num == 4 %}
-                            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&q=80" alt="Matemáticas">
-                        {% else %}
-                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="STEM">
-                        {% endif %}
-                    {% endwith %}
+                     <img src="{% static recurso.imagen.url %}" alt="{{ recurso.titulo|escape }}" class="recurso_img">
                     <div class="card-overlay"></div>
                 </div>
 

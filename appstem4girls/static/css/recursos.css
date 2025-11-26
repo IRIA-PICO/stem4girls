@@ -24,7 +24,7 @@
   display: inline-block; 
   vertical-align: top;     
   width: 30%;               /* Ajusta para tener 3 por fila */
-  min-width: 280px;
+  min-width: 300px;
   min-height: 340px; 
   background-color: #111827;
   border-radius: 12px;

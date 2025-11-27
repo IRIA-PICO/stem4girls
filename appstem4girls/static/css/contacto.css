@@ -1,0 +1,64 @@
+#contactos .row {
+    margin-bottom: 10px;
+}
+
+/* Cabeceras de columna */
+#contactos h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Filas de contacto */
+#contactos p {
+    margin: 0;
+    padding: 6px 0;
+    font-size: 15px;
+}
+
+/* Botón eliminar */
+#contactos .btn-danger {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+#contactos .glyphicon-remove {
+    font-size: 14px;
+}
+
+/* Mensaje de “no hay contactos” */
+#contactos p {
+    color: #444;
+}
+
+#contactos .no-results {
+    color: #777;
+    margin-top: 15px;
+}
+
+/* Añadir formulario */
+#nuevo {
+    background: #f7f7f7;
+    padding: 60px 0;
+}
+
+#nuevo h2 {
+    margin-bottom: 20px;
+}
+
+#nuevo .form-control {
+    border-radius: 6px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#nuevo .form-control:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 4px rgba(102, 175, 233, 0.6);
+}
+
+#nuevo button {
+    padding: 10px 20px;
+    font-size: 18px;
+}

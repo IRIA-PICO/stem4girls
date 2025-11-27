@@ -31,11 +31,9 @@
                            placeholder="Buscar por nombre, email o teléfono...">
                 </div>
                 <div class="sort-container">
-                    <span class="sort-icon">⚡</span>
+                    <span class="sort-icon">🔤</span>
                     <select v-model="ordenarPor" class="sort-select">
                         <option value="nombre">Ordenar por Nombre</option>
-                        <option value="email">Ordenar por Email</option>
-                        <option value="telefono">Ordenar por Teléfono</option>
                     </select>
                 </div>
             </div>
@@ -49,7 +47,7 @@
                 <h2 class="section-title">
                     <span class="title-icon">👥</span>
                     Mis Contactos
-                    <span class="contactos-count">(@{{ contactosFiltrados.length }})</span>
+                    <span class="contactos-count" v-text="contactosFiltrados.length"></span>
                 </h2>
             </div>
 
@@ -67,11 +65,9 @@
                         <div class="contacto-info">
                             <h3 class="contacto-nombre" v-text="persona.nombre"> </h3>
                             <div class="contacto-detail">
-                                <span class="detail-icon">✉️</span>
                                 <span class="detail-text"v-text="persona.email"></span>
                             </div>
                             <div class="contacto-detail">
-                                <span class="detail-icon">📱</span>
                                 <span class="detail-text"v-text="persona.telefono"> </span>
                             </div>
                         </div>
@@ -79,12 +75,12 @@
                             <button class="btn-action btn-edit" 
                                     @click="editarPersona(personas.indexOf(persona))"
                                     title="Editar contacto">
-                                <span class="glyphicon glyphicon-pencil"></span>
+                                ✏️
                             </button>
                             <button class="btn-action btn-delete" 
                                     @click="eliminarPersona(personas.indexOf(persona))"
                                     title="Eliminar contacto">
-                                <span class="glyphicon glyphicon-trash"></span>
+                                🗑️
                             </button>
                         </div>
                     </div>
@@ -101,7 +97,7 @@
                     No hay contactos aún
                 </h3>
                 <p class="empty-text" v-if="busqueda">
-                    No hay resultados para "@{{ busqueda }}"
+                    No hay resultados para <span v-text="busqueda"></span>
                 </p>
                 <p class="empty-text" v-else>
                     ¡Comienza agregando tu primer contacto!

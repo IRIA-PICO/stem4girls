@@ -118,7 +118,11 @@
         <div class="container">
             <div class="form-header">
                 <h2 class="section-title">
-                    {{ editando !== null ? 'Actualizar Contacto' : 'Añadir Contacto' }}
+                    {% if editando %}
+                        Actualizar Contacto
+                    {% else %}
+                        Añadir Contacto
+                    {% endif %}
                 </h2>
             </div>
             
@@ -170,7 +174,11 @@
                                 <span v-if="editando !== null">✏️</span>
                                 <span v-else>➕</span>
                             </span>
-                            {{ editando !== null ? 'Actualizar Contacto' : 'Añadir Contacto' }}
+                            {% if editando %}
+                                Actualizar Contacto
+                            {% else %}
+                                Añadir Contacto
+                            {% endif %}
                         </button>
                         <button v-if="editando !== null" 
                                 type="button"

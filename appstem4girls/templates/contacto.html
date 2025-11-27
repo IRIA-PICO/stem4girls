@@ -8,6 +8,7 @@
 {% block titulo %}Contacto{% endblock %}
 
 {% block contenido %}
+<div id="app">  <!-- Vue controla todo dentro -->
     <!-- Contactos Grid Section -->
     <section id="contactos">
         <div class="container">
@@ -29,27 +30,23 @@
                     <h4>Teléfono</h4>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <p>John Doe</p>
-                </div>
-                <div class="col-xs-4">
-                    <p>john.doe@deusto.es</p>
-                </div>
-                <div class="col-xs-3">
-                    <p>555555555</p>
-                </div>
+
+            <!-- LISTA DE CONTACTOS (Vue) -->
+            <div class="row" v-for="(persona, index) in personas" :key="index">
+                <div class="col-xs-4"><p>{{ persona.nombre }}</p></div>
+                <div class="col-xs-4"><p>{{ persona.email }}</p></div>
+                <div class="col-xs-3"><p>{{ persona.telefono }}</p></div>
                 <div class="col-xs-1">
-                      <button class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span></button>
+                    <button class="btn btn-danger btn-sm" @click="eliminarPersona(index)">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
                 </div>
             </div>
-            </div>
-            <div>
-              <div class="row">
-                  <div class="col-xs-12">
+     
+            <div v-if="personas.length === 0" class="row">
+                <div class="col-xs-12">
                       <p>No se ha encontrado ningún contacto.</p>
-                  </div>
-              </div>
+                </div>
             </div>
         </div>
     </section>
@@ -65,26 +62,23 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form @submit.prevent="agregarPersona" id="contactForm" novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nombre</label>
-                                <input type="text" class="form-control" placeholder="Nombre" id="name">
-                                <p class="help-block text-danger"></p>
+                                <input v-model="nuevo.nombre" type="text" class="form-control" placeholder="Nombre">
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Email" id="email">
-                                <p class="help-block text-danger"></p>
+                                <input v-model="nuevo.email" type="email" class="form-control" placeholder="Email">
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Teléfono</label>
-                                <input type="tel" class="form-control" placeholder="Número de teléfono" id="phone">
-                                <p class="help-block text-danger"></p>
+                                <input v-model="nuevo.telefono" type="tel" class="form-control" placeholder="Número de teléfono">
                             </div>
                         </div>
                         <br>
@@ -99,30 +93,7 @@
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Acerca de...</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p>AgendaVue es un proyecto simple en VueJS.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+</div>  <!-- Fin del div controlado por Vue -->
 
     <!-- jQuery -->
     <!-- <script src="js/jquery.js"></script> -->
@@ -135,6 +106,6 @@
     <!-- <script src="js/freelancer.js"></script> -->
 
     <!-- Vue -->
-    <script src="js/vue.js"></script>   
+    <script src="js/vue1.js"></script>   
 
 {% endblock %}

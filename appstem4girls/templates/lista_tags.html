@@ -15,10 +15,9 @@
 
     <div class="tags_grid">
         {% for tag in tags %}
-            <div class="tag_card">
+            <div class="tag_card {{ tag.color_class }}">
                 <h2>{{ tag.nombre }}</h2>
                 <p>{{ tag.recursos.count }} {% trans "recurso " %}{{ tag.recursos.count|pluralize:"s" }}</p>
-                <!-- pongo recursos porque en el models.py Recursos así lo he llamado a los tags-->
                 <a href="{% url 'detalle_tag' tag.id %}" class="btn_tag">{% trans "Ver Recursos" %}</a>
             </div>
         {% empty %}

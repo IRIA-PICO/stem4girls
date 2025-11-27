@@ -16,6 +16,7 @@ class Proveedor(models.Model):
 class Tag(models.Model):
     nombre = models.CharField(max_length=50)
     descripcion = models.TextField(blank=True)
+    color_class = models.CharField(max_length=20, default='blue') 
 
     def __str__(self):
         return self.nombre

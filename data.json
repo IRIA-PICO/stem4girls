@@ -1194,7 +1194,8 @@
   "pk": 1,
   "fields": {
     "nombre": "Video",
-    "descripcion": "archivos de video"
+    "descripcion": "archivos de video",
+    "color_class": "orange"
   }
 },
 {
@@ -1202,7 +1203,8 @@
   "pk": 2,
   "fields": {
     "nombre": "Camp",
-    "descripcion": ""
+    "descripcion": "",
+    "color_class": "blue"
   }
 },
 {
@@ -1210,7 +1212,8 @@
   "pk": 3,
   "fields": {
     "nombre": "Información",
-    "descripcion": ""
+    "descripcion": "",
+    "color_class": "green"
   }
 },
 {
@@ -1218,7 +1221,8 @@
   "pk": 5,
   "fields": {
     "nombre": "Taller",
-    "descripcion": ""
+    "descripcion": "",
+    "color_class": "red"
   }
 },
 {
@@ -1226,7 +1230,8 @@
   "pk": 6,
   "fields": {
     "nombre": "Ciencia",
-    "descripcion": ""
+    "descripcion": "",
+    "color_class": "purple"
   }
 },
 {
@@ -1234,7 +1239,8 @@
   "pk": 7,
   "fields": {
     "nombre": "Tecnologia",
-    "descripcion": ""
+    "descripcion": "",
+    "color_class": "teal"
   }
 },
 {

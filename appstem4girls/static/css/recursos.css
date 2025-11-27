@@ -121,19 +121,18 @@
 
 .tag {
     padding: 5px 10px;
-    border: 1px solid var(--accent);
     border-radius: 20px; 
-    background-color: rgba(139, 92, 246, 0.1);
     font-size: 0.85rem;
     font-weight: 500;
     text-decoration: none;
     color: var(--accent);
 }
-
-.tag:hover {
-    background-color: rgba(139, 92, 246, 0.3);
-    border-color: var(--secondary);
-}
+.tag_card.blue { background-color: #3498db; }
+.tag_card.green { background-color: #eb5bcc; }
+.tag_card.red { background-color: #cf4e40; }
+.tag_card.purple { background-color: #9b59b6; }
+.tag_card.orange { background-color: #e67e22; }
+.tag_card.teal { background-color: #1abc9c; }
 
 .enlace_recursos {
     margin-top: auto;

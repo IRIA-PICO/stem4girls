@@ -32,16 +32,20 @@
   min-height: 150px;
   border-radius: 16px;
   padding: 25px 20px;
-  background-color: #111827;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tag_card:hover { 
-  transform: translateY(-6px);
+.tag_card.blue { background-color: #3498db; }
+.tag_card.green { background-color: #eb5bcc; }
+.tag_card.red { background-color: #cf4e40; }
+.tag_card.purple { background-color: #9b59b6; }
+.tag_card.orange { background-color: #e67e22; }
+.tag_card.teal { background-color: #1abc9c; }
+
+.tag_card:hover {
   box-shadow: 0 8px 16px rgba(0,0,0,0.12);
 }
 

@@ -57,6 +57,9 @@ def mujeres_lideres(request, ):
     }
     return render(request, 'mujeres_lideres.html', context)
 
+def contacto(request):
+    return render(request, 'contacto.html')
+
 #JAVASCRIPT
 def ajax_search(request):
     """

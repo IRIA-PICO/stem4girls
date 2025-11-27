@@ -13,6 +13,7 @@ urlpatterns = [
     path('mujeres_lideres/', views.mujeres_lideres, name='mujeres_lideres'),
     path('i18n/', include('django.conf.urls.i18n')),    
     path('ajax/search/', views.ajax_search, name='ajax_search'),
+    path('contacto/', views.contacto, name='contacto'),
 
 ]
 

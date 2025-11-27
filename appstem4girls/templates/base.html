@@ -37,6 +37,7 @@
                     <a href="{% url 'lista_proveedores' %}" class="nav-link">{% trans "Proveedores" %}</a>
                     <a href="{% url 'lista_tags' %}" class="nav-link">{% trans "Etiquetas" %}</a>
                     <a href="{% url 'mujeres_lideres' %}" class="nav-link">{% trans "Mujeres Líderes" %}</a>
+                    <a href="{% url 'contacto' %}" class="nav-link">{% trans "Contacto" %}</a>
                     <div class="lang-switcher">
                         <form id="lang-es" action="{% url 'set_language' %}" method="post">
                             {% csrf_token %}

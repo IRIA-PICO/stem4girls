@@ -9,88 +9,176 @@
 {% block titulo %}Contacto{% endblock %}
 
 {% block contenido %}
-<div id="app">  <!-- Vue controla todo dentro -->
-    <!-- Contactos Grid Section -->
-    <section id="contactos">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contactos</h2>
-                    <hr class="star-primary">
-                </div>
+<div id="app">
+    <!-- Hero Section -->
+    <section class="hero-contactos">
+        <div class="hero-content">
+            <div class="hero-icon">
+                <span class="icon-wrapper">📇</span>
             </div>
-            <div>
-            <div class="row">
-                <div class="col-xs-4">
-                    <h4>Nombre</h4>
-                </div>
-                <div class="col-xs-4">
-                    <h4>Email</h4>
-                </div>
-                <div class="col-xs-3">
-                    <h4>Teléfono</h4>
-                </div>
-            </div>
+            <h1 class="hero-title">Agenda de Contactos</h1>
+            <p class="hero-subtitle">Gestiona tu red de contactos STEM</p>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
 
-            <!-- LISTA DE CONTACTOS (Vue) -->
-            <div class="row" v-for="(persona, index) in personas" :key="index">
-                <div class="col-xs-4"><p>{{ persona.nombre }}</p></div>
-                <div class="col-xs-4"><p>{{ persona.email }}</p></div>
-                <div class="col-xs-3"><p>{{ persona.telefono }}</p></div>
-                <div class="col-xs-1">
-                    <button class="btn btn-danger btn-sm" @click="eliminarPersona(index)">
-                        <span class="glyphicon glyphicon-remove"></span>
-                    </button>
+    <!-- Barra de herramientas -->
+    <section class="toolbar-section">
+        <div class="container">
+            <div class="toolbar-wrapper">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input v-model="busqueda" 
+                           type="text" 
+                           class="search-input" 
+                           placeholder="Buscar por nombre, email o teléfono...">
                 </div>
-            </div>
-     
-            <div v-if="personas.length === 0" class="row">
-                <div class="col-xs-12">
-                      <p>No se ha encontrado ningún contacto.</p>
+                <div class="sort-container">
+                    <span class="sort-icon">⚡</span>
+                    <select v-model="ordenarPor" class="sort-select">
+                        <option value="nombre">Ordenar por Nombre</option>
+                        <option value="email">Ordenar por Email</option>
+                        <option value="telefono">Ordenar por Teléfono</option>
+                    </select>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Añadir nuevo Section -->
-    <section id="nuevo">
+    <!-- Lista de Contactos -->
+    <section id="contactos">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Añadir contacto</h2>
-                    <hr class="star-primary">
+            <div class="contactos-header">
+                <h2 class="section-title">
+                    <span class="title-icon">👥</span>
+                    Mis Contactos
+                    <span class="contactos-count">({{ contactosFiltrados.length }})</span>
+                </h2>
+            </div>
+
+            <!-- Grid de contactos -->
+            <div class="contactos-grid">
+                <div class="contacto-card" 
+                     v-for="(persona, index) in contactosFiltrados" 
+                     :key="index">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="avatar-wrapper">
+                            <div class="avatar">{{ persona.nombre.charAt(0).toUpperCase() }}</div>
+                            <div class="avatar-glow"></div>
+                        </div>
+                        <div class="contacto-info">
+                            <h3 class="contacto-nombre">{{ persona.nombre }}</h3>
+                            <div class="contacto-detail">
+                                <span class="detail-icon">✉️</span>
+                                <span class="detail-text">{{ persona.email }}</span>
+                            </div>
+                            <div class="contacto-detail">
+                                <span class="detail-icon">📱</span>
+                                <span class="detail-text">{{ persona.telefono }}</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-action btn-edit" 
+                                    @click="editarPersona(personas.indexOf(persona))"
+                                    title="Editar contacto">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </button>
+                            <button class="btn-action btn-delete" 
+                                    @click="eliminarPersona(personas.indexOf(persona))"
+                                    title="Eliminar contacto">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <form @submit.prevent="agregarPersona" id="contactForm" novalidate>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Nombre</label>
-                                <input v-model="nuevo.nombre" type="text" class="form-control" placeholder="Nombre">
-                            </div>
+
+            <!-- Mensaje vacío -->
+            <div v-if="contactosFiltrados.length === 0" class="empty-state">
+                <div class="empty-icon">🔍</div>
+                <h3 class="empty-title" v-if="busqueda">
+                    No se encontraron contactos
+                </h3>
+                <h3 class="empty-title" v-else>
+                    No hay contactos aún
+                </h3>
+                <p class="empty-text" v-if="busqueda">
+                    No hay resultados para "{{ busqueda }}"
+                </p>
+                <p class="empty-text" v-else>
+                    ¡Comienza agregando tu primer contacto!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario Añadir/Editar -->
+    <section id="nuevo">
+        <div class="container">
+            <div class="form-header">
+                <h2 class="section-title">
+                    <span class="title-icon">{{ editando !== null ? '✏️' : '➕' }}</span>
+                    {{ editando !== null ? 'Editar Contacto' : 'Nuevo Contacto' }}
+                </h2>
+            </div>
+            
+            <div class="form-wrapper">
+                <form @submit.prevent="agregarPersona" class="contact-form" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="label-icon">👤</span>
+                                Nombre Completo
+                            </label>
+                            <input v-model="nuevo.nombre" 
+                                   type="text" 
+                                   class="form-input" 
+                                   placeholder="Ej: María García"
+                                   required>
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email</label>
-                                <input v-model="nuevo.email" type="email" class="form-control" placeholder="Email">
-                            </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="label-icon">✉️</span>
+                                Correo Electrónico
+                            </label>
+                            <input v-model="nuevo.email" 
+                                   type="email" 
+                                   class="form-input" 
+                                   placeholder="maria@ejemplo.com"
+                                   required>
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Teléfono</label>
-                                <input v-model="nuevo.telefono" type="tel" class="form-control" placeholder="Número de teléfono">
-                            </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="label-icon">📱</span>
+                                Número de Teléfono
+                            </label>
+                            <input v-model="nuevo.telefono" 
+                                   type="tel" 
+                                   class="form-input" 
+                                   placeholder="+34 612 345 678"
+                                   required>
                         </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Añadir</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" 
+                                class="btn-submit"
+                                :class="editando !== null ? 'btn-update' : 'btn-add'">
+                            <span class="btn-icon">{{ editando !== null ? '✏️' : '➕' }}</span>
+                            <span class="btn-text">{{ editando !== null ? 'Actualizar Contacto' : 'Añadir Contacto' }}</span>
+                        </button>
+                        <button v-if="editando !== null" 
+                                type="button"
+                                @click="cancelarEdicion"
+                                class="btn-cancel">
+                            <span class="btn-icon">✖️</span>
+                            <span class="btn-text">Cancelar</span>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

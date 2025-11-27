@@ -9,7 +9,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    border-bottom: 2px solid;
 }
 
 .lp-info p {
@@ -263,6 +262,12 @@
     margin-top: 0.5rem;
     text-decoration: none;
 }
+.tag.blue { background-color: #89bee0; }
+.tag.green { background-color: #df89cc; }
+.tag.red { background-color: #dd857c; }
+.tag.purple { background-color: #bf81d7; }
+.tag.orange { background-color: #daab81; }
+.tag.teal { background-color: #72d1be; }
 
 .r-link {
     color: var(--accent);

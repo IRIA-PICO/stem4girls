@@ -127,12 +127,12 @@
     text-decoration: none;
     color: var(--accent);
 }
-.tag_card.blue { background-color: #3498db; }
-.tag_card.green { background-color: #eb5bcc; }
-.tag_card.red { background-color: #cf4e40; }
-.tag_card.purple { background-color: #9b59b6; }
-.tag_card.orange { background-color: #e67e22; }
-.tag_card.teal { background-color: #1abc9c; }
+.tag.blue { background-color: #89bee0; }
+.tag.green { background-color: #df89cc; }
+.tag.red { background-color: #dd857c; }
+.tag.purple { background-color: #bf81d7; }
+.tag.orange { background-color: #daab81; }
+.tag.teal { background-color: #72d1be; }
 
 .enlace_recursos {
     margin-top: auto;

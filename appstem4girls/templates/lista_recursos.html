@@ -45,7 +45,7 @@
                     <div class="tags_recurso">
                         {% for tag in recurso.tags.all %}
                             <!-- añadir tags con propiedades -->
-                            <a href="{% url 'detalle_tag' tag.id %}" class="tag">
+                            <a href="{% url 'detalle_tag' tag.id %}" class="tag {{ tag.color_class }}">
                                 {{ tag.nombre }}
                             </a>
                         {% endfor %}

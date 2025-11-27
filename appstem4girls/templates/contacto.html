@@ -65,14 +65,14 @@
                             <div class="avatar-glow"></div>
                         </div>
                         <div class="contacto-info">
-                            <h3 class="contacto-nombre">@{{ persona.nombre }}</h3>
+                            <h3 class="contacto-nombre" v-text="persona.nombre"> </h3>
                             <div class="contacto-detail">
                                 <span class="detail-icon">✉️</span>
-                                <span class="detail-text">@{{ persona.email }}</span>
+                                <span class="detail-text"v-text="persona.email"></span>
                             </div>
                             <div class="contacto-detail">
                                 <span class="detail-icon">📱</span>
-                                <span class="detail-text">@{{ persona.telefono }}</span>
+                                <span class="detail-text"v-text="persona.telefono"> </span>
                             </div>
                         </div>
                         <div class="card-actions">

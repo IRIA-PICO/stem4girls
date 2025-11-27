@@ -5,12 +5,11 @@
     margin-bottom: 16px;
     padding-bottom: 8px;
     padding-left: 15px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     border-bottom: 2px solid;
-    border-image: linear-gradient(135deg, var(--secondary), var(--primary)) 1;
 }
 
 .lp-info p {
@@ -30,12 +29,11 @@
 }
 
 .prov-tarjeta {
-    background-color: #1a1831;
+    background-color: var(--card-bg);
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0 2px 8px rgba(139,92, 246, 0.3);
+    box-shadow: 0 2px 8px rgba( var(--primary), 0.4);
     border-left: 4px solid;
-    border-image: linear-gradient(135deg, var(--secondary), var(--accent)) 1;
     box-sizing: border-box;	
 }
 

@@ -33,7 +33,7 @@
     align-items: center;
 }
 
-#live-search-input {
+.search_box {
     width: 100%;
     padding: 1rem 1rem 1rem 4rem; 
     border-radius: 50px;
@@ -45,10 +45,19 @@
     background-size: 1.5rem;
 }
 
-#live-search-input:focus {
+.search_box:focus {
     outline: none;
     border-color: var(--secondary);
     box-shadow: 0 0 15px rgba(160, 231, 229, 0.7);
+}
+
+#live-search-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-light);
+  font-size: 1rem;
+  outline: none;
 }
 
 .grid_recursos { 

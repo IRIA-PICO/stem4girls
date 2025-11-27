@@ -30,15 +30,22 @@
 
 .prov-tarjeta {
     background-color: var(--card-bg);
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 2px 8px rgba( var(--primary), 0.4);
-    border-left: 4px solid;
-    box-sizing: border-box;	
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box; 
+    min-height: 380px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #D1D5DB;
 }
 
 .prov-tarjeta:hover {
-    box-shadow: 0px 10px 20px rgba(120, 120, 120, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(139, 92, 246, 0.5);
 }
 
 /*Hay que comprobar como queda cuando carguemos fotos*/

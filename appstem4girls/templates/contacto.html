@@ -118,8 +118,7 @@
         <div class="container">
             <div class="form-header">
                 <h2 class="section-title">
-                    <span v-if="editando !== null">Editar</span>
-                    <span v-else>Añadir</span>
+                    {{ editando !== null ? 'Actualizar Contacto' : 'Añadir Contacto' }}
                 </h2>
             </div>
             
@@ -171,7 +170,7 @@
                                 <span v-if="editando !== null">✏️</span>
                                 <span v-else>➕</span>
                             </span>
-                            <span class="btn-text">{{ editando !== null ? 'Actualizar Contacto' : 'Añadir Contacto' }}</span>
+                            {{ editando !== null ? 'Actualizar Contacto' : 'Añadir Contacto' }}
                         </button>
                         <button v-if="editando !== null" 
                                 type="button"

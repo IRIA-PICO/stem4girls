@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        {% load i18n %}
+        <script src="{% static 'js/jsonld.js' %}"></script>
         <!-- OpenGraph (Facebook / WhatsApp / LinkedIn) -->
         <meta property="og:title" content="STEAM 4 Girls">
         <meta property="og:description" content="Proyecto STEM con gestión de contactos.">
@@ -14,9 +17,6 @@
         <meta name="twitter:title" content="STEAM 4 Girls">
         <meta name="twitter:description" content="Proyecto STEM con gestión dinámica de contactos.">
         <meta name="twitter:image" content="{% static 'images/compartiresvivir.png' %}">
-        {% load static %}
-        {% load i18n %}
-        <script src="{% static 'js/jsonld.js' %}"></script>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         
         {% block extra_css %}{% endblock %}

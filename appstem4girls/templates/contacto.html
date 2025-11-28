@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="{% static 'css/contacto.css' %}">
 {% endblock %}
 
-{% block titulo %}Contacto{% endblock %}
+{% block titulo %}{% trans"Contacto" %}{% endblock %}
 
 {% block contenido %}
 <div id="app">
     <!-- Hero Section -->
     <section class="hero-contactos">
         <div class="hero-content">
-            <h1 class="hero-title">Agenda de Contactos</h1>
-            <p class="hero-subtitle">Gestiona tu red de contactos STEM</p>
+            <h1 class="hero-title">{% trans "Agenda de Contactos" %}</h1>
+            <p class="hero-subtitle">{% trans "Gestiona tu red de contactos STEM" %}</p>
         </div>
         <div class="hero-glow"></div>
     </section>
@@ -33,7 +33,7 @@
                 <div class="sort-container">
                     <span class="sort-icon">🔤</span>
                     <select v-model="ordenarPor" class="sort-select">
-                        <option value="nombre">Ordenar por Nombre</option>
+                        <option value="nombre">{% trans "Ordenar por Nombre" %}</option>
                     </select>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <div class="contactos-header">
                 <h2 class="section-title">
                     <span class="title-icon">👥</span>
-                    Mis Contactos
+                    {% trans "Mis Contactos" %}
                     <span class="contactos-count" v-text="contactosFiltrados.length"></span>
                 </h2>
             </div>
@@ -91,16 +91,16 @@
             <div v-if="contactosFiltrados.length === 0" class="empty-state">
                 <div class="empty-icon">🔍</div>
                 <h3 class="empty-title" v-if="busqueda">
-                    No se encontraron contactos
+                    {% trans "No se encontraron contactos" %}
                 </h3>
                 <h3 class="empty-title" v-else>
-                    No hay contactos aún
+                    {% trans "No hay contactos aún" %}
                 </h3>
                 <p class="empty-text" v-if="busqueda">
-                    No hay resultados para <span v-text="busqueda"></span>
+                    {% trans "No hay resultados para" %} <span v-text="busqueda"></span>
                 </p>
                 <p class="empty-text" v-else>
-                    ¡Comienza agregando tu primer contacto!
+                    {% trans "¡Comienza agregando tu primer contacto!" %}
                 </p>
             </div>
         </div>
@@ -112,9 +112,9 @@
             <div class="form-header">
                 <h2 class="section-title">
                     {% if editando %}
-                        Actualizar Contacto
+                        {% trans "Actualizar Contacto" %}
                     {% else %}
-                        Añadir Contacto
+                        {% trans "Añadir Contacto" %}
                     {% endif %}
                 </h2>
             </div>
@@ -125,7 +125,7 @@
                         <div class="form-group">
                             <label class="form-label">
                                 <span class="label-icon">👤</span>
-                                Nombre Completo
+                                {% trans "Nombre Completo" %}
                             </label>
                             <input v-model="nuevo.nombre" 
                                    type="text" 
@@ -137,7 +137,7 @@
                         <div class="form-group">
                             <label class="form-label">
                                 <span class="label-icon">✉️</span>
-                                Correo Electrónico
+                                {% trans "Correo Electrónico" %}
                             </label>
                             <input v-model="nuevo.email" 
                                    type="email" 
@@ -149,7 +149,7 @@
                         <div class="form-group">
                             <label class="form-label">
                                 <span class="label-icon">📱</span>
-                                Número de Teléfono
+                                {% trans "Número de Teléfono" %}
                             </label>
                             <input v-model="nuevo.telefono" 
                                    type="tel" 
@@ -168,9 +168,9 @@
                                 <span v-else>➕</span>
                             </span>
                             {% if editando %}
-                                Actualizar Contacto
+                                {% trans "Actualizar Contacto" %}
                             {% else %}
-                                Añadir Contacto
+                                {% trans "Añadir Contacto" %}
                             {% endif %}
                         </button>
                         <button v-if="editando !== null" 

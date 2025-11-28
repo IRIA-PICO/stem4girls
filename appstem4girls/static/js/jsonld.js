@@ -3,9 +3,9 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "STEAM 4 Girls",
-        "url": "https://tusitio.com",
+        "url": "https://stem4girls.onrender.com/",
         "description": "Proyecto para gestionar contactos y recursos STEM.",
-        "logo": "https://tusitio.com/static/logo.png"
+        "logo": "https://stem4girls.onrender.com/static/compartiresvivir.png"
     };
 
     const script = document.createElement("script");

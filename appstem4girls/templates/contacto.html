@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{% static 'css/contacto.css' %}">
 {% endblock %}
 
-{% block titulo %}{% trans"Contacto" %}{% endblock %}
+{% block titulo %}Contacto{% endblock %}
 
 {% block contenido %}
 <div id="app">
@@ -53,9 +53,8 @@
 
             <!-- Grid de contactos -->
             <div class="contactos-grid">
-                <div class="contacto-card" 
-                     v-for="(persona, index) in contactosFiltrados" 
-                     :key="index">
+                <div class="contacto-card" v-for="(persona, index) in contactosFiltrados" :key="index"
+                        itemscope itemtype="https://schema.org/Person"typeof="Person">
                     <div class="card-glow"></div>
                     <div class="card-content">
                         <div class="avatar-wrapper">
@@ -63,12 +62,12 @@
                             <div class="avatar-glow"></div>
                         </div>
                         <div class="contacto-info">
-                            <h3 class="contacto-nombre" v-text="persona.nombre"> </h3>
+                            <h3 class="contacto-nombre" itemprop="name" property="name" v-text="persona.nombre"> </h3>
                             <div class="contacto-detail">
-                                <span class="detail-text"v-text="persona.email"></span>
+                                <span class="detail-text"itemprop="email" property="email"v-text="persona.email"></span>
                             </div>
                             <div class="contacto-detail">
-                                <span class="detail-text"v-text="persona.telefono"> </span>
+                                <span class="detail-text" itemprop="telephone" property="telephone" v-text="persona.telefono"> </span>
                             </div>
                         </div>
                         <div class="card-actions">

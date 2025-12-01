@@ -66,8 +66,7 @@
   padding: 0 1rem;
 }
 
-.search-container,
-.sort-container {
+.search-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -83,14 +82,12 @@
   box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
 }
 
-.search-icon,
-.sort-icon {
+.search-icon {
   font-size: 1.2rem;
   margin-right: 0.8rem;
 }
 
-.search-input,
-.sort-select {
+.search-input {
   flex: 1;
   background: transparent;
   border: none;

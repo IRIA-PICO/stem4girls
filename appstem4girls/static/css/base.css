@@ -194,40 +194,32 @@
   object-fit: cover;
 }
 @media (max-width: 900px) {
-
-  /* NAV EN COLUMNA */
   .nav-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
   }
-
-  /* LOGO + LANG SWITCHER juntos arriba */
   .nav-brand {
+    order: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
-
-  /* El menú queda abajo, a ancho completo */
   .nav-menu {
+    order: 1;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
   }
-
-  .nav-link {
-    display: block;
-    width: 100%;
+  .nav-link, .lang-switcher {
+    display: flex;
+    align-items: center;
   }
-
-  /* Ajustes del logo */
   .logo-title { font-size: 1.1rem; }
   .logo-wrapper { width: 45px; height: 45px; }
 }
-
 
 body {
   font-family: 'Poppins', Arial, sans-serif;

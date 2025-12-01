@@ -1190,6 +1190,19 @@
   }
 },
 {
+  "model": "appstem4girls.proveedor",
+  "pk": 3,
+  "fields": {
+    "nombre": "Girls Who Code",
+    "descripcion": "Organización internacional que promueve que niñas y adolescentes desarrollen habilidades de programación y liderazgo tecnológico mediante clubs, talleres y recursos abiertos.",
+    "ciudad": "New York",
+    "direccion": "",
+    "telefono": "",
+    "email": "info@girlswhocode.com",
+    "web": "https://girlswhocode.com/"
+  }
+},
+{
   "model": "appstem4girls.tag",
   "pk": 1,
   "fields": {
@@ -1238,8 +1251,8 @@
   "model": "appstem4girls.tag",
   "pk": 7,
   "fields": {
-    "nombre": "Tecnologia",
-    "descripcion": "",
+    "nombre": "Robótica",
+    "descripcion": "Actividades relacionadas con robots, automatización y programación física.",
     "color_class": "teal"
   }
 },
@@ -1317,6 +1330,19 @@
     "tags": [
       5
     ]
+  }
+},
+{
+  "model": "appstem4girls.recurso",
+  "pk": 6,
+  "fields": {
+    "titulo": "Intro to Robotics - Beginner Workshop",
+    "descripcion": "Un taller introductorio donde las participantes aprenderán los conceptos básicos de la robótica: sensores, actuadores y programación mediante pequeños robots educativos.",
+    "fecha_publicacion": "2025-11-10",
+    "enlace": "https://girlswhocode.com/programs",
+    "proveedor": 3,
+    "imagen": "images/robotica_basica.png",
+    "tags": [6,7]
   }
 },
 {

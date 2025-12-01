@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-28 09:34+0100\n"
+"POT-Creation-Date: 2025-12-01 12:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,33 +18,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\appstem4girls\templates\base.html:30
+#: .\appstem4girls\templates\base.html:41
 msgid "Empoderando el futuro"
 msgstr "Empowering the future"
 
-#: .\appstem4girls\templates\base.html:36
+#: .\appstem4girls\templates\base.html:47
 msgid "Recursos"
 msgstr "Resources"
 
-#: .\appstem4girls\templates\base.html:37
+#: .\appstem4girls\templates\base.html:48
 #: .\appstem4girls\templates\index.html:38
 msgid "Proveedores"
 msgstr "Providers"
 
-#: .\appstem4girls\templates\base.html:38
+#: .\appstem4girls\templates\base.html:49
 msgid "Etiquetas"
 msgstr "Tags"
 
-#: .\appstem4girls\templates\base.html:39
+#: .\appstem4girls\templates\base.html:50
 msgid "Mujeres Líderes"
 msgstr "Women Leaders"
 
-#: .\appstem4girls\templates\base.html:40
-#: .\appstem4girls\templates\base.html:89
+#: .\appstem4girls\templates\base.html:51
+#: .\appstem4girls\templates\base.html:100
 msgid "Contacto"
 msgstr "Contact"
 
-#: .\appstem4girls\templates\base.html:73
+#: .\appstem4girls\templates\base.html:84
 msgid ""
 "\"Para todas las futuras mujeres científicas. El futuro no se predice, ¡se "
 "programa!\""
@@ -52,32 +52,32 @@ msgstr ""
 "\"For all future women scientists. The future is not predicted, it's "
 "programmed!\""
 
-#: .\appstem4girls\templates\base.html:75
+#: .\appstem4girls\templates\base.html:86
 msgid "© 2025 App de Stem4girls"
 msgstr "© 2025 Stem4girls App"
 
-#: .\appstem4girls\templates\base.html:79
+#: .\appstem4girls\templates\base.html:90
 msgid "Navegación"
 msgstr "Navigation"
 
-#: .\appstem4girls\templates\base.html:81
+#: .\appstem4girls\templates\base.html:92
 msgid "Inicio"
 msgstr "Home"
 
-#: .\appstem4girls\templates\base.html:82
+#: .\appstem4girls\templates\base.html:93
 #: .\appstem4girls\templates\index.html:47
 msgid "Explorar Recursos"
 msgstr "Explore Resources"
 
-#: .\appstem4girls\templates\base.html:83
+#: .\appstem4girls\templates\base.html:94
 msgid "Aviso Legal"
 msgstr "Legal Notice"
 
-#: .\appstem4girls\templates\base.html:84
+#: .\appstem4girls\templates\base.html:95
 msgid "Política de Privacidad"
 msgstr "Privacy Policy"
 
-#: .\appstem4girls\templates\base.html:121
+#: .\appstem4girls\templates\base.html:132
 msgid "Hecho por mujeres para mujeres."
 msgstr "Made by women for women."
 
@@ -99,43 +99,43 @@ msgstr "Sort by Name"
 msgid "Mis Contactos"
 msgstr "My Contacts"
 
-#: .\appstem4girls\templates\contacto.html:94
+#: .\appstem4girls\templates\contacto.html:93
 msgid "No se encontraron contactos"
 msgstr "No contacts were found"
 
-#: .\appstem4girls\templates\contacto.html:97
+#: .\appstem4girls\templates\contacto.html:96
 msgid "No hay contactos aún"
 msgstr "No contacts yet"
 
-#: .\appstem4girls\templates\contacto.html:100
+#: .\appstem4girls\templates\contacto.html:99
 msgid "No hay resultados para"
 msgstr "No results found for"
 
-#: .\appstem4girls\templates\contacto.html:103
+#: .\appstem4girls\templates\contacto.html:102
 msgid "¡Comienza agregando tu primer contacto!"
 msgstr "Start by adding your first contact!"
 
-#: .\appstem4girls\templates\contacto.html:115
-#: .\appstem4girls\templates\contacto.html:171
+#: .\appstem4girls\templates\contacto.html:114
+#: .\appstem4girls\templates\contacto.html:170
 msgid "Actualizar Contacto"
 msgstr "Update Contact"
 
-#: .\appstem4girls\templates\contacto.html:117
-#: .\appstem4girls\templates\contacto.html:173
+#: .\appstem4girls\templates\contacto.html:116
+#: .\appstem4girls\templates\contacto.html:172
 #, fuzzy
 #| msgid "Contacto"
 msgid "Añadir Contacto"
 msgstr "Add Contact"
 
-#: .\appstem4girls\templates\contacto.html:128
+#: .\appstem4girls\templates\contacto.html:127
 msgid "Nombre Completo"
 msgstr "Full Name"
 
-#: .\appstem4girls\templates\contacto.html:140
+#: .\appstem4girls\templates\contacto.html:139
 msgid "Correo Electrónico"
 msgstr "Email"
 
-#: .\appstem4girls\templates\contacto.html:152
+#: .\appstem4girls\templates\contacto.html:151
 #, fuzzy
 #| msgid "Teléfono:"
 msgid "Número de Teléfono"
@@ -316,8 +316,6 @@ msgid "Ver más detalles:"
 msgstr "See More Details:"
 
 #: .\appstem4girls\templates\lista_tags.html:13
-#, fuzzy
-#| msgid "Proveedores de Recursos STEM"
 msgid "Etiquetas de Recursos STEM"
 msgstr "STEM Resource Tags"
 

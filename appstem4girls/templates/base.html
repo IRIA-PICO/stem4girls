@@ -6,6 +6,12 @@
         {% load static %}
         {% load i18n %}
         <script src="{% static 'js/jsonld.js' %}"></script>
+        <script id="jsonld-contactos" type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": []
+            }
+        </script>
         <!-- OpenGraph (Facebook / WhatsApp / LinkedIn) -->
         <meta property="og:title" content="STEAM 4 Girls">
         <meta property="og:description" content="Proyecto STEM con gestión de contactos.">

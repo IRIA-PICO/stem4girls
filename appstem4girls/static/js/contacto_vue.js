@@ -67,12 +67,9 @@ new Vue({
         },
 
         generarJSONLDContactos() {
+            const script = document.getElementById("jsonld-contactos");
+            if (!script) return;
 
-            // 1. Borrar script anterior si existe
-            const oldScript = document.getElementById("jsonld-contactos");
-            if (oldScript) oldScript.remove();
-
-            // 2. Crear estructura JSON
             const data = {
                 "@context": "https://schema.org",
                 "@graph": this.personas.map(p => ({
@@ -83,21 +80,13 @@ new Vue({
                 }))
             };
 
-            // 3. Crear script nuevo
-            const script = document.createElement("script");
-            script.type = "application/ld+json";
-            script.id = "jsonld-contactos";
             script.textContent = JSON.stringify(data, null, 2);
-
-            // 4. Insertarlo en <head>
-            document.head.appendChild(script);
-
             console.log("JSON-LD actualizado:", data);
         }
     },
 
     mounted() {
-    console.log("VUE INICIADO");
-    this.generarJSONLDContactos();
+        console.log("VUE INICIADO");
+        this.generarJSONLDContactos();
     }
 });

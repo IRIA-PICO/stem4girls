@@ -92,11 +92,9 @@ msgstr "Gestiona tu red de contactos STEM"
 
 #: .\appstem4girls\templates\contacto.html:36
 msgid "Ordenar por Nombre"
-msgstr ""
+msgstr "Ordenar por Nombre"
 
 #: .\appstem4girls\templates\contacto.html:49
-#, fuzzy
-#| msgid "Contacto"
 msgid "Mis Contactos"
 msgstr "Contacto"
 
@@ -123,8 +121,6 @@ msgstr "Actualizar Contacto"
 
 #: .\appstem4girls\templates\contacto.html:116
 #: .\appstem4girls\templates\contacto.html:172
-#, fuzzy
-#| msgid "Contacto"
 msgid "Añadir Contacto"
 msgstr "Contacto"
 
@@ -137,14 +133,10 @@ msgid "Correo Electrónico"
 msgstr "Correo Electrónico"
 
 #: .\appstem4girls\templates\contacto.html:151
-#, fuzzy
-#| msgid "Teléfono:"
 msgid "Número de Teléfono"
 msgstr "Teléfono:"
 
 #: .\appstem4girls\templates\detalle_proveedor.html:13
-#, fuzzy
-#| msgid "Explorar recursos"
 msgid "Volver a proveedores"
 msgstr "Explorar recursos"
 
@@ -166,25 +158,19 @@ msgstr "Web:"
 
 #: .\appstem4girls\templates\detalle_proveedor.html:74
 #: .\appstem4girls\templates\detalle_tag.html:17
-#, fuzzy
-#| msgid "Recursos"
 msgid "Recursos de"
-msgstr "Recursos"
+msgstr "Recursos de"
 
 #: .\appstem4girls\templates\detalle_proveedor.html:94
 #: .\appstem4girls\templates\detalle_tag.html:37
-#, fuzzy
-#| msgid "Explorar recursos"
 msgid "Ver recurso"
-msgstr "Explorar recursos"
+msgstr "Ver recursos"
 
 #: .\appstem4girls\templates\detalle_proveedor.html:100
 msgid "Este proveedor aún no tiene recursos asociados."
 msgstr "Este proveedor aún no tiene recursos asociados."
 
 #: .\appstem4girls\templates\detalle_recurso.html:14
-#, fuzzy
-#| msgid "Proveedores"
 msgid "Proveedor"
 msgstr "Proveedores"
 
@@ -204,14 +190,10 @@ msgid "Ir a la web"
 msgstr "Ir a la web"
 
 #: .\appstem4girls\templates\detalle_recurso.html:58
-#, fuzzy
-#| msgid "Explorar recursos"
 msgid "Volver a recursos"
 msgstr "Explorar recursos"
 
 #: .\appstem4girls\templates\detalle_tag.html:11
-#, fuzzy
-#| msgid "Etiquetas"
 msgid "Volver a Etiquetas"
 msgstr "Etiquetas"
 
@@ -317,15 +299,13 @@ msgstr ""
 
 #: .\appstem4girls\templates\lista_recursos.html:22
 msgid "Buscar recursos(nombre, etiqueta, proveedor...)"
-msgstr ""
+msgstr "Buscar recursos(nombre, etiqueta, proveedor...)"
 
 #: .\appstem4girls\templates\lista_recursos.html:58
 msgid "Ver más detalles:"
 msgstr "Ver más detalles:"
 
 #: .\appstem4girls\templates\lista_tags.html:13
-#, fuzzy
-#| msgid "Proveedores de Recursos STEM"
 msgid "Etiquetas de Recursos STEM"
 msgstr "Etiquetas de Recursos STEM"
 
@@ -338,14 +318,10 @@ msgstr ""
 "Vídeo, etc.)."
 
 #: .\appstem4girls\templates\lista_tags.html:20
-#, fuzzy
-#| msgid "Recursos"
 msgid "recurso"
 msgstr "recurso"
 
 #: .\appstem4girls\templates\lista_tags.html:21
-#, fuzzy
-#| msgid "Explorar recursos"
 msgid "Ver Recursos"
 msgstr "Explorar recursos"
 

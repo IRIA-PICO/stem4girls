@@ -75,7 +75,7 @@ new Vue({
             this.editando = null;
             this.nuevo = { nombre: '', email: '', telefono: '' };
             
-        }
+        },
         //Genera JSON-LD DINAMICO
         generarJSONLDContactos() {
 

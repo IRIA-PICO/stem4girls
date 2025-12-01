@@ -17,7 +17,7 @@ new Vue({
     },
     computed: {
         contactosFiltrados() {
-            let resultado = this.personas;
+            let resultado = [...this.personas];
 
             // Filtrar por búsqueda
             if (this.busqueda) {
@@ -32,11 +32,7 @@ new Vue({
             // Ordenar según el criterio
             if (this.ordenarPor === 'nombre') {
                 resultado = resultado.sort((a, b) => a.nombre.localeCompare(b.nombre));
-            } else if (this.ordenarPor === 'email') {
-                resultado = resultado.sort((a, b) => a.email.localeCompare(b.email));
-            } else if (this.ordenarPor === 'telefono') {
-                resultado = resultado.sort((a, b) => a.telefono.localeCompare(b.telefono));
-            }
+            } 
 
             return resultado;
         }
@@ -73,12 +69,12 @@ new Vue({
         editarPersona(index) {
             this.editando = index;
             this.nuevo = {...this.personas[index]};
-            this.generarJSONLDContactos();
+            
         },
         cancelarEdicion() {
             this.editando = null;
             this.nuevo = { nombre: '', email: '', telefono: '' };
-            this.generarJSONLDContactos();
+            
         }
         //Genera JSON-LD DINAMICO
         generarJSONLDContactos() {
@@ -112,5 +108,5 @@ new Vue({
         // generar JSON-LD al cargar la página
         this.generarJSONLDContactos();
     }
-    }
+    
 });

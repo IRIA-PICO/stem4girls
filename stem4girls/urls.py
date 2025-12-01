@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    #path('appstem4girls/', include('appstem4girls.urls')), # LOCALE
     path('', include('appstem4girls.urls')),
     path('admin/', admin.site.urls),
 ]

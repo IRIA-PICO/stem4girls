@@ -35,7 +35,7 @@
     overflow: hidden;
     padding: 20px;
     box-sizing: border-box; 
-    min-height: 380px; 
+    min-height: 200px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,13 +45,6 @@
 .prov-tarjeta:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(139, 92, 246, 0.5);
-}
-
-/*Hay que comprobar como queda cuando carguemos fotos*/
-.prov-logo {
-    height: 40px; 
-    object-fit: contain;
-    margin-bottom: 12px;
 }
 
 .prov-nombre {

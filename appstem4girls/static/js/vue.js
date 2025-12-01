@@ -56,6 +56,7 @@ new Vue({
                     this.nuevo.email = '';
                     this.nuevo.telefono = '';
                 }
+                this.generarJSONLDContactos();
             } else {
                 alert("Por favor completa todos los campos.");
             }
@@ -66,15 +67,50 @@ new Vue({
                 if(this.editando === index) {
                     this.cancelarEdicion();
                 }
+                this.generarJSONLDContactos();
             }
         },
         editarPersona(index) {
             this.editando = index;
             this.nuevo = {...this.personas[index]};
+            this.generarJSONLDContactos();
         },
         cancelarEdicion() {
             this.editando = null;
             this.nuevo = { nombre: '', email: '', telefono: '' };
+            this.generarJSONLDContactos();
         }
+        //Genera JSON-LD DINAMICO
+        generarJSONLDContactos() {
+
+            // eliminar JSON-LD previo si existe
+            const old = document.getElementById("jsonld-contactos");
+            if (old) old.remove();
+
+            const contactosJSON = this.personas.map(p => ({
+                "@type": "Person",
+                "name": p.nombre,
+                "email": p.email,
+                "telephone": p.telefono
+            }));
+
+            const data = {
+                "@context": "https://schema.org",
+                "@graph": contactosJSON
+            };
+
+            const script = document.createElement("script");
+            script.type = "application/ld+json";
+            script.id = "jsonld-contactos";
+            script.textContent = JSON.stringify(data, null, 2);
+
+            document.head.appendChild(script);
+        }
+    },
+
+    mounted() {
+        // generar JSON-LD al cargar la página
+        this.generarJSONLDContactos();
+    }
     }
 });

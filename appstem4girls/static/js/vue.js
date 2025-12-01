@@ -66,9 +66,6 @@ new Vue({
             this.nuevo = { nombre: '', email: '', telefono: '' };
         },
 
-        // ************************************************************************
-        // 🔥 FUNCIÓN QUE GENERA EL JSON-LD Y LO AÑADE AL HEAD CORRECTAMENTE
-        // ************************************************************************
         generarJSONLDContactos() {
 
             // 1. Borrar script anterior si existe
@@ -100,6 +97,7 @@ new Vue({
     },
 
     mounted() {
-        this.generarJSONLDContactos(); // generar al cargar
+    console.log("VUE INICIADO");
+    this.generarJSONLDContactos();
     }
 });

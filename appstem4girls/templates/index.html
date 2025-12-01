@@ -77,10 +77,10 @@
                 <div class="card-content">
                     <!-- Header: Proveedor y fecha -->
                     <div class="card-header">
-                        <div class="card-provider">
+                        <a href="{% url 'detalle_proveedor' recurso.proveedor.id %}" class="card-provider">>
                             <span class="provider-dot"></span>
                             {{ recurso.proveedor.nombre }}
-                        </div>
+                        </a>
                         <div class="card-date">
                             {{ recurso.fecha_publicacion|date:"d M Y" }}
                         </div>
@@ -103,7 +103,7 @@
                         {% if recurso.tags.all %}
                         <div class="card-tags">
                             {% for tag in recurso.tags.all|slice:":3" %}
-                            <a href="{% url 'detalle_tag' tag.id %}" class="card-tag">{{ tag.nombre }}</a>
+                            <a href="{% url 'detalle_tag' tag.id %}" class="card-tag {{ tag.color_class }}">{{ tag.nombre }}</a>
                             {% endfor %}
                             {% if recurso.tags.count > 3 %}
                             <a href="{% url 'detalle_recurso' recurso.id %}" class="card-tag-more" title="Ver todos los tags">+{{ recurso.tags.count|add:"-3" }}</a>

@@ -36,8 +36,11 @@
             {% if recurso.enlace %}
             <div class="video_container">
                 <iframe 
-                src="{{ recurso.enlace }}" 
-                title="{{ recurso.titulo }}" >
+                src="https://www.youtube.com/embed/1pwjHgUrTyQ"
+                title="{{ recurso.titulo }}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
                 </iframe>
             </div>
             {% endif %}

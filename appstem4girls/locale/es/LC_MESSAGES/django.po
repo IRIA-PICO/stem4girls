@@ -159,7 +159,7 @@ msgstr "Web:"
 #: .\appstem4girls\templates\detalle_proveedor.html:74
 #: .\appstem4girls\templates\detalle_tag.html:17
 msgid "Recursos de"
-msgstr "Recursos de"
+msgstr "Recursos de "
 
 #: .\appstem4girls\templates\detalle_proveedor.html:94
 #: .\appstem4girls\templates\detalle_tag.html:37

@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, get_list_or_404
 from .models import Recurso, Proveedor, Tag, Mujeres
 from django.http import JsonResponse
 from django.urls import reverse
@@ -19,7 +19,7 @@ def index(request):
     return render(request, 'index.html', context)
 
 def lista_recursos(request):
-    recursos = Recurso.objects.all()
+    recursos = get_list_or_404(Recurso)
     return render(request, 'lista_recursos.html', {'recursos': recursos})
 
 
@@ -29,7 +29,7 @@ def detalle_recurso(request, recurso_id):
 
 
 def lista_proveedores(request):
-    proveedores = Proveedor.objects.all()
+    proveedores = get_list_or_404(Proveedor)
     return render(request, 'lista_proveedores.html', {'proveedores': proveedores})
 
 
@@ -40,7 +40,7 @@ def detalle_proveedor(request, proveedor_id):
 
 
 def lista_tags(request):
-    tags = Tag.objects.all()
+    tags = get_list_or_404(Tag)
     return render(request, 'lista_tags.html', {'tags': tags})
 
 

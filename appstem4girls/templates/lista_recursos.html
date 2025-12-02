@@ -16,12 +16,19 @@
     </div>
 
     <!-- Buscador en índice -->
-    <div class="search_box">
-        <span class="search-icon">🔍</span>
-        <input id="live-search-input" class="live-search-input" type="search"
-        placeholder="{% trans 'Buscar recursos(nombre, etiqueta, proveedor...)' %}" autocomplete="off">
-        <div id="live-search-results" class="live-search-results" aria-live="polite" role="listbox"></div>
-    </div>
+    <section class="toolbar-section">
+        <div class="container">
+            <div class="toolbar-wrapper">
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input v-model="busqueda" 
+                           type="text" 
+                           class="search-input" 
+                           placeholder="Buscar por nombre, email o teléfono...">
+                </div>
+            </div>
+        </div>
+    </section>
 
   <!-- Blog entry -->
   <div class="grid_recursos">

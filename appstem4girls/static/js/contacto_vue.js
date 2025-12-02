@@ -1,14 +1,13 @@
-// Datos iniciales
 const contactos = [
   { nombre: "Juan Pérez", email: "juan@example.com", telefono: "123456789" },
   { nombre: "Ana Gómez", email: "ana@example.com", telefono: "987654321" }
 ];
 
-// Función JSON-LD
-function generarJSONLD() {
+// Función JSON-LD: ahora acepta el array a serializar
+function generarJSONLD(personasArray) {
     const data = {
         "@context": "https://schema.org",
-        "@graph": contactos.map(p => ({
+        "@graph": personasArray.map(p => ({
             "@type": "Person",
             "name": p.nombre,
             "email": p.email,
@@ -30,7 +29,8 @@ function generarJSONLD() {
 new Vue({
     el: '#app',
     data: {
-        personas: contactos,
+        // Copia de contactos para evitar compartir la misma referencia
+        personas: contactos.slice(),
         nuevo: { nombre: '', email: '', telefono: '' },
         editando: null,
         busqueda: '',
@@ -49,9 +49,8 @@ new Vue({
                 );
             }
             
-            resultado = [...resultado].sort((a, b) => {
-                return a.nombre.localeCompare(b.nombre);
-            });
+            // Orden simple por nombre (puedes usar ordenarPor si quieres)
+            resultado = [...resultado].sort((a, b) => a.nombre.localeCompare(b.nombre));
             
             return resultado;
         }
@@ -60,15 +59,16 @@ new Vue({
         agregarPersona() {
             if (this.nuevo.nombre && this.nuevo.email && this.nuevo.telefono) {
                 if (this.editando !== null) {
+                    // actualizar en la lista reactiva
                     this.$set(this.personas, this.editando, { ...this.nuevo });
-                    this.$set(contactos, this.editando, { ...this.nuevo });
                     this.cancelarEdicion();
                 } else {
+                    // SOLO push en this.personas (no duplicar en 'contactos')
                     this.personas.push({ ...this.nuevo });
-                    contactos.push({ ...this.nuevo });
                 }
                 this.nuevo = { nombre: '', email: '', telefono: '' };
-                generarJSONLD();
+                // regenerar JSON-LD desde this.personas
+                generarJSONLD(this.personas);
             } else {
                 alert("Por favor, completa todos los campos.");
             }
@@ -77,7 +77,8 @@ new Vue({
         editarPersona(index) {
             this.editando = index;
             this.nuevo = { ...this.personas[index] };
-            document.getElementById('nuevo').scrollIntoView({ behavior: 'smooth' });
+            const el = document.getElementById('nuevo');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
         },
         
         cancelarEdicion() {
@@ -88,13 +89,12 @@ new Vue({
         eliminarPersona(index) {
             if (confirm("¿Estás seguro de que deseas eliminar este contacto?")) {
                 this.personas.splice(index, 1);
-                contactos.splice(index, 1);
-                generarJSONLD();
+                generarJSONLD(this.personas);
             }
         }
     },
     mounted() {
         console.log("✅ Vue iniciado");
-        generarJSONLD();
+        generarJSONLD(this.personas);
     }
 });

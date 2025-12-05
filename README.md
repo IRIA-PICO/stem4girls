@@ -20,6 +20,28 @@ En los efectos box-shadow de .prov-tarjeta y .lr (ajustes visuales).
 En recurso.css → ayuda con el ratio 16/9 para vídeos y creación del hover animado.
 En las media queries y en transformaciones CSS más avanzadas.
 
-Proyecto desarrollado por:
+Instalación
 
+1. Crear y activar un entorno virtual:
+```bash
+python -m venv venv
+venv\Scripts\activate  # Windows
+pip install -r requirements.txt y en el requirements.txt incluye:
+asgiref==3.9.2
+brotli==1.2.0
+click==8.3.1
+colorama==0.4.6
+dj-database-url==3.0.1
+Django==5.2.6
+gunicorn==23.0.0
+h11==0.16.0
+packaging==25.0
+pillow==12.0.0
+psycopg2-binary==2.9.11
+sqlparse==0.5.3
+tzdata==2025.2
+uvicorn==0.38.0
+whitenoise==6.11.0
+
+Proyecto desarrollado por:
 Oihane Garcia, Leire Miragaya e Iria Picó

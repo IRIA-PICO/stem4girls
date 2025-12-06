@@ -5,6 +5,21 @@ HTML + CSS – para el diseño de la interfaz y la maquetación responsive.
 JavaScript (en secciones dinámicas).
 Base de datos SQLite (por defecto de Django).
 Plantillas de Django con herencia (extends, block, static, url).
+
+Funcionalidades implementadas (E4a y E4b):
+Este proyecto combina los requisitos de Django y Vue.
+
+Funcionalidades añadidas en Django (E4a):
+Opción 1: Interacción enriquecida en el cliente con JavaScript (eventos, efectos, ajax) y sus librerías o frameworks.
+Opción 5: Carga de datos iniciales para la aplicación (todas las entidades).
+Opción 6: Multilingüismo - i18n (traducir algunas partes estáticas de las plantillas a otro idioma y activar esta funcionalidad en las URLs del proyecto).
+Opción 8: Desplegar el proyecto de Django en Render o Heroku .
+
+Desarrollo con Vue (E4b):
+Desarrollar la SPA con Vue. No ha sido posible desplegarlo en Netlify, ya que no ejecuta aplicaciones Django, por lo que todo el proyecto (Django y Vue) ha sido desplegado en Render.
+Además, el proyecto puede ejecutarse en local utilizando el archivo de configuración settingsLOC.py.
+Opción 1: incluir capacidades micro-semánticas (RDFa y Microdata) y de la web de datos (JSON-LD), todas ellas mencionadas en Structured data markup, e incluir capacidades sociales (Twitter, Facebook).
+
 Durante el desarrollo, ChatGPT se ha utilizado como asistente técnico y de diseño para optimizar y aprender sobre buenas prácticas.
 En concreto, se ha empleado en:
 

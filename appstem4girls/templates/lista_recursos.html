@@ -21,10 +21,7 @@
             <div class="toolbar-wrapper">
                 <div class="search-container">
                     <span class="search-icon">🔍</span>
-                    <input v-model="busqueda" 
-                           type="text" 
-                           class="search-input" 
-                           placeholder="Buscar por nombre, email o teléfono...">
+                    <input id="live-search-input" class="search-input" type="search" placeholder="{% trans 'Buscar recursos(nombre, etiqueta, proveedor...)' %}" autocomplete="off">
                 </div>
             </div>
         </div>
